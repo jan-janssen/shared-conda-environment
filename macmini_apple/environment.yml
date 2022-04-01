@@ -406,6 +406,4 @@ dependencies:
   - zipp=3.7.0=pyhd8ed1ab_1
   - zlib=1.2.11=h90dfc92_1014
   - zstd=1.5.2=h861e0a7_0
-  - pip:
-    - pygmailfilter==0.post0.dev1
 prefix: /Users/jan/miniforge3
