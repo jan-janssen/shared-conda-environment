@@ -5,7 +5,7 @@ channels:
 dependencies:
   - abseil-cpp=20211102.0=h96cf925_1
   - adb=1.3.0=pyhd8ed1ab_1
-  - aimsgb=0.1.0=pyhd8ed1ab_1
+  - aimsgb=0.1.1=pyhd8ed1ab_0
   - aioeasywebdav=2.4.0=pyha770c72_0
   - aiohttp=3.8.1=py310h1961e1f_1
   - aiosignal=1.2.0=pyhd8ed1ab_0
@@ -34,8 +34,8 @@ dependencies:
   - bleach=5.0.0=pyhd8ed1ab_0
   - blosc=1.21.1=h97e831e_3
   - bokeh=2.4.3=py310h2ec42d9_0
-  - boto3=1.24.12=pyhd8ed1ab_0
-  - botocore=1.27.12=pyhd8ed1ab_0
+  - boto3=1.24.16=pyhd8ed1ab_0
+  - botocore=1.27.16=pyhd8ed1ab_0
   - brotli=1.0.9=h5eb16cf_7
   - brotli-bin=1.0.9=h5eb16cf_7
   - brotlipy=0.7.0=py310h1961e1f_1004
@@ -130,7 +130,7 @@ dependencies:
   - google-cloud-storage=2.4.0=pyh6c4a22f_0
   - google-crc32c=1.1.2=py310hf913535_3
   - google-resumable-media=2.3.3=pyhd8ed1ab_0
-  - googleapis-common-protos=1.56.2=py310h2ec42d9_0
+  - googleapis-common-protos=1.56.3=py310h2ec42d9_0
   - graphite2=1.3.13=h2e338ed_1001
   - graphviz=3.0.0=h6f567cf_1
   - greenlet=1.1.2=py310h9d931ec_2
@@ -150,7 +150,7 @@ dependencies:
   - httplib2=0.20.4=pyhd8ed1ab_0
   - icu=70.1=h96cf925_0
   - idna=3.3=pyhd8ed1ab_0
-  - imagemagick=7.1.0_38=pl5321h1a6ef8d_0
+  - imagemagick=7.1.0_39=pl5321h1a6ef8d_0
   - imagesize=1.3.0=pyhd8ed1ab_0
   - importlib-metadata=4.11.4=py310h2ec42d9_0
   - importlib-resources=5.8.0=pyhd8ed1ab_0
@@ -161,7 +161,7 @@ dependencies:
   - ipykernel=6.15.0=pyh736e0ef_0
   - ipython=8.4.0=py310h2ec42d9_0
   - ipython_genutils=0.2.0=py_1
-  - ipywidgets=7.7.0=pyhd8ed1ab_0
+  - ipywidgets=7.7.1=pyhd8ed1ab_0
   - itsdangerous=2.1.2=pyhd8ed1ab_0
   - jbig=2.1=h0d85af4_2003
   - jedi=0.18.1=py310h2ec42d9_1
@@ -177,9 +177,9 @@ dependencies:
   - jupyter-sphinx=0.3.2=pyhd8ed1ab_1
   - jupyter_client=7.3.4=pyhd8ed1ab_0
   - jupyter_core=4.10.0=py310h2ec42d9_0
-  - jupyter_server=1.17.1=pyhd8ed1ab_0
+  - jupyter_server=1.18.0=pyhd8ed1ab_0
   - jupyterlab_pygments=0.2.2=pyhd8ed1ab_0
-  - jupyterlab_widgets=1.1.0=pyhd8ed1ab_0
+  - jupyterlab_widgets=1.1.1=pyhd8ed1ab_0
   - jupytext=1.13.8=pyh4b9bcc7_0
   - kim-api=2.3.0=h32d3758_0
   - kiwisolver=1.4.3=py310habb735a_0
@@ -298,19 +298,19 @@ dependencies:
   - nspr=4.32=hcd9eead_1
   - nss=3.78=ha8197d3_0
   - numexpr=2.8.0=py310h514ec25_2
-  - numpy=1.22.4=py310hed37afb_0
+  - numpy=1.23.0=py310ha3f357c_0
   - oauth2client=4.1.3=py_0
   - olefile=0.46=pyh9f0ad1d_1
   - openblas=0.3.20=openmp_h5ad848b_0
   - openh264=2.1.1=hfd3ada9_0
   - openjpeg=2.4.0=h6e7aa92_1
   - openmpi=4.1.4=h8589876_100
-  - openssl=1.1.1o=hfe4f2af_0
+  - openssl=1.1.1p=hfe4f2af_0
   - otpauth=1.0.1=pyhd8ed1ab_0
   - p11-kit=0.24.1=h65f8906_0
   - packaging=21.3=pyhd8ed1ab_0
   - palettable=3.3.0=py_0
-  - pandas=1.4.2=py310h3099161_2
+  - pandas=1.4.3=py310h3099161_0
   - pandoc=2.18=h694c41f_0
   - pandocfilters=1.5.0=pyhd8ed1ab_0
   - pango=1.50.7=hc4a7b6d_0
@@ -334,7 +334,7 @@ dependencies:
   - pixman=0.40.0=hbcb3906_0
   - pkg-config=0.29.2=ha3d46e9_1008
   - platformdirs=2.5.1=pyhd8ed1ab_0
-  - plotly=5.8.2=pyhd8ed1ab_0
+  - plotly=5.9.0=pyhd8ed1ab_0
   - pluggy=1.0.0=py310h2ec42d9_3
   - ply=3.11=py_1
   - prettytable=3.3.0=pyhd8ed1ab_0
@@ -365,8 +365,8 @@ dependencies:
   - pygraphviz=1.9=py310h61b8529_2
   - pyiron=0.4.6=pyhd8ed1ab_0
   - pyiron-data=0.0.20=hd8ed1ab_0
-  - pyiron_atomistics=0.2.47=pyhd8ed1ab_0
-  - pyiron_base=0.5.13=pyhd8ed1ab_0
+  - pyiron_atomistics=0.2.48=pyhd8ed1ab_0
+  - pyiron_base=0.5.14=pyhd8ed1ab_0
   - pyiron_gpl=0.0.3=pyhd8ed1ab_0
   - pylammpsmpi=0.0.8=pyh7a6e0b1_0
   - pymatgen=2022.5.26=py310habb735a_0
@@ -419,7 +419,7 @@ dependencies:
   - seekpath=2.0.1=pyh44b312d_1
   - send2trash=1.8.0=pyhd8ed1ab_0
   - setuptools=62.6.0=py310h2ec42d9_0
-  - setuptools-scm=6.4.2=pyhd8ed1ab_0
+  - setuptools-scm=7.0.2=pyhd8ed1ab_0
   - shellingham=1.4.0=pyh44b312d_0
   - simplejson=3.17.6=py310h1961e1f_1
   - six=1.16.0=pyh6c4a22f_0
@@ -453,7 +453,7 @@ dependencies:
   - sphinxcontrib-qthelp=1.0.3=py_0
   - sphinxcontrib-serializinghtml=1.1.5=pyhd8ed1ab_2
   - sphinxdft-data=0.0.1=hd8ed1ab_2
-  - sqlalchemy=1.4.37=py310h6c45266_0
+  - sqlalchemy=1.4.38=py310h6c45266_0
   - sqlite=3.38.5=hd9f0692_0
   - stack_data=0.3.0=pyhd8ed1ab_0
   - statsmodels=0.13.2=py310h1bbcd0e_0
@@ -461,7 +461,7 @@ dependencies:
   - stopit=1.1.2=py_0
   - svt-av1=1.1.0=hb486fe8_1
   - sympy=1.10.1=py310h2ec42d9_0
-  - tabulate=0.8.9=pyhd8ed1ab_0
+  - tabulate=0.8.10=pyhd8ed1ab_0
   - tamkin=1.2.6=py_2
   - tbb=2021.5.0=hbb4e6a2_1
   - tbb-devel=2021.5.0=hbb4e6a2_1
@@ -496,11 +496,11 @@ dependencies:
   - waiting=1.4.1=pyhd8ed1ab_0
   - wcwidth=0.2.5=pyh9f0ad1d_2
   - webencodings=0.5.1=py_1
-  - websocket-client=1.3.2=pyhd8ed1ab_0
+  - websocket-client=1.3.3=pyhd8ed1ab_0
   - werkzeug=2.1.2=pyhd8ed1ab_1
   - wget=1.20.3=h52ee1ee_1
   - wheel=0.37.1=pyhd8ed1ab_0
-  - widgetsnbextension=3.6.0=py310h2ec42d9_0
+  - widgetsnbextension=3.6.1=pyha770c72_0
   - wrapt=1.14.1=py310h6c45266_0
   - x264=1!161.3030=h0d85af4_1
   - x265=3.5=hbb4e6a2_3
