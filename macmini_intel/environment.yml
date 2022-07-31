@@ -34,8 +34,8 @@ dependencies:
   - bleach=5.0.1=pyhd8ed1ab_0
   - blosc=1.21.1=h97e831e_3
   - bokeh=2.4.3=py310h2ec42d9_0
-  - boto3=1.24.40=pyhd8ed1ab_0
-  - botocore=1.27.40=pyhd8ed1ab_0
+  - boto3=1.24.41=pyhd8ed1ab_0
+  - botocore=1.27.41=pyhd8ed1ab_0
   - brotli=1.0.9=h5eb16cf_7
   - brotli-bin=1.0.9=h5eb16cf_7
   - brotlipy=0.7.0=py310h1961e1f_1004
@@ -415,7 +415,7 @@ dependencies:
   - s3transfer=0.6.0=pyhd8ed1ab_0
   - scandir=1.10.0=py310h1961e1f_5
   - scikit-learn=1.1.1=py310hfc06b38_0
-  - scipy=1.8.1=py310h70707f4_2
+  - scipy=1.9.0=py310h70707f4_0
   - seaborn=0.11.2=hd8ed1ab_0
   - seaborn-base=0.11.2=pyhd8ed1ab_0
   - seekpath=2.0.1=pyh44b312d_1
