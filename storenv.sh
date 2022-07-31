@@ -7,6 +7,7 @@ intel_path=${repo_path}"/macmini_intel"
 cd ${apple_path}
 source ~/.zshrcapple
 conda update --all -y
+conda clean --all -y
 conda env export > environment.yml
 git add environment.yml
 
@@ -14,5 +15,6 @@ git add environment.yml
 cd ${intel_path}
 source ~/.zshrcintel
 conda update --all -y
+conda clean --all -y
 conda env export > environment.yml
 git add environment.yml
