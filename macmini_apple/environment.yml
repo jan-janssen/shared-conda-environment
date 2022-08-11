@@ -9,7 +9,7 @@ dependencies:
   - aiosignal=1.2.0=pyhd8ed1ab_0
   - alabaster=0.7.12=py_0
   - aniso8601=9.0.1=pyhd8ed1ab_0
-  - anyio=3.6.1=py310hbe9552e_0
+  - anyio=3.6.1=pyhd8ed1ab_1
   - aom=3.4.0=hbe31e94_1
   - appnope=0.1.3=pyhd8ed1ab_0
   - argon2-cffi=21.3.0=pyhd8ed1ab_0
@@ -40,7 +40,7 @@ dependencies:
   - ca-certificates=2022.6.15=h4653dfc_0
   - cached-property=1.5.2=hd8ed1ab_1
   - cached_property=1.5.2=pyha770c72_1
-  - cachetools=5.0.0=pyhd8ed1ab_0
+  - cachetools=5.2.0=pyhd8ed1ab_0
   - cctools=973.0.1=h43ef6ec_10
   - cctools_osx-arm64=973.0.1=h8e51184_10
   - certifi=2022.6.15=py310hbe9552e_0
@@ -55,7 +55,7 @@ dependencies:
   - commonmark=0.9.1=py_0
   - conda=4.13.0=py310hbe9552e_1
   - conda-build=3.21.9=py310hbe9552e_1
-  - conda-forge-pinning=2022.08.07.13.04.47=hd8ed1ab_0
+  - conda-forge-pinning=2022.08.11.11.15.53=hd8ed1ab_0
   - conda-package-handling=1.8.1=py310hf8d0d8f_1
   - conda-smithy=3.21.1=pyhd8ed1ab_0
   - conda-souschef=2.2.1=pyhd8ed1ab_0
@@ -82,8 +82,8 @@ dependencies:
   - fastapi=0.79.0=pyhd8ed1ab_0
   - ffmpeg=4.4.2=lgpl_hcece248_6
   - file=5.39=h2c9beb0_1
-  - filelock=3.7.1=pyhd8ed1ab_0
-  - flask=2.2.1=pyhd8ed1ab_0
+  - filelock=3.8.0=pyhd8ed1ab_0
+  - flask=2.2.2=pyhd8ed1ab_0
   - flask-restful=0.3.9=pyhd8ed1ab_0
   - flit-core=3.7.1=pyhd8ed1ab_0
   - font-ttf-dejavu-sans-mono=2.37=hab24e00_0
@@ -94,7 +94,7 @@ dependencies:
   - fonts-conda-ecosystem=1=0
   - fonts-conda-forge=1=0
   - fonttools=4.34.4=py310h02f21da_0
-  - freetype=2.10.4=h17b34a0_1
+  - freetype=2.10.4=hd633e50_2
   - frozenlist=1.3.1=py310h8c01e39_0
   - future=0.18.2=py310hbe9552e_5
   - gettext=0.19.8.1=h049c9fb_1008
@@ -109,11 +109,11 @@ dependencies:
   - gmpy2=2.1.2=py310h25f46c9_0
   - gnutls=3.7.6=h27a1928_5
   - google-api-core=2.8.2=pyhd8ed1ab_0
-  - google-api-python-client=2.55.0=pyhd8ed1ab_0
+  - google-api-python-client=2.56.0=pyhd8ed1ab_0
   - google-auth=2.10.0=pyh6c4a22f_0
   - google-auth-httplib2=0.1.0=pyhd8ed1ab_1
   - google-auth-oauthlib=0.5.2=pyhd8ed1ab_0
-  - google-cloud-sdk=396.0.0=py310hbe9552e_0
+  - google-cloud-sdk=397.0.0=py310hbe9552e_0
   - googleapis-common-protos=1.56.4=py310hbe9552e_0
   - grayskull=1.6.0=pyhd8ed1ab_1
   - greenlet=1.1.2=py310h1105856_2
@@ -128,7 +128,7 @@ dependencies:
   - htop=3.2.1=h46ed386_0
   - httpcore=0.15.0=pyhd8ed1ab_0
   - httplib2=0.20.4=pyhd8ed1ab_0
-  - httpx=0.23.0=py310hbe9552e_0
+  - httpx=0.23.0=py310hbe9552e_1
   - hyperframe=6.0.1=pyhd8ed1ab_0
   - icu=70.1=h6b3803e_0
   - idna=3.3=pyhd8ed1ab_0
@@ -146,7 +146,7 @@ dependencies:
   - itsdangerous=2.1.2=pyhd8ed1ab_0
   - jarowinkler=1.2.0=py310hb07a4bc_0
   - jbig=2.1=h3422bc3_2003
-  - jedi=0.18.1=py310hbe9552e_1
+  - jedi=0.18.1=pyhd8ed1ab_2
   - jinja2=3.1.2=pyhd8ed1ab_1
   - joblib=1.1.0=pyhd8ed1ab_0
   - jpeg=9e=he4db4b2_2
@@ -158,11 +158,11 @@ dependencies:
   - jupyter_console=6.4.4=pyhd8ed1ab_0
   - jupyter_core=4.11.1=py310hbe9552e_0
   - jupyter_server=1.18.1=pyhd8ed1ab_0
-  - jupyterlab=3.4.4=pyhd8ed1ab_0
+  - jupyterlab=3.4.5=pyhd8ed1ab_0
   - jupyterlab_pygments=0.2.2=pyhd8ed1ab_0
   - jupyterlab_server=2.15.0=pyhd8ed1ab_0
   - jupyterlab_widgets=1.1.1=pyhd8ed1ab_0
-  - keyring=23.7.0=py310hbe9552e_0
+  - keyring=23.8.2=py310hbe9552e_0
   - kiwisolver=1.4.4=py310hd23d0e8_0
   - krb5=1.19.3=hf9b2bbe_0
   - lame=3.100=h27ca646_1001
@@ -173,11 +173,11 @@ dependencies:
   - ld64_osx-arm64=609=h6ce2ded_10
   - lerc=4.0.0=h9a09cb3_0
   - libarchive=3.5.2=h69ec738_3
-  - libblas=3.9.0=15_osxarm64_openblas
+  - libblas=3.9.0=16_osxarm64_openblas
   - libbrotlicommon=1.0.9=h1c322ee_7
   - libbrotlidec=1.0.9=h1c322ee_7
   - libbrotlienc=1.0.9=h1c322ee_7
-  - libcblas=3.9.0=15_osxarm64_openblas
+  - libcblas=3.9.0=16_osxarm64_openblas
   - libcurl=7.83.1=h2fcd78c_0
   - libcxx=14.0.6=h04bba0f_0
   - libdeflate=1.13=h57fd34a_0
@@ -188,7 +188,7 @@ dependencies:
   - libgfortran5=11.0.1.dev0=hf114ba7_23
   - libiconv=1.16=h642e427_0
   - libidn2=2.3.3=he4db4b2_0
-  - liblapack=3.9.0=15_osxarm64_openblas
+  - liblapack=3.9.0=16_osxarm64_openblas
   - liblief=0.11.5=hbdafb3b_1
   - libllvm13=13.0.1=hfd59cb2_2
   - libmagic=5.39=h2c9beb0_1
@@ -197,7 +197,7 @@ dependencies:
   - libnetcdf=4.8.1=nompi_h96a3436_102
   - libnghttp2=1.47.0=he723fca_0
   - libogg=1.3.4=h27ca646_1
-  - libopenblas=0.3.20=openmp_h130de29_1
+  - libopenblas=0.3.21=openmp_hcb59c3b_0
   - libpng=1.6.37=h2c9beb0_3
   - libpq=14.4=h8ab49ba_0
   - libprotobuf=3.20.1=h332123e_0
@@ -215,7 +215,7 @@ dependencies:
   - libwebp=1.2.3=h1e26fe3_1
   - libwebp-base=1.2.3=he4db4b2_2
   - libxcb=1.13=h9b22ae9_1004
-  - libxgboost=1.5.1=cpu_h9f176f6_2
+  - libxgboost=1.6.1=cpu_h7e51313_1
   - libxml2=2.9.14=h035c1df_3
   - libxslt=1.1.35=ha8fb468_0
   - libzip=1.9.2=h8caee39_0
@@ -307,8 +307,8 @@ dependencies:
   - pugixml=1.11.4=hbdafb3b_0
   - pure_eval=0.2.2=pyhd8ed1ab_0
   - py-lief=0.11.5=py310h1b49c16_1
-  - py-xgboost=1.5.1=cpu_py310ha244a38_2
-  - py3dmol=1.8.0=pyhd8ed1ab_0
+  - py-xgboost=1.6.1=cpu_py310ha244a38_1
+  - py3dmol=1.8.1=pyhd8ed1ab_0
   - pyasn1=0.4.8=py_0
   - pyasn1-modules=0.2.7=py_0
   - pyauthenticator=0.0.1=pyhd8ed1ab_0
@@ -318,7 +318,7 @@ dependencies:
   - pycparser=2.21=pyhd8ed1ab_0
   - pycrypto=2.6.1=py310he2143c4_1006
   - pydantic=1.9.1=py310h02f21da_0
-  - pydatamail=0.0.9=pyhd8ed1ab_0
+  - pydatamail=0.0.10=pyhd8ed1ab_0
   - pydatamail_google=0.0.8=pyhd8ed1ab_0
   - pyfiglet=0.8.post1=py_0
   - pyfileindex=0.0.6=pyhd8ed1ab_0
@@ -326,8 +326,8 @@ dependencies:
   - pygments=2.12.0=pyhd8ed1ab_0
   - pyiron=0.4.6=pyhd8ed1ab_0
   - pyiron-data=0.0.20=hd8ed1ab_0
-  - pyiron_atomistics=0.2.52=pyhd8ed1ab_0
-  - pyiron_base=0.5.20=pyhd8ed1ab_0
+  - pyiron_atomistics=0.2.53=pyhd8ed1ab_0
+  - pyiron_base=0.5.21=pyhd8ed1ab_0
   - pyjwt=2.4.0=pyhd8ed1ab_0
   - pymatgen=2022.7.25=py310hd23d0e8_0
   - pynacl=1.5.0=py310hf8d0d8f_1
@@ -356,7 +356,7 @@ dependencies:
   - pyzbar=0.1.8=pyh9f0ad1d_0
   - pyzmq=23.2.0=py310hede2015_0
   - qrcode=7.3.1=pyhd8ed1ab_0
-  - rapidfuzz=2.4.2=py310hb07a4bc_0
+  - rapidfuzz=2.4.3=py310hc6dc59f_0
   - readline=8.1.2=h46ed386_0
   - readme_renderer=36.0=pyhd8ed1ab_0
   - regex=2022.7.25=py310h02f21da_0
@@ -383,7 +383,7 @@ dependencies:
   - seaborn-base=0.11.2=pyhd8ed1ab_0
   - seekpath=2.0.1=pyh44b312d_1
   - send2trash=1.8.0=pyhd8ed1ab_0
-  - setuptools=63.4.2=py310hbe9552e_0
+  - setuptools=63.4.3=py310hbe9552e_0
   - sigtool=0.1.3=h7747421_0
   - simplegmail=4.0.4=pyhd8ed1ab_0
   - simplejson=3.17.6=py310hf8d0d8f_1
@@ -403,7 +403,7 @@ dependencies:
   - sphinxcontrib-qthelp=1.0.3=py_0
   - sphinxcontrib-serializinghtml=1.1.5=pyhd8ed1ab_2
   - sphinxdft-data=0.0.1=hd8ed1ab_2
-  - sqlalchemy=1.4.39=py310h02f21da_0
+  - sqlalchemy=1.4.40=py310h8c01e39_0
   - sqlite=3.39.2=h40dfcc0_0
   - stack_data=0.3.0=pyhd8ed1ab_0
   - starlette=0.19.1=pyhd8ed1ab_0
@@ -444,14 +444,14 @@ dependencies:
   - wcwidth=0.2.5=pyh9f0ad1d_2
   - webencodings=0.5.1=py_1
   - websocket-client=1.3.3=pyhd8ed1ab_0
-  - werkzeug=2.2.1=pyhd8ed1ab_0
+  - werkzeug=2.2.2=pyhd8ed1ab_0
   - wget=1.20.3=hb616509_1
   - wheel=0.37.1=pyhd8ed1ab_0
   - widgetsnbextension=3.6.1=pyha770c72_0
   - wrapt=1.14.1=py310h02f21da_0
   - x264=1!164.3095=he4db4b2_0
   - x265=3.5=hbc6ce65_3
-  - xgboost=1.5.1=cpu_py310h1b73f8b_2
+  - xgboost=1.6.1=cpu_py310he362541_1
   - xorg-libxau=1.0.9=h27ca646_0
   - xorg-libxdmcp=1.1.3=h27ca646_0
   - xz=5.2.5=h642e427_1
@@ -462,5 +462,5 @@ dependencies:
   - zeromq=4.3.4=hbdafb3b_1
   - zipp=3.8.1=pyhd8ed1ab_0
   - zlib=1.2.12=ha287fd2_2
-  - zstd=1.5.2=hd705a24_2
+  - zstd=1.5.2=hd705a24_3
 prefix: /Users/jan/miniforge3
