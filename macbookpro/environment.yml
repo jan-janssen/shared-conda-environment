@@ -62,7 +62,7 @@ dependencies:
   - commonmark=0.9.1=py_0
   - conda=22.9.0=py310h2ec42d9_1
   - conda-build=3.22.0=py310h2ec42d9_2
-  - conda-forge-pinning=2022.10.10.17.52.17=hd8ed1ab_0
+  - conda-forge-pinning=2022.10.12.08.17.18=hd8ed1ab_0
   - conda-merge=0.2.0=pyhd8ed1ab_0
   - conda-package-handling=1.9.0=py310h90acd4f_0
   - conda-smithy=3.21.2=pyhd8ed1ab_0
@@ -70,7 +70,7 @@ dependencies:
   - contourpy=1.0.5=py310ha23aa8a_0
   - corner=2.2.1=pyhd8ed1ab_0
   - coverage=6.5.0=py310h90acd4f_0
-  - cryptography=38.0.1=py310h23bb4e6_0
+  - cryptography=38.0.2=py310h23bb4e6_0
   - curl=7.85.0=h57eb407_0
   - cycler=0.11.0=pyhd8ed1ab_0
   - cython=0.29.32=py310hd4537e4_0
@@ -122,7 +122,7 @@ dependencies:
   - giflib=5.2.1=hbcb3906_2
   - git=2.38.0=pl5321h17f406e_0
   - gitdb=4.0.9=pyhd8ed1ab_0
-  - gitpython=3.1.28=pyhd8ed1ab_0
+  - gitpython=3.1.29=pyhd8ed1ab_0
   - gl2ps=1.4.2=h4cff582_0
   - glew=2.1.0=h046ec9c_2
   - glib=2.74.0=hbc0c0cd_0
@@ -170,7 +170,7 @@ dependencies:
   - jsonschema=4.16.0=pyhd8ed1ab_0
   - jupyter_client=7.3.4=pyhd8ed1ab_0
   - jupyter_core=4.11.1=py310h2ec42d9_0
-  - jupyter_server=1.19.1=pyhd8ed1ab_0
+  - jupyter_server=1.21.0=pyhd8ed1ab_0
   - jupyterlab=3.4.8=pyhd8ed1ab_0
   - jupyterlab_pygments=0.2.2=pyhd8ed1ab_0
   - jupyterlab_server=2.15.2=pyhd8ed1ab_0
@@ -253,7 +253,7 @@ dependencies:
   - mamba=0.27.0=py310h795411f_0
   - markdown=3.4.1=pyhd8ed1ab_0
   - markupsafe=2.1.1=py310h1961e1f_1
-  - matplotlib-base=3.6.0=py310he725631_0
+  - matplotlib-base=3.6.1=py310he725631_0
   - matplotlib-inline=0.1.6=pyhd8ed1ab_0
   - mendeleev=0.11.0=pyha21a80b_0
   - mistune=2.0.4=pyhd8ed1ab_0
@@ -273,9 +273,9 @@ dependencies:
   - multidict=6.0.2=py310h1961e1f_1
   - munkres=1.1.4=pyh9f0ad1d_0
   - mypy_extensions=0.4.3=py310h2ec42d9_5
-  - mysql-common=8.0.30=h7ebae80_1
-  - mysql-libs=8.0.30=hc37e033_1
-  - nbclassic=0.4.5=pyhd8ed1ab_0
+  - mysql-common=8.0.31=h7ebae80_0
+  - mysql-libs=8.0.31=hc37e033_0
+  - nbclassic=0.4.6=pyhd8ed1ab_0
   - nbclient=0.7.0=pyhd8ed1ab_0
   - nbconvert=7.2.1=pyhd8ed1ab_0
   - nbconvert-core=7.2.1=pyhd8ed1ab_0
@@ -364,8 +364,8 @@ dependencies:
   - pygments=2.13.0=pyhd8ed1ab_0
   - pyiron=0.4.6=pyhd8ed1ab_0
   - pyiron-data=0.0.20=hd8ed1ab_0
-  - pyiron_atomistics=0.2.57=pyhd8ed1ab_1
-  - pyiron_base=0.5.25=pyhd8ed1ab_0
+  - pyiron_atomistics=0.2.58=pyhd8ed1ab_0
+  - pyiron_base=0.5.26=pyhd8ed1ab_0
   - pyjwt=2.5.0=pyhd8ed1ab_0
   - pymatgen=2022.9.21=py310ha23aa8a_1
   - pynacl=1.5.0=py310h1961e1f_1
@@ -476,7 +476,7 @@ dependencies:
   - typed-ast=1.5.4=py310h6c45266_0
   - typing-extensions=4.4.0=hd8ed1ab_0
   - typing_extensions=4.4.0=pyha770c72_0
-  - tzdata=2022d=h191b570_0
+  - tzdata=2022e=h191b570_0
   - uncertainties=3.1.7=pyhd8ed1ab_0
   - unicodedata2=14.0.0=py310h1961e1f_1
   - urllib3=1.26.11=pyhd8ed1ab_0
