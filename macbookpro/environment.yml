@@ -53,7 +53,7 @@ dependencies:
   - comm=0.1.2=pyhd8ed1ab_0
   - conda=22.11.1=py311h6eed73b_1
   - conda-build=3.23.3=py311h6eed73b_1
-  - conda-forge-pinning=2023.02.14.01.17.40=hd8ed1ab_0
+  - conda-forge-pinning=2023.02.14.04.57.01=hd8ed1ab_0
   - conda-merge=0.2.0=pyhd8ed1ab_0
   - conda-package-handling=2.0.2=pyh38be061_0
   - conda-package-streaming=0.7.0=pyhd8ed1ab_1
@@ -152,9 +152,9 @@ dependencies:
   - jupyter_server=2.2.1=pyhd8ed1ab_0
   - jupyter_server_fileid=0.6.0=pyhd8ed1ab_0
   - jupyter_server_terminals=0.4.4=pyhd8ed1ab_1
-  - jupyter_server_ydoc=0.6.1=pyhd8ed1ab_0
-  - jupyter_ydoc=0.2.2=pyhd8ed1ab_0
-  - jupyterlab=3.6.1=pyhd8ed1ab_0
+  - jupyter_server_ydoc=0.7.0=pyhd8ed1ab_0
+  - jupyter_ydoc=0.3.1=pyhd8ed1ab_0
+  - jupyterlab=3.5.0=pyhd8ed1ab_0
   - jupyterlab_pygments=0.2.2=pyhd8ed1ab_0
   - jupyterlab_server=2.19.0=pyhd8ed1ab_0
   - jupyterlab_widgets=1.1.2=pyhd8ed1ab_0
@@ -170,7 +170,7 @@ dependencies:
   - ld64=609=hc6ad406_11
   - ld64_osx-64=609=hfd63004_11
   - lerc=4.0.0=hb486fe8_0
-  - libabseil=20220623.0=cxx17_h844d122_6
+  - libabseil=20230125.0=cxx17_hf0c8a7f_0
   - libaec=1.0.6=hf0c8a7f_1
   - libarchive=3.6.2=h6d8d9f1_0
   - libblas=3.9.0=16_osx64_openblas
@@ -189,7 +189,6 @@ dependencies:
   - libgfortran=5.0.0=11_3_0_h97931a8_27
   - libgfortran5=11.3.0=h082f757_27
   - libglib=2.74.1=h4c723e1_1
-  - libgrpc=1.51.1=h1ddfa78_1
   - libiconv=1.17=hac89ed1_0
   - libidn2=2.3.4=hb7f2c08_0
   - libjpeg-turbo=2.1.4=hb7f2c08_0
@@ -383,22 +382,17 @@ dependencies:
   - pyyaml=6.0=py311h5547dcb_5
   - pyzbar=0.1.9=pyhd8ed1ab_0
   - pyzmq=25.0.0=py311habfacb3_0
-  - qpdf=10.6.3=ha68c33c_0
   - qrcode=7.4.2=pyhd8ed1ab_0
-  - qrtools=0.0.2=pyhd8ed1ab_0
   - quickff=2.2.4=pyh9f0ad1d_3
   - randspg=0.0.1=he49afe7_2
   - rapidfuzz=2.13.7=py311h814d153_0
-  - re2=2023.02.01=hf0c8a7f_0
   - readline=8.1.2=h3899abd_0
   - readme_renderer=37.3=pyhd8ed1ab_0
-  - regex=2022.10.31=py311h5547dcb_0
   - reproc=14.2.4=hb7f2c08_0
   - reproc-cpp=14.2.4=hf0c8a7f_0
   - requests=2.28.2=pyhd8ed1ab_0
   - requests-oauthlib=1.3.1=pyhd8ed1ab_0
   - requests-toolbelt=0.10.1=pyhd8ed1ab_0
-  - requests-unixsocket=0.2.0=py_0
   - rfc3986=2.0.0=pyhd8ed1ab_0
   - rich=13.3.1=pyhd8ed1ab_1
   - ripgrep=13.0.0=hbbacdb1_2
@@ -406,7 +400,6 @@ dependencies:
   - ruamel.yaml=0.17.21=py311h5547dcb_2
   - ruamel.yaml.clib=0.2.7=py311h5547dcb_1
   - ruamel.yaml.jinja2=0.2.4=py_1
-  - ruamel_yaml=0.15.80=py311h5547dcb_1008
   - scandir=1.10.0=py311h5547dcb_6
   - scikit-learn=1.2.1=py311h087fafe_0
   - scipy=1.10.0=py311h939689b_2
@@ -416,11 +409,8 @@ dependencies:
   - seekpath=2.0.1=pyh44b312d_1
   - send2trash=1.8.0=pyhd8ed1ab_0
   - setuptools=65.6.3=pyhd8ed1ab_0
-  - setuptools-scm=7.1.0=pyhd8ed1ab_0
-  - setuptools_scm=7.1.0=hd8ed1ab_0
   - sigtool=0.1.3=h88f4db0_0
   - six=1.16.0=pyh6c4a22f_0
-  - smartmontools=7.3=hbb4e6a2_0
   - smmap=3.0.5=pyh44b312d_0
   - snappy=1.1.9=h225ccf5_2
   - sniffio=1.3.0=pyhd8ed1ab_0
@@ -434,22 +424,16 @@ dependencies:
   - stack_data=0.6.2=pyhd8ed1ab_0
   - statsmodels=0.13.5=py311hd5badaa_2
   - stdlib-list=0.8.0=pyhd8ed1ab_0
-  - svt-av1=1.4.1=hf0c8a7f_0
   - sympy=1.11.1=py311h6eed73b_2
   - tabulate=0.9.0=pyhd8ed1ab_1
   - tamkin=1.2.6=py_2
   - tapi=1100.0.11=h9ce4665_0
   - tbb=2021.7.0=hb8565cd_1
-  - tbb-devel=2021.7.0=hb8565cd_1
   - tblib=1.7.0=pyhd8ed1ab_0
   - tenacity=8.2.1=pyhd8ed1ab_0
-  - tensorboard-plugin-wit=1.8.1=pyhd8ed1ab_0
-  - termcolor=2.2.0=pyhd8ed1ab_0
   - terminado=0.17.1=pyhd1c38e8_0
-  - testpath=0.6.0=pyhd8ed1ab_0
   - threadpoolctl=3.1.0=pyh8a188c0_0
   - tinycss2=1.2.1=pyhd8ed1ab_0
-  - tinydb=4.7.1=pyhd8ed1ab_0
   - tk=8.6.12=h5dbffcc_0
   - toml=0.10.2=pyhd8ed1ab_0
   - tomli=2.0.1=pyhd8ed1ab_0
@@ -459,7 +443,6 @@ dependencies:
   - tqdm=4.64.1=pyhd8ed1ab_0
   - traitlets=5.9.0=pyhd8ed1ab_0
   - twine=4.0.2=pyhd8ed1ab_0
-  - typed-ast=1.5.4=py311h5547dcb_1
   - typing-extensions=4.4.0=hd8ed1ab_0
   - typing_extensions=4.4.0=pyha770c72_0
   - tzdata=2022g=h191b570_0
