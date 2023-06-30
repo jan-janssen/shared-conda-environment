@@ -2,7 +2,7 @@ name: base
 channels:
   - conda-forge
 dependencies:
-  - aimsgb=1.0.0=pyhd8ed1ab_0
+  - aimsgb=1.0.1=pyhd8ed1ab_0
   - aiofiles=22.1.0=pyhd8ed1ab_0
   - aiohttp=3.8.4=py311h2725bcf_1
   - aiosignal=1.3.1=pyhd8ed1ab_0
@@ -14,6 +14,7 @@ dependencies:
   - argon2-cffi-bindings=21.2.0=py311h5547dcb_3
   - ase=3.22.1=pyhd8ed1ab_1
   - asttokens=2.2.1=pyhd8ed1ab_0
+  - async-lru=2.0.2=pyhd8ed1ab_0
   - async-timeout=4.0.2=pyhd8ed1ab_0
   - attrs=23.1.0=pyh71513ae_1
   - babel=2.12.1=pyhd8ed1ab_1
@@ -31,8 +32,8 @@ dependencies:
   - boolean.py=3.7=py_0
   - boost=1.78.0=py311h349b758_4
   - boost-cpp=1.78.0=hf5ba120_3
-  - brotli=1.0.9=hb7f2c08_8
-  - brotli-bin=1.0.9=hb7f2c08_8
+  - brotli=1.0.9=hb7f2c08_9
+  - brotli-bin=1.0.9=hb7f2c08_9
   - brotlipy=0.7.0=py311h5547dcb_1005
   - bzip2=1.0.8=h0d85af4_4
   - c-ares=1.19.1=h0dc2134_0
@@ -54,7 +55,7 @@ dependencies:
   - comm=0.1.3=pyhd8ed1ab_0
   - conda=23.3.1=py311h6eed73b_0
   - conda-build=3.25.0=py311h6eed73b_0
-  - conda-forge-pinning=2023.06.27.00.31.06=hd8ed1ab_0
+  - conda-forge-pinning=2023.06.29.12.26.26=hd8ed1ab_0
   - conda-index=0.2.3=pyhd8ed1ab_0
   - conda-merge=0.2.0=pyhd8ed1ab_0
   - conda-package-handling=2.0.2=pyh38be061_0
@@ -112,7 +113,7 @@ dependencies:
   - gmp=6.2.1=h2e338ed_0
   - gmpy2=2.1.2=py311hc5b4402_1
   - google-api-core=2.11.1=pyhd8ed1ab_0
-  - google-api-python-client=2.90.0=pyhd8ed1ab_0
+  - google-api-python-client=2.91.0=pyhd8ed1ab_0
   - google-auth=2.21.0=pyh1a96a4e_0
   - google-auth-httplib2=0.1.0=pyhd8ed1ab_1
   - google-auth-oauthlib=1.0.0=pyhd8ed1ab_0
@@ -139,31 +140,32 @@ dependencies:
   - ipykernel=6.23.3=pyh5fb750a_0
   - ipython=8.14.0=pyhd1c38e8_0
   - ipython_genutils=0.2.0=py_1
-  - ipywidgets=7.7.5=pyhd8ed1ab_0
+  - ipywidgets=8.0.6=pyhd8ed1ab_0
   - isodate=0.6.1=pyhd8ed1ab_0
   - isort=5.12.0=pyhd8ed1ab_1
   - itsdangerous=2.1.2=pyhd8ed1ab_0
   - jaraco.classes=3.2.3=pyhd8ed1ab_0
   - jedi=0.18.2=pyhd8ed1ab_0
   - jinja2=3.1.2=pyhd8ed1ab_1
-  - joblib=1.2.0=pyhd8ed1ab_0
+  - joblib=1.3.0=pyhd8ed1ab_0
   - jpeg=9e=hac89ed1_2
   - json5=0.9.5=pyh9f0ad1d_0
   - jsonpatch=1.32=pyhd8ed1ab_0
   - jsonpointer=2.0=py_0
   - jsonschema=4.17.3=pyhd8ed1ab_0
+  - jupyter-lsp=2.2.0=pyhd8ed1ab_0
   - jupyter_client=8.3.0=pyhd8ed1ab_0
   - jupyter_core=5.3.1=py311h6eed73b_0
   - jupyter_events=0.6.3=pyhd8ed1ab_0
-  - jupyter_server=2.6.0=pyhd8ed1ab_0
+  - jupyter_server=2.7.0=pyhd8ed1ab_0
   - jupyter_server_fileid=0.9.0=pyhd8ed1ab_0
   - jupyter_server_terminals=0.4.4=pyhd8ed1ab_1
   - jupyter_server_ydoc=0.8.0=pyhd8ed1ab_0
   - jupyter_ydoc=0.3.4=pyhd8ed1ab_0
-  - jupyterlab=3.5.3=pyhd8ed1ab_0
+  - jupyterlab=4.0.2=pyhd8ed1ab_0
   - jupyterlab_pygments=0.2.2=pyhd8ed1ab_0
   - jupyterlab_server=2.23.0=pyhd8ed1ab_0
-  - jupyterlab_widgets=1.1.4=pyhd8ed1ab_0
+  - jupyterlab_widgets=3.0.7=pyhd8ed1ab_1
   - keyring=24.2.0=py311h6eed73b_0
   - kim-api=2.2.1=h33e6e43_0
   - kimpy=2.1.0=py311hd2070f0_0
@@ -179,9 +181,9 @@ dependencies:
   - libaec=1.0.6=hf0c8a7f_1
   - libarchive=3.6.2=h6d8d9f1_0
   - libblas=3.9.0=17_osx64_openblas
-  - libbrotlicommon=1.0.9=hb7f2c08_8
-  - libbrotlidec=1.0.9=hb7f2c08_8
-  - libbrotlienc=1.0.9=hb7f2c08_8
+  - libbrotlicommon=1.0.9=hb7f2c08_9
+  - libbrotlidec=1.0.9=hb7f2c08_9
+  - libbrotlienc=1.0.9=hb7f2c08_9
   - libcblas=3.9.0=17_osx64_openblas
   - libclang=16.0.3=default_h43f3e7d_0
   - libclang13=16.0.3=default_h865f117_0
@@ -215,7 +217,7 @@ dependencies:
   - libssh2=1.11.0=hd019ec5_0
   - libtiff=4.5.0=hee9004a_2
   - libunistring=0.9.10=h0d85af4_0
-  - libwebp-base=1.3.0=hb7f2c08_0
+  - libwebp-base=1.3.1=h0dc2134_0
   - libxcb=1.13=h0d85af4_1004
   - libxml2=2.10.4=h554bb67_0
   - libxslt=1.1.37=h5d22bc9_0
@@ -259,7 +261,7 @@ dependencies:
   - ncurses=6.4=hf0c8a7f_0
   - nest-asyncio=1.5.6=pyhd8ed1ab_0
   - networkx=3.1=pyhd8ed1ab_0
-  - nglview=3.0.3=pyh8a188c0_0
+  - nglview=3.0.6=pyhba93850_0
   - nose=1.3.7=py_1006
   - notebook=6.5.4=pyha770c72_0
   - notebook-shim=0.2.3=pyhd8ed1ab_0
@@ -274,7 +276,7 @@ dependencies:
   - overrides=7.3.1=pyhd8ed1ab_0
   - packaging=23.1=pyhd8ed1ab_0
   - palettable=3.3.3=pyhd8ed1ab_0
-  - pandas=2.0.2=py311hab14417_0
+  - pandas=2.0.3=py311hab14417_0
   - pandoc=3.1.3=h9d075a6_0
   - pandocfilters=1.5.0=pyhd8ed1ab_0
   - paramiko=3.2.0=pyhd8ed1ab_0
@@ -324,17 +326,17 @@ dependencies:
   - pydantic=1.10.9=py311h2725bcf_0
   - pyfiglet=0.8.post1=py_0
   - pyfileindex=0.0.11=pyhd8ed1ab_0
-  - pygithub=1.58.0=pyh1a96a4e_0
+  - pygithub=1.59.0=pyhd8ed1ab_0
   - pygmailsorter=0.0.4=pyhd8ed1ab_0
   - pygments=2.15.1=pyhd8ed1ab_0
   - pyimapsync=0.0.2=pyhd8ed1ab_0
-  - pyiron=0.5.0=pyhd8ed1ab_1
+  - pyiron=0.5.0=pyhd8ed1ab_2
   - pyiron-data=0.0.22=hd8ed1ab_0
   - pyiron_atomistics=0.3.0=pyhd8ed1ab_1
   - pyiron_base=0.6.1=pyhd8ed1ab_1
   - pyiron_gpl=0.0.3=pyhd8ed1ab_1
   - pyjwt=2.7.0=pyhd8ed1ab_0
-  - pymatgen=2023.06.23=py311hd5c4f45_0
+  - pymatgen=2023.6.28=py311hd5c4f45_0
   - pymongo=4.4.0=py311hdf8f085_0
   - pynacl=1.5.0=py311h5547dcb_2
   - pyobjc-core=9.2=py311hf110eff_0
@@ -385,7 +387,7 @@ dependencies:
   - ruamel.yaml.jinja2=0.2.4=py_1
   - scandir=1.10.0=py311h5547dcb_6
   - scikit-learn=1.2.2=py311h83feae1_2
-  - scipy=1.11.0=py311h16c3c4d_0
+  - scipy=1.11.1=py311h16c3c4d_0
   - scrypt=0.8.18=py311h8470a88_4
   - seaborn=0.12.2=hd8ed1ab_0
   - seaborn-base=0.12.2=pyhd8ed1ab_0
@@ -402,7 +404,7 @@ dependencies:
   - soupsieve=2.3.2.post1=pyhd8ed1ab_0
   - spglib=2.0.2=py311hd5badaa_0
   - sphinxdft-data=0.0.1=hd8ed1ab_2
-  - sqlalchemy=2.0.16=py311h2725bcf_0
+  - sqlalchemy=2.0.17=py311h2725bcf_0
   - sqlite=3.42.0=h2b0dec6_0
   - sqsgenerator=0.2=py311hb935b28_5
   - stack_data=0.6.2=pyhd8ed1ab_0
@@ -428,8 +430,8 @@ dependencies:
   - tqdm=4.65.0=pyhd8ed1ab_1
   - traitlets=5.9.0=pyhd8ed1ab_0
   - twine=4.0.2=pyhd8ed1ab_0
-  - typing-extensions=4.6.3=hd8ed1ab_0
-  - typing_extensions=4.6.3=pyha770c72_0
+  - typing-extensions=4.7.0=hd8ed1ab_0
+  - typing_extensions=4.7.0=pyha770c72_0
   - typing_utils=0.1.0=pyhd8ed1ab_0
   - tzdata=2023c=h71feb2d_0
   - uncertainties=3.1.7=pyhd8ed1ab_0
@@ -444,7 +446,7 @@ dependencies:
   - werkzeug=2.3.6=pyhd8ed1ab_0
   - wget=1.20.3=hd3787cc_1
   - wheel=0.40.0=pyhd8ed1ab_0
-  - widgetsnbextension=3.6.4=pyhd8ed1ab_0
+  - widgetsnbextension=4.0.7=pyhd8ed1ab_0
   - wrapt=1.15.0=py311h5547dcb_0
   - xarray=2023.6.0=pyhd8ed1ab_0
   - xmltodict=0.13.0=pyhd8ed1ab_0
