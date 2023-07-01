@@ -7,6 +7,7 @@ dependencies:
   - aiohttp=3.8.4=py311h2725bcf_1
   - aiosignal=1.3.1=pyhd8ed1ab_0
   - aiosqlite=0.19.0=pyhd8ed1ab_0
+  - annotated-types=0.5.0=pyhd8ed1ab_0
   - anyio=3.7.0=pyhd8ed1ab_1
   - appdirs=1.4.4=pyh9f0ad1d_0
   - appnope=0.1.3=pyhd8ed1ab_0
@@ -40,7 +41,7 @@ dependencies:
   - ca-certificates=2023.5.7=h8857fd0_0
   - cached-property=1.5.2=hd8ed1ab_1
   - cached_property=1.5.2=pyha770c72_1
-  - cachetools=5.3.0=pyhd8ed1ab_0
+  - cachetools=5.3.1=pyhd8ed1ab_0
   - cctools=973.0.1=h40f6528_13
   - cctools_osx-64=973.0.1=h5676edf_13
   - cdcs=0.2.1=pyhd8ed1ab_0
@@ -55,7 +56,7 @@ dependencies:
   - comm=0.1.3=pyhd8ed1ab_0
   - conda=23.3.1=py311h6eed73b_0
   - conda-build=3.25.0=py311h6eed73b_0
-  - conda-forge-pinning=2023.06.29.12.26.26=hd8ed1ab_0
+  - conda-forge-pinning=2023.07.01.05.57.24=hd8ed1ab_0
   - conda-index=0.2.3=pyhd8ed1ab_0
   - conda-merge=0.2.0=pyhd8ed1ab_0
   - conda-package-handling=2.0.2=pyh38be061_0
@@ -80,7 +81,7 @@ dependencies:
   - distributed=2023.6.1=pyhd8ed1ab_0
   - dnspython=2.3.0=pyhd8ed1ab_0
   - docutils=0.20.1=py311h6eed73b_0
-  - emmet-core=0.57.2=pyhd8ed1ab_0
+  - emmet-core=0.58.0=pyhd8ed1ab_0
   - entrypoints=0.4=pyhd8ed1ab_0
   - exceptiongroup=1.1.1=pyhd8ed1ab_0
   - executing=1.2.0=pyhd8ed1ab_0
@@ -116,7 +117,7 @@ dependencies:
   - google-api-python-client=2.91.0=pyhd8ed1ab_0
   - google-auth=2.21.0=pyh1a96a4e_0
   - google-auth-httplib2=0.1.0=pyhd8ed1ab_1
-  - google-auth-oauthlib=1.0.0=pyhd8ed1ab_0
+  - google-auth-oauthlib=1.0.0=pyhd8ed1ab_1
   - googleapis-common-protos=1.59.1=pyhd8ed1ab_0
   - grayskull=2.3.0=pyhd8ed1ab_0
   - greenlet=2.0.2=py311hdf8f085_1
@@ -147,7 +148,7 @@ dependencies:
   - jaraco.classes=3.2.3=pyhd8ed1ab_0
   - jedi=0.18.2=pyhd8ed1ab_0
   - jinja2=3.1.2=pyhd8ed1ab_1
-  - joblib=1.3.0=pyhd8ed1ab_0
+  - joblib=1.3.0=pyhd8ed1ab_1
   - jpeg=9e=hac89ed1_2
   - json5=0.9.5=pyh9f0ad1d_0
   - jsonpatch=1.32=pyhd8ed1ab_0
@@ -177,7 +178,7 @@ dependencies:
   - ld64=609=ha02d983_13
   - ld64_osx-64=609=hbfe4790_13
   - lerc=4.0.0=hb486fe8_0
-  - libabseil=20230125.2=cxx17_h000cb23_2
+  - libabseil=20230125.3=cxx17_h000cb23_0
   - libaec=1.0.6=hf0c8a7f_1
   - libarchive=3.6.2=h6d8d9f1_0
   - libblas=3.9.0=17_osx64_openblas
@@ -210,7 +211,7 @@ dependencies:
   - libnghttp2=1.52.0=he2ab024_0
   - libopenblas=0.3.23=openmp_h429af6e_0
   - libpng=1.6.39=ha978bb4_0
-  - libprotobuf=4.23.2=h5feb325_5
+  - libprotobuf=4.23.3=h5feb325_0
   - libsodium=1.0.18=hbcb3906_1
   - libsolv=0.7.24=h7d26f99_1
   - libsqlite=3.42.0=h58db7d2_0
@@ -307,7 +308,7 @@ dependencies:
   - prometheus_client=0.17.0=pyhd8ed1ab_0
   - prompt-toolkit=3.0.38=pyha770c72_0
   - prompt_toolkit=3.0.38=hd8ed1ab_0
-  - protobuf=4.23.2=py311h700567c_1
+  - protobuf=4.23.3=py311h700567c_0
   - psutil=5.9.5=py311h5547dcb_0
   - pthread-stubs=0.4=hc929b4f_1001
   - ptyprocess=0.7.0=pyhd3deb0d_0
@@ -323,7 +324,8 @@ dependencies:
   - pycosat=0.6.4=py311h5547dcb_1
   - pycparser=2.21=pyhd8ed1ab_0
   - pycryptodome=3.18.0=py311hf94429f_0
-  - pydantic=1.10.9=py311h2725bcf_0
+  - pydantic=2.0=py311h2725bcf_0
+  - pydantic-core=2.0.1=py311h299eb51_0
   - pyfiglet=0.8.post1=py_0
   - pyfileindex=0.0.11=pyhd8ed1ab_0
   - pygithub=1.59.0=pyhd8ed1ab_0
@@ -386,7 +388,7 @@ dependencies:
   - ruamel.yaml.clib=0.2.7=py311h5547dcb_1
   - ruamel.yaml.jinja2=0.2.4=py_1
   - scandir=1.10.0=py311h5547dcb_6
-  - scikit-learn=1.2.2=py311h83feae1_2
+  - scikit-learn=1.3.0=py311h83feae1_0
   - scipy=1.11.1=py311h16c3c4d_0
   - scrypt=0.8.18=py311h8470a88_4
   - seaborn=0.12.2=hd8ed1ab_0
