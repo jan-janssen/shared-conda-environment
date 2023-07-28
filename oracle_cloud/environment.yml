@@ -21,13 +21,13 @@ dependencies:
   - charset-normalizer=3.2.0=pyhd8ed1ab_0
   - click=8.1.6=unix_pyh707e725_0
   - colorama=0.4.6=pyhd8ed1ab_0
-  - conda=23.5.2=py311hec3470c_0
+  - conda=23.7.1=py311hec3470c_0
   - conda-package-handling=2.0.2=pyh38be061_0
   - conda-package-streaming=0.8.0=pyhd8ed1ab_0
   - configargparse=1.7=pyhd8ed1ab_0
   - configobj=5.0.8=pyhd8ed1ab_0
   - cryptography=41.0.2=py311hd42d77a_0
-  - curl=8.2.0=h4e8248e_0
+  - curl=8.2.1=h4e8248e_0
   - distro=1.8.0=pyhd8ed1ab_0
   - expat=2.5.0=hd600fc2_1
   - flask=2.3.2=pyhd8ed1ab_0
@@ -62,7 +62,7 @@ dependencies:
   - libarchive=3.6.2=h566b526_1
   - libblas=3.9.0=17_linuxaarch64_openblas
   - libcblas=3.9.0=17_linuxaarch64_openblas
-  - libcurl=8.2.0=h4e8248e_0
+  - libcurl=8.2.1=h4e8248e_0
   - libedit=3.1.20191231=he28a2e2_2
   - libev=4.33=h516909a_1
   - libexpat=2.5.0=hd600fc2_1
