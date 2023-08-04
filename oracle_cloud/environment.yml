@@ -21,9 +21,9 @@ dependencies:
   - charset-normalizer=3.2.0=pyhd8ed1ab_0
   - click=8.1.6=unix_pyh707e725_0
   - colorama=0.4.6=pyhd8ed1ab_0
-  - conda=23.7.1=py311hec3470c_0
-  - conda-package-handling=2.0.2=pyh38be061_0
-  - conda-package-streaming=0.8.0=pyhd8ed1ab_0
+  - conda=23.7.2=py311hec3470c_0
+  - conda-package-handling=2.2.0=pyh38be061_0
+  - conda-package-streaming=0.9.0=pyhd8ed1ab_0
   - configargparse=1.7=pyhd8ed1ab_0
   - configobj=5.0.8=pyhd8ed1ab_0
   - cryptography=41.0.2=py311hd42d77a_0
@@ -42,7 +42,7 @@ dependencies:
   - google-auth=2.22.0=pyh1a96a4e_0
   - google-auth-httplib2=0.1.0=pyhd8ed1ab_1
   - google-auth-oauthlib=1.0.0=pyhd8ed1ab_1
-  - googleapis-common-protos=1.59.1=pyhd8ed1ab_0
+  - googleapis-common-protos=1.60.0=pyhd8ed1ab_0
   - greenlet=2.0.2=py311h8715677_1
   - gunicorn=21.2.0=py311hec3470c_0
   - httplib2=0.22.0=pyhd8ed1ab_0
@@ -92,16 +92,16 @@ dependencies:
   - markupsafe=2.1.3=py311hc8f2f60_0
   - multidict=6.0.4=py311h1d6c08a_0
   - ncurses=6.4=h2e1726e_0
-  - numpy=1.25.1=py311h69ead2a_0
+  - numpy=1.25.2=py311h69ead2a_0
   - oauthlib=3.2.2=pyhd8ed1ab_0
-  - openssl=3.1.1=h31becfc_1
+  - openssl=3.1.2=h31becfc_0
   - packaging=23.1=pyhd8ed1ab_0
   - pandas=2.0.3=py311h2dc6514_1
   - parsedatetime=2.6=pyh9f0ad1d_0
   - pcre2=10.40=he7b27c6_0
   - perl=5.32.1=4_h31becfc_perl5
   - pip=23.2.1=pyhd8ed1ab_0
-  - platformdirs=3.9.1=pyhd8ed1ab_0
+  - platformdirs=3.10.0=pyhd8ed1ab_0
   - pluggy=1.2.0=pyhd8ed1ab_0
   - pooch=1.7.0=pyha770c72_3
   - protobuf=4.23.3=py311h9b67ae7_0
@@ -113,7 +113,7 @@ dependencies:
   - pyimapsync=0.0.2=pyhd8ed1ab_0
   - pyjwt=2.8.0=pyhd8ed1ab_0
   - pyopenssl=23.2.0=pyhd8ed1ab_1
-  - pyparsing=3.1.0=pyhd8ed1ab_0
+  - pyparsing=3.1.1=pyhd8ed1ab_0
   - pyrfc3339=1.1=py_0
   - pysocks=1.7.1=pyha2e5f31_6
   - python=3.11.4=h43d1f9e_0_cpython
