@@ -22,7 +22,7 @@ dependencies:
   - click=8.1.7=unix_pyh707e725_0
   - code-server=4.16.1=h2208a57_0
   - colorama=0.4.6=pyhd8ed1ab_0
-  - conda=23.7.2=py311hec3470c_0
+  - conda=23.7.3=py311hec3470c_0
   - conda-package-handling=2.2.0=pyh38be061_0
   - conda-package-streaming=0.9.0=pyhd8ed1ab_0
   - configargparse=1.7=pyhd8ed1ab_0
@@ -31,12 +31,12 @@ dependencies:
   - curl=8.2.1=h4e8248e_0
   - distro=1.8.0=pyhd8ed1ab_0
   - expat=2.5.0=hd600fc2_1
-  - flask=2.3.2=pyhd8ed1ab_0
+  - flask=2.3.3=pyhd8ed1ab_0
   - flask-login=0.6.2=pyhd8ed1ab_0
   - fmt=9.1.0=hdd96247_0
   - frozenlist=1.4.0=py311hcd402e7_0
   - gettext=0.21.1=ha18d298_0
-  - git=2.41.0=pl5321h0d979e1_0
+  - git=2.42.0=pl5321h0d979e1_0
   - gmailsorter=0.1.1=pyhd8ed1ab_0
   - google-api-core=2.11.1=pyhd8ed1ab_0
   - google-api-python-client=2.97.0=pyhd8ed1ab_0
@@ -74,14 +74,14 @@ dependencies:
   - libgomp=13.1.0=h2b4548d_0
   - libiconv=1.17=h9cdd2b7_0
   - liblapack=3.9.0=17_linuxaarch64_openblas
-  - libmamba=1.4.9=h0c45e31_0
-  - libmambapy=1.4.9=py311he85eb8a_0
+  - libmamba=1.5.0=h0c45e31_0
+  - libmambapy=1.5.0=py311he85eb8a_0
   - libnghttp2=1.52.0=h250e5c5_0
   - libnsl=2.0.0=hf897c2e_0
   - libopenblas=0.3.23=pthreads_hd703e6f_0
   - libprotobuf=4.23.4=h6b51aa4_1
-  - libsolv=0.7.24=hd84c7bf_1
-  - libsqlite=3.42.0=h194ca79_0
+  - libsolv=0.7.24=hd84c7bf_3
+  - libsqlite=3.43.0=h194ca79_0
   - libssh2=1.11.0=h492db2e_0
   - libstdcxx-ng=13.1.0=h452befe_0
   - libuuid=2.38.1=hb4cce97_0
@@ -90,11 +90,11 @@ dependencies:
   - libzlib=1.2.13=h31becfc_5
   - lz4-c=1.9.4=hd600fc2_0
   - lzo=2.10=h516909a_1000
-  - mamba=1.4.9=py311hb6c5aa6_0
+  - mamba=1.5.0=py311hb6c5aa6_0
   - markupsafe=2.1.3=py311hc8f2f60_0
   - multidict=6.0.4=py311h1d6c08a_0
   - ncurses=6.4=h2e1726e_0
-  - nodejs=16.19.0=hcab9400_1
+  - nodejs=16.20.2=hcb20a51_1
   - numpy=1.25.2=py311h69ead2a_0
   - oauthlib=3.2.2=pyhd8ed1ab_0
   - openssl=3.1.2=h31becfc_0
@@ -136,8 +136,8 @@ dependencies:
   - ruamel.yaml.clib=0.2.7=py311h1d6c08a_1
   - ruamel_yaml=0.15.80=py311hdfa8b44_1008
   - scikit-learn=1.3.0=py311hb93614b_0
-  - scipy=1.11.1=py311h69ead2a_0
-  - setuptools=68.0.0=pyhd8ed1ab_0
+  - scipy=1.11.2=py311h69ead2a_0
+  - setuptools=68.1.2=pyhd8ed1ab_0
   - six=1.16.0=pyh6c4a22f_0
   - sqlalchemy=2.0.20=py311hc8f2f60_0
   - threadpoolctl=3.2.0=pyha21a80b_0
@@ -150,7 +150,7 @@ dependencies:
   - uritemplate=4.1.1=pyhd8ed1ab_0
   - urllib3=1.26.15=pyhd8ed1ab_0
   - werkzeug=2.3.7=pyhd8ed1ab_0
-  - wheel=0.41.1=pyhd8ed1ab_0
+  - wheel=0.41.2=pyhd8ed1ab_0
   - xz=5.2.6=h9cdd2b7_0
   - yaml=0.2.5=hf897c2e_2
   - yaml-cpp=0.7.0=h4de3ea5_2
