@@ -33,19 +33,18 @@ dependencies:
   - expat=2.5.0=hd600fc2_1
   - flask=2.3.3=pyhd8ed1ab_0
   - flask-login=0.6.2=pyhd8ed1ab_0
-  - fmt=9.1.0=hdd96247_0
+  - fmt=10.1.1=h2a328a1_0
   - frozenlist=1.4.0=py311hcd402e7_0
   - gettext=0.21.1=ha18d298_0
   - git=2.42.0=pl5321h0d979e1_0
   - gmailsorter=0.1.1=pyhd8ed1ab_0
   - google-api-core=2.11.1=pyhd8ed1ab_0
-  - google-api-python-client=2.97.0=pyhd8ed1ab_0
-  - google-auth=2.22.0=pyh1a96a4e_0
+  - google-api-python-client=2.98.0=pyhd8ed1ab_0
+  - google-auth=2.23.0=pyh1a96a4e_0
   - google-auth-httplib2=0.1.0=pyhd8ed1ab_1
-  - google-auth-oauthlib=1.0.0=pyhd8ed1ab_1
+  - google-auth-oauthlib=1.1.0=pyhd8ed1ab_0
   - googleapis-common-protos=1.60.0=pyhd8ed1ab_0
   - greenlet=2.0.2=py311h8715677_1
-  - gtest=1.14.0=h2a328a1_1
   - gunicorn=21.2.0=py311hec3470c_0
   - httplib2=0.22.0=pyhd8ed1ab_0
   - icu=72.1=hcf00150_0
@@ -60,38 +59,38 @@ dependencies:
   - keyutils=1.6.1=h4e544f5_0
   - krb5=1.21.2=hc419048_0
   - ld_impl_linux-aarch64=2.40=h2d8c526_0
-  - libabseil=20230802.0=cxx17_h2f0025b_1
+  - libabseil=20230802.0=cxx17_h2f0025b_3
   - libarchive=3.6.2=h566b526_1
-  - libblas=3.9.0=17_linuxaarch64_openblas
-  - libcblas=3.9.0=17_linuxaarch64_openblas
+  - libblas=3.9.0=5_h6783c1e_netlib
+  - libcblas=3.9.0=5_h6783c1e_netlib
   - libcurl=8.2.1=h4e8248e_0
   - libedit=3.1.20191231=he28a2e2_2
   - libev=4.33=h516909a_1
   - libexpat=2.5.0=hd600fc2_1
   - libffi=3.4.2=h3557bc0_5
-  - libgcc-ng=13.1.0=h2b4548d_0
-  - libgfortran-ng=13.1.0=he9431aa_0
-  - libgfortran5=13.1.0=h24e4805_0
-  - libgomp=13.1.0=h2b4548d_0
+  - libgcc-ng=13.2.0=hf8544c7_0
+  - libgfortran-ng=13.2.0=he9431aa_0
+  - libgfortran5=13.2.0=h582850c_0
+  - libgomp=13.2.0=hf8544c7_0
   - libiconv=1.17=h9cdd2b7_0
-  - liblapack=3.9.0=17_linuxaarch64_openblas
-  - libmamba=1.5.0=h0c45e31_0
-  - libmambapy=1.5.0=py311he85eb8a_0
+  - liblapack=3.9.0=5_h6783c1e_netlib
+  - libmamba=1.5.1=h604a1c0_0
+  - libmambapy=1.5.1=py311h765b69a_0
   - libnghttp2=1.52.0=h250e5c5_0
   - libnsl=2.0.0=hf897c2e_0
-  - libopenblas=0.3.23=pthreads_hd703e6f_0
-  - libprotobuf=4.23.4=h87e877f_5
-  - libsolv=0.7.24=hd84c7bf_3
+  - libopenblas=0.3.24=pthreads_h5a5ec62_0
+  - libprotobuf=4.23.4=h87e877f_6
+  - libsolv=0.7.24=hd84c7bf_4
   - libsqlite=3.43.0=h194ca79_0
   - libssh2=1.11.0=h492db2e_0
-  - libstdcxx-ng=13.1.0=h452befe_0
+  - libstdcxx-ng=13.2.0=h9a76618_0
   - libuuid=2.38.1=hb4cce97_0
   - libuv=1.44.2=h31becfc_1
   - libxml2=2.11.5=h164fba4_0
   - libzlib=1.2.13=h31becfc_5
   - lz4-c=1.9.4=hd600fc2_0
   - lzo=2.10=h516909a_1000
-  - mamba=1.5.0=py311hb6c5aa6_0
+  - mamba=1.5.1=py311hb6c5aa6_0
   - markupsafe=2.1.3=py311hc8f2f60_0
   - multidict=6.0.4=py311h1d6c08a_0
   - ncurses=6.4=h2e1726e_0
@@ -108,7 +107,7 @@ dependencies:
   - platformdirs=3.10.0=pyhd8ed1ab_0
   - pluggy=1.3.0=pyhd8ed1ab_0
   - pooch=1.7.0=pyha770c72_3
-  - protobuf=4.23.4=py311h2dbc127_1
+  - protobuf=4.23.4=py311h2dbc127_2
   - pyasn1=0.4.8=py_0
   - pyasn1-modules=0.2.7=py_0
   - pybind11-abi=4=hd8ed1ab_3
@@ -124,7 +123,7 @@ dependencies:
   - python-dateutil=2.8.2=pyhd8ed1ab_0
   - python-tzdata=2023.3=pyhd8ed1ab_0
   - python_abi=3.11=3_cp311
-  - pytz=2023.3=pyhd8ed1ab_0
+  - pytz=2023.3.post1=pyhd8ed1ab_0
   - pyu2f=0.1.5=pyhd8ed1ab_0
   - pywin32-on-windows=0.1.0=pyh1179c8e_3
   - readline=8.2=h8fc344f_1
