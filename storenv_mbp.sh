@@ -1,6 +1,6 @@
 #!/bin/bash
 repo_path="/Users/jan/PycharmProjects/my-conda-environment"
-intel_path=${repo_path}"/macbookpro"
+intel_path=${repo_path}"/macbookpro_x64"
 
 # store intel environment
 cd ${intel_path}
