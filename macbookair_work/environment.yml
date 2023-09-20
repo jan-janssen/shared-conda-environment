@@ -2,7 +2,7 @@ name: base
 channels:
   - conda-forge
 dependencies:
-  - aimsgb=1.0.3=pyhd8ed1ab_0
+  - aimsgb=1.1.0=pyhd8ed1ab_0
   - annotated-types=0.5.0=pyhd8ed1ab_0
   - anyio=4.0.0=pyhd8ed1ab_0
   - appnope=0.1.3=pyhd8ed1ab_0
@@ -16,7 +16,7 @@ dependencies:
   - atomistics=0.0.5=pyhd8ed1ab_0
   - attrs=23.1.0=pyh71513ae_1
   - aws-c-auth=0.7.3=h1fca4dd_3
-  - aws-c-cal=0.6.2=h03343b3_0
+  - aws-c-cal=0.6.2=hea78866_1
   - aws-c-common=0.9.0=h0dc2134_0
   - aws-c-compression=0.2.17=hc1c6d78_2
   - aws-c-event-stream=0.3.2=hf265e0f_0
@@ -42,8 +42,8 @@ dependencies:
   - boolean.py=4.0=pyhd8ed1ab_0
   - boost=1.78.0=py310h3e792ce_4
   - boost-cpp=1.78.0=hf5ba120_3
-  - boto3=1.28.48=pyhd8ed1ab_0
-  - botocore=1.31.48=pyhd8ed1ab_0
+  - boto3=1.28.50=pyhd8ed1ab_0
+  - botocore=1.31.51=pyhd8ed1ab_0
   - brotli=1.1.0=h0dc2134_0
   - brotli-bin=1.1.0=h0dc2134_0
   - brotlipy=0.7.0=py310h90acd4f_1005
@@ -73,8 +73,8 @@ dependencies:
   - conda-libmamba-solver=23.7.0=pyhd8ed1ab_0
   - conda-package-handling=2.2.0=pyh38be061_0
   - conda-package-streaming=0.9.0=pyhd8ed1ab_0
-  - contourpy=1.1.0=py310h88cfcbd_0
-  - cryptography=41.0.3=py310ha1817de_0
+  - contourpy=1.1.1=py310h88cfcbd_0
+  - cryptography=41.0.4=py310ha1817de_0
   - curl=8.3.0=h5f667d7_0
   - cycler=0.11.0=pyhd8ed1ab_0
   - dcw-gmt=2.1.2=h694c41f_0
@@ -84,6 +84,7 @@ dependencies:
   - dill=0.3.7=pyhd8ed1ab_0
   - dscribe=2.1.0=py310h88cfcbd_0
   - ducc0=0.31.0=py310h9e9d8ca_0
+  - elpa=2021.11.001=nompi_hd723550_103
   - emmet-core=0.68.0=pyhd8ed1ab_0
   - entrypoints=0.4=pyhd8ed1ab_0
   - exceptiongroup=1.1.3=pyhd8ed1ab_0
@@ -121,6 +122,8 @@ dependencies:
   - gmp=6.2.1=h2e338ed_0
   - gmpy2=2.1.2=py310hb691cb2_1
   - gmt=6.4.0=h9716759_14
+  - gpaw=23.9.1=py310_nompi_omp_0
+  - gpaw-data=0.9.20000=hd8ed1ab_2
   - greenlet=2.0.2=py310h9e9d8ca_1
   - gshhg-gmt=2.3.7=h694c41f_1003
   - gst-plugins-base=1.22.5=hb5d3a86_1
@@ -169,7 +172,7 @@ dependencies:
   - kim-api=2.3.0=hb20c0b4_0
   - kiwisolver=1.4.5=py310h88cfcbd_0
   - krb5=1.21.2=hb884880_0
-  - lammps=2023.08.02=cpu_py310_h47242cf_mpich_1
+  - lammps=2023.08.02=cpu_py310_h47242cf_mpich_2
   - latexcodec=2.0.1=pyh9f0ad1d_0
   - lcms2=2.15=h2dcdeff_1
   - ld64=609=ha91a046_14
@@ -222,6 +225,8 @@ dependencies:
   - libunistring=0.9.10=h0d85af4_0
   - libvorbis=1.3.7=h046ec9c_0
   - libwebp-base=1.3.2=h0dc2134_0
+  - libxc=6.2.2=cpu_he0ea0f9_0
+  - libxc-c=6.2.2=cpu_h7fb0593_0
   - libxcb=1.15=hb7f2c08_0
   - libxml2=2.11.5=hd95e348_0
   - libzip=1.10.1=hc158999_3
@@ -234,7 +239,7 @@ dependencies:
   - mamba=1.5.1=py310h6bde348_0
   - markdown-it-py=3.0.0=pyhd8ed1ab_0
   - markupsafe=2.1.3=py310h6729b98_0
-  - matplotlib-base=3.7.2=py310h475a17b_0
+  - matplotlib-base=3.8.0=py310hf92ae1b_0
   - matplotlib-inline=0.1.6=pyhd8ed1ab_0
   - mdurl=0.1.0=pyhd8ed1ab_0
   - mendeleev=0.14.0=pyha21a80b_0
@@ -271,7 +276,7 @@ dependencies:
   - numexpr=2.8.4=py310h5e4fcda_1
   - numpy=1.24.4=py310h7451ae0_0
   - openjpeg=2.5.0=h13ac156_2
-  - openssl=3.1.2=h8a1eda9_0
+  - openssl=3.1.3=h8a1eda9_0
   - overrides=7.4.0=pyhd8ed1ab_0
   - packaging=23.1=pyhd8ed1ab_0
   - palettable=3.3.3=pyhd8ed1ab_0
@@ -296,7 +301,7 @@ dependencies:
   - pkginfo=1.9.6=pyhd8ed1ab_0
   - pkgutil-resolve-name=1.3.10=pyhd8ed1ab_1
   - platformdirs=3.10.0=pyhd8ed1ab_0
-  - plotly=5.16.1=pyhd8ed1ab_0
+  - plotly=5.17.0=pyhd8ed1ab_0
   - pluggy=1.3.0=pyhd8ed1ab_0
   - ply=3.11=py_1
   - pooch=1.7.0=pyha770c72_3
@@ -326,9 +331,10 @@ dependencies:
   - pyfileindex=0.0.11=pyhd8ed1ab_0
   - pygments=2.16.1=pyhd8ed1ab_0
   - pygmt=0.10.0=pyhd8ed1ab_0
-  - pyiron-data=0.0.22=hd8ed1ab_0
+  - pyiron-data=0.0.24=hd8ed1ab_0
   - pyiron_atomistics=0.3.2=pyhd8ed1ab_0
-  - pyiron_base=0.6.5=pyhd8ed1ab_0
+  - pyiron_base=0.6.6=pyhd8ed1ab_0
+  - pylammpsmpi=0.2.3=pyhd8ed1ab_0
   - pymatgen=2023.9.10=py310h92ebccd_0
   - pympipool=0.7.0=pyhd8ed1ab_0
   - pynacl=1.5.0=py310h90acd4f_2
@@ -336,7 +342,7 @@ dependencies:
   - pyobjc-framework-cocoa=9.2=py310hef2d279_0
   - pyopenssl=23.2.0=pyhd8ed1ab_1
   - pyotp=2.9.0=pyhd8ed1ab_0
-  - pyparsing=3.0.9=pyhd8ed1ab_0
+  - pyparsing=3.1.1=pyhd8ed1ab_0
   - pypng=0.20220715.0=pyhd8ed1ab_0
   - pyproj=3.6.0=py310h198f139_1
   - pyqt=5.15.9=py310hecc045f_4
@@ -345,7 +351,7 @@ dependencies:
   - pyshp=2.3.1=pyhd8ed1ab_0
   - pyshtools=4.10.4=py310he3d087f_0
   - pysocks=1.7.1=pyha2e5f31_6
-  - pysqa=0.1.1=pyhd8ed1ab_0
+  - pysqa=0.1.2=pyhd8ed1ab_0
   - pytables=3.8.0=py310hd1bf580_2
   - pytest=7.4.2=pyhd8ed1ab_0
   - python=3.10.12=had23ca6_0_cpython
@@ -354,7 +360,7 @@ dependencies:
   - python-json-logger=2.0.7=pyhd8ed1ab_0
   - python-libarchive-c=5.0=py310h2ec42d9_1
   - python-tzdata=2023.3=pyhd8ed1ab_0
-  - python_abi=3.10=3_cp310
+  - python_abi=3.10=4_cp310
   - pytz=2023.3.post1=pyhd8ed1ab_0
   - pyxtal=0.6.0=pyhd8ed1ab_1
   - pyyaml=6.0.1=py310h6729b98_0
@@ -372,7 +378,7 @@ dependencies:
   - requests=2.31.0=pyhd8ed1ab_0
   - rfc3339-validator=0.1.4=pyhd8ed1ab_0
   - rfc3986-validator=0.1.1=pyh9f0ad1d_0
-  - rich=13.5.2=pyhd8ed1ab_2
+  - rich=13.5.3=pyhd8ed1ab_0
   - ripgrep=13.0.0=hbbacdb1_2
   - rpds-py=0.10.3=py310h3461e44_0
   - ruamel.yaml=0.17.32=py310h6729b98_0
@@ -395,7 +401,7 @@ dependencies:
   - sparse=0.14.0=pyhd8ed1ab_0
   - spglib=2.0.2=py310h936d966_0
   - sphinxdft-data=0.0.1=hd8ed1ab_2
-  - sqlalchemy=2.0.20=py310h6729b98_0
+  - sqlalchemy=2.0.21=py310h6729b98_0
   - sqlite=3.43.0=h2b0dec6_0
   - sqsgenerator=0.3=py310hbc62ce4_0
   - stack_data=0.6.2=pyhd8ed1ab_0
@@ -415,8 +421,8 @@ dependencies:
   - tornado=6.3.3=py310h6729b98_0
   - tqdm=4.66.1=pyhd8ed1ab_0
   - traitlets=5.10.0=pyhd8ed1ab_0
-  - typing-extensions=4.7.1=hd8ed1ab_0
-  - typing_extensions=4.7.1=pyha770c72_0
+  - typing-extensions=4.8.0=hd8ed1ab_0
+  - typing_extensions=4.8.0=pyha770c72_0
   - typing_utils=0.1.0=pyhd8ed1ab_0
   - tzcode=2023c=hb7f2c08_0
   - tzdata=2023c=h71feb2d_0
@@ -445,6 +451,6 @@ dependencies:
   - zipp=3.16.2=pyhd8ed1ab_0
   - zlib=1.2.13=h8a1eda9_5
   - zlib-ng=2.0.7=hb7f2c08_0
-  - zstandard=0.19.0=py310h90acd4f_0
+  - zstandard=0.21.0=py310h151724a_0
   - zstd=1.5.5=h829000d_0
 prefix: /Users/janssen/mambaforge
