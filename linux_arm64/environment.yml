@@ -22,13 +22,13 @@ dependencies:
   - click=8.1.7=unix_pyh707e725_0
   - code-server=4.16.1=h2208a57_0
   - colorama=0.4.6=pyhd8ed1ab_0
-  - conda=23.7.3=py311hec3470c_0
+  - conda=23.7.4=py311hec3470c_0
   - conda-package-handling=2.2.0=pyh38be061_0
   - conda-package-streaming=0.9.0=pyhd8ed1ab_0
   - configargparse=1.7=pyhd8ed1ab_0
   - configobj=5.0.8=pyhd8ed1ab_0
-  - cryptography=41.0.3=py311hd42d77a_0
-  - curl=8.2.1=h4e8248e_0
+  - cryptography=41.0.4=py311hd42d77a_0
+  - curl=8.3.0=h4e8248e_0
   - distro=1.8.0=pyhd8ed1ab_0
   - expat=2.5.0=hd600fc2_1
   - flask=2.3.3=pyhd8ed1ab_0
@@ -39,9 +39,9 @@ dependencies:
   - git=2.42.0=pl5321h0d979e1_0
   - gmailsorter=0.1.1=pyhd8ed1ab_0
   - google-api-core=2.11.1=pyhd8ed1ab_0
-  - google-api-python-client=2.98.0=pyhd8ed1ab_0
-  - google-auth=2.23.0=pyh1a96a4e_0
-  - google-auth-httplib2=0.1.0=pyhd8ed1ab_1
+  - google-api-python-client=2.100.0=pyhd8ed1ab_0
+  - google-auth=2.23.0=pyh1a96a4e_1
+  - google-auth-httplib2=0.1.1=pyhd8ed1ab_0
   - google-auth-oauthlib=1.1.0=pyhd8ed1ab_0
   - googleapis-common-protos=1.60.0=pyhd8ed1ab_0
   - greenlet=2.0.2=py311h8715677_1
@@ -55,23 +55,23 @@ dependencies:
   - joblib=1.3.2=pyhd8ed1ab_0
   - josepy=1.13.0=pyhd8ed1ab_0
   - jsonpatch=1.32=pyhd8ed1ab_0
-  - jsonpointer=2.0=py_0
+  - jsonpointer=2.4=py311hec3470c_2
   - keyutils=1.6.1=h4e544f5_0
   - krb5=1.21.2=hc419048_0
   - ld_impl_linux-aarch64=2.40=h2d8c526_0
-  - libabseil=20230802.0=cxx17_h2f0025b_3
+  - libabseil=20230802.1=cxx17_h2f0025b_0
   - libarchive=3.6.2=h566b526_1
   - libblas=3.9.0=5_h6783c1e_netlib
   - libcblas=3.9.0=5_h6783c1e_netlib
-  - libcurl=8.2.1=h4e8248e_0
+  - libcurl=8.3.0=h4e8248e_0
   - libedit=3.1.20191231=he28a2e2_2
   - libev=4.33=h516909a_1
   - libexpat=2.5.0=hd600fc2_1
   - libffi=3.4.2=h3557bc0_5
-  - libgcc-ng=13.2.0=hf8544c7_0
-  - libgfortran-ng=13.2.0=he9431aa_0
-  - libgfortran5=13.2.0=h582850c_0
-  - libgomp=13.2.0=hf8544c7_0
+  - libgcc-ng=13.2.0=hf8544c7_1
+  - libgfortran-ng=13.2.0=he9431aa_1
+  - libgfortran5=13.2.0=h582850c_1
+  - libgomp=13.2.0=hf8544c7_1
   - libiconv=1.17=h9cdd2b7_0
   - liblapack=3.9.0=5_h6783c1e_netlib
   - libmamba=1.5.1=h604a1c0_0
@@ -83,7 +83,7 @@ dependencies:
   - libsolv=0.7.24=hd84c7bf_4
   - libsqlite=3.43.0=h194ca79_0
   - libssh2=1.11.0=h492db2e_0
-  - libstdcxx-ng=13.2.0=h9a76618_0
+  - libstdcxx-ng=13.2.0=h9a76618_1
   - libuuid=2.38.1=hb4cce97_0
   - libuv=1.44.2=h31becfc_1
   - libxml2=2.11.5=h164fba4_0
@@ -95,9 +95,9 @@ dependencies:
   - multidict=6.0.4=py311h1d6c08a_0
   - ncurses=6.4=h2e1726e_0
   - nodejs=16.20.2=hcb20a51_1
-  - numpy=1.25.2=py311h69ead2a_0
+  - numpy=1.26.0=py311h69ead2a_0
   - oauthlib=3.2.2=pyhd8ed1ab_0
-  - openssl=3.1.2=h31becfc_0
+  - openssl=3.1.3=h31becfc_0
   - packaging=23.1=pyhd8ed1ab_0
   - pandas=2.1.0=py311h2dc6514_0
   - parsedatetime=2.6=pyh9f0ad1d_0
@@ -108,8 +108,8 @@ dependencies:
   - pluggy=1.3.0=pyhd8ed1ab_0
   - pooch=1.7.0=pyha770c72_3
   - protobuf=4.23.4=py311h2dbc127_2
-  - pyasn1=0.4.8=py_0
-  - pyasn1-modules=0.2.7=py_0
+  - pyasn1=0.5.0=pyhd8ed1ab_0
+  - pyasn1-modules=0.3.0=pyhd8ed1ab_0
   - pybind11-abi=4=hd8ed1ab_3
   - pycosat=0.6.4=py311hdfa8b44_1
   - pycparser=2.21=pyhd8ed1ab_0
@@ -122,7 +122,7 @@ dependencies:
   - python=3.11.5=h43d1f9e_0_cpython
   - python-dateutil=2.8.2=pyhd8ed1ab_0
   - python-tzdata=2023.3=pyhd8ed1ab_0
-  - python_abi=3.11=3_cp311
+  - python_abi=3.11=4_cp311
   - pytz=2023.3.post1=pyhd8ed1ab_0
   - pyu2f=0.1.5=pyhd8ed1ab_0
   - pywin32-on-windows=0.1.0=pyh1179c8e_3
@@ -136,16 +136,16 @@ dependencies:
   - ruamel.yaml.clib=0.2.7=py311h1d6c08a_1
   - ruamel_yaml=0.15.80=py311hdfa8b44_1008
   - scikit-learn=1.3.0=py311hb93614b_0
-  - scipy=1.11.2=py311h69ead2a_0
-  - setuptools=68.1.2=pyhd8ed1ab_0
+  - scipy=1.11.2=py311h69ead2a_1
+  - setuptools=68.2.2=pyhd8ed1ab_0
   - six=1.16.0=pyh6c4a22f_0
-  - sqlalchemy=2.0.20=py311hc8f2f60_0
+  - sqlalchemy=2.0.21=py311hc8f2f60_0
   - threadpoolctl=3.2.0=pyha21a80b_0
   - tk=8.6.12=hd8af866_0
   - toolz=0.12.0=pyhd8ed1ab_0
   - tqdm=4.66.1=pyhd8ed1ab_0
-  - typing-extensions=4.7.1=hd8ed1ab_0
-  - typing_extensions=4.7.1=pyha770c72_0
+  - typing-extensions=4.8.0=hd8ed1ab_0
+  - typing_extensions=4.8.0=pyha770c72_0
   - tzdata=2023c=h71feb2d_0
   - uritemplate=4.1.1=pyhd8ed1ab_0
   - urllib3=1.26.15=pyhd8ed1ab_0
@@ -157,6 +157,6 @@ dependencies:
   - yarl=1.9.2=py311hcd402e7_0
   - zipp=3.16.2=pyhd8ed1ab_0
   - zlib=1.2.13=h31becfc_5
-  - zstandard=0.19.0=py311hdfa8b44_0
+  - zstandard=0.21.0=py311hb827a26_0
   - zstd=1.5.5=h4c53e97_0
 prefix: /home/opc/mambaforge
