@@ -1,6 +1,6 @@
 #!/bin/bash
-repo_path="/Users/janssen/Projects/my-conda-environment"
-intel_path=${repo_path}"/macbookair_work"
+repo_path="/Users/janssen/projects/my-conda-environment"
+intel_path=${repo_path}"/macbookpro_arm"
 
 # store intel environment
 cd ${intel_path}
