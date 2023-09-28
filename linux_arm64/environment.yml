@@ -17,7 +17,7 @@ dependencies:
   - cachetools=5.3.1=pyhd8ed1ab_0
   - certbot=2.6.0=pyhd8ed1ab_0
   - certifi=2023.7.22=pyhd8ed1ab_0
-  - cffi=1.15.1=py311h2e7898d_3
+  - cffi=1.15.1=py311h7963103_5
   - charset-normalizer=3.2.0=pyhd8ed1ab_0
   - click=8.1.7=unix_pyh707e725_0
   - code-server=4.16.1=h2208a57_0
@@ -34,7 +34,7 @@ dependencies:
   - flask=2.3.3=pyhd8ed1ab_0
   - flask-login=0.6.2=pyhd8ed1ab_0
   - fmt=10.1.1=h2a328a1_0
-  - frozenlist=1.4.0=py311hcd402e7_0
+  - frozenlist=1.4.0=py311hcd402e7_1
   - gettext=0.21.1=ha18d298_0
   - git=2.42.0=pl5321h0d979e1_0
   - gmailsorter=0.1.1=pyhd8ed1ab_0
@@ -45,7 +45,7 @@ dependencies:
   - google-auth-oauthlib=1.1.0=pyhd8ed1ab_0
   - googleapis-common-protos=1.60.0=pyhd8ed1ab_0
   - greenlet=2.0.2=py311h8715677_1
-  - gunicorn=21.2.0=py311hec3470c_0
+  - gunicorn=21.2.0=py311hec3470c_1
   - httplib2=0.22.0=pyhd8ed1ab_0
   - icu=72.1=hcf00150_0
   - idna=3.4=pyhd8ed1ab_0
@@ -55,7 +55,7 @@ dependencies:
   - joblib=1.3.2=pyhd8ed1ab_0
   - josepy=1.13.0=pyhd8ed1ab_0
   - jsonpatch=1.32=pyhd8ed1ab_0
-  - jsonpointer=2.4=py311hec3470c_2
+  - jsonpointer=2.4=py311hec3470c_3
   - keyutils=1.6.1=h4e544f5_0
   - krb5=1.21.2=hc419048_0
   - ld_impl_linux-aarch64=2.40=h2d8c526_0
@@ -68,10 +68,10 @@ dependencies:
   - libev=4.33=h516909a_1
   - libexpat=2.5.0=hd600fc2_1
   - libffi=3.4.2=h3557bc0_5
-  - libgcc-ng=13.2.0=hf8544c7_1
-  - libgfortran-ng=13.2.0=he9431aa_1
-  - libgfortran5=13.2.0=h582850c_1
-  - libgomp=13.2.0=hf8544c7_1
+  - libgcc-ng=13.2.0=hf8544c7_2
+  - libgfortran-ng=13.2.0=he9431aa_2
+  - libgfortran5=13.2.0=h582850c_2
+  - libgomp=13.2.0=hf8544c7_2
   - libiconv=1.17=h9cdd2b7_0
   - liblapack=3.9.0=5_h6783c1e_netlib
   - libmamba=1.5.1=h604a1c0_0
@@ -83,7 +83,7 @@ dependencies:
   - libsolv=0.7.24=hd84c7bf_4
   - libsqlite=3.43.0=h194ca79_0
   - libssh2=1.11.0=h492db2e_0
-  - libstdcxx-ng=13.2.0=h9a76618_1
+  - libstdcxx-ng=13.2.0=h9a76618_2
   - libuuid=2.38.1=hb4cce97_0
   - libuv=1.44.2=h31becfc_1
   - libxml2=2.11.5=h164fba4_0
@@ -91,7 +91,7 @@ dependencies:
   - lz4-c=1.9.4=hd600fc2_0
   - lzo=2.10=h516909a_1000
   - mamba=1.5.1=py311hb6c5aa6_0
-  - markupsafe=2.1.3=py311hc8f2f60_0
+  - markupsafe=2.1.3=py311hc8f2f60_1
   - multidict=6.0.4=py311h1d6c08a_0
   - ncurses=6.4=h2e1726e_0
   - nodejs=16.20.2=hcb20a51_1
@@ -99,7 +99,7 @@ dependencies:
   - oauthlib=3.2.2=pyhd8ed1ab_0
   - openssl=3.1.3=h31becfc_0
   - packaging=23.1=pyhd8ed1ab_0
-  - pandas=2.1.0=py311h2dc6514_0
+  - pandas=2.1.1=py311h2dc6514_0
   - parsedatetime=2.6=pyh9f0ad1d_0
   - pcre2=10.40=he7b27c6_0
   - perl=5.32.1=4_h31becfc_perl5
@@ -135,7 +135,7 @@ dependencies:
   - ruamel.yaml=0.17.32=py311hcd402e7_0
   - ruamel.yaml.clib=0.2.7=py311h1d6c08a_1
   - ruamel_yaml=0.15.80=py311hdfa8b44_1008
-  - scikit-learn=1.3.0=py311hb93614b_0
+  - scikit-learn=1.3.1=py311hb93614b_0
   - scipy=1.11.2=py311h69ead2a_1
   - setuptools=68.2.2=pyhd8ed1ab_0
   - six=1.16.0=pyh6c4a22f_0
@@ -155,8 +155,8 @@ dependencies:
   - yaml=0.2.5=hf897c2e_2
   - yaml-cpp=0.7.0=h4de3ea5_2
   - yarl=1.9.2=py311hcd402e7_0
-  - zipp=3.16.2=pyhd8ed1ab_0
+  - zipp=3.17.0=pyhd8ed1ab_0
   - zlib=1.2.13=h31becfc_5
-  - zstandard=0.21.0=py311hb827a26_0
+  - zstandard=0.21.0=py311hb827a26_1
   - zstd=1.5.5=h4c53e97_0
 prefix: /home/opc/mambaforge
