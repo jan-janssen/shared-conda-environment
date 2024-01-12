@@ -28,4 +28,4 @@ jobs:
         python .ci_support/dryrun.py
     - uses: actions/upload-artifact@v4
       with:
-        path: *.yml
+        path: macbook_pro_x64.yml
