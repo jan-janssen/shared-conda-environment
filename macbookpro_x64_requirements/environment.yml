@@ -15,6 +15,7 @@ dependencies:
   - mamba=1.5.6
   - matgl=0.9.1
   - matplotlib-base=3.8.2
+  - mkl=2022.2.1 
   - mpi4py=3.1.5
   - nglview=3.0.8
   - numpy=1.26.2
