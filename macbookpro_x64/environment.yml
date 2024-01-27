@@ -29,18 +29,18 @@ dependencies:
   - atk-1.0=2.38.0=h1d18e73_1
   - atomistics=0.1.21=pyhc1e730c_0
   - attrs=23.2.0=pyh71513ae_0
-  - aws-c-auth=0.7.14=h0315e4f_0
+  - aws-c-auth=0.7.14=h82587f3_2
   - aws-c-cal=0.6.9=he75d6b7_3
   - aws-c-common=0.9.12=h10d778d_0
   - aws-c-compression=0.2.17=h45babc2_8
-  - aws-c-event-stream=0.4.1=h66ba26d_3
-  - aws-c-http=0.8.0=hf425658_3
-  - aws-c-io=0.14.1=h49ca7b5_0
-  - aws-c-mqtt=0.10.1=h4fcdba2_1
-  - aws-c-s3=0.4.10=h71e543f_1
-  - aws-c-sdkutils=0.1.13=h45babc2_1
+  - aws-c-event-stream=0.4.1=h687dd0d_4
+  - aws-c-http=0.8.0=hfbeb629_4
+  - aws-c-io=0.14.2=h49ca7b5_1
+  - aws-c-mqtt=0.10.1=h13b1282_2
+  - aws-c-s3=0.4.10=h97045b1_2
+  - aws-c-sdkutils=0.1.14=h45babc2_0
   - aws-checksums=0.1.17=h45babc2_7
-  - aws-crt-cpp=0.26.1=h0472572_4
+  - aws-crt-cpp=0.26.1=h49f3c28_6
   - aws-sdk-cpp=1.11.242=h2d1bcde_0
   - azure-core=1.29.7=pyhd8ed1ab_0
   - babel=2.14.0=pyhd8ed1ab_0
@@ -50,7 +50,7 @@ dependencies:
   - bcrypt=4.1.2=py311h5e0f0e4_0
   - beautifulsoup4=4.12.3=pyha770c72_0
   - bibtexparser=1.4.1=pyhd8ed1ab_0
-  - black=23.12.1=py311h6eed73b_0
+  - black=24.1.0=py311h6eed73b_0
   - bleach=6.1.0=pyhd8ed1ab_0
   - blinker=1.7.0=pyhd8ed1ab_0
   - blosc=1.21.5=heccf04b_0
@@ -58,14 +58,14 @@ dependencies:
   - boolean.py=4.0=pyhd8ed1ab_0
   - boost=1.82.0=h9bdd199_6
   - boost-cpp=1.82.0=h07eb623_6
-  - boto3=1.34.27=pyhd8ed1ab_0
-  - botocore=1.34.27=pyhd8ed1ab_0
+  - boto3=1.34.29=pyhd8ed1ab_0
+  - botocore=1.34.29=pyhd8ed1ab_0
   - brotli=1.1.0=h0dc2134_1
   - brotli-bin=1.1.0=h0dc2134_1
   - brotli-python=1.1.0=py311hdf8f085_1
   - brotlipy=0.7.0=py311h2725bcf_1006
   - bzip2=1.0.8=h10d778d_5
-  - c-ares=1.25.0=h10d778d_0
+  - c-ares=1.26.0=h10d778d_0
   - c-blosc2=2.13.1=h0ae8482_0
   - ca-certificates=2023.11.17=h8857fd0_0
   - cached-property=1.5.2=hd8ed1ab_1
@@ -98,7 +98,7 @@ dependencies:
   - compiler-rt_osx-64=14.0.6=hab78ec2_0
   - conda=23.11.0=py311h6eed73b_1
   - conda-build=3.28.4=py311h6eed73b_0
-  - conda-forge-pinning=2024.01.25.18.22.54=hd8ed1ab_0
+  - conda-forge-pinning=2024.01.26.23.27.14=hd8ed1ab_0
   - conda-index=0.3.0=pyhd8ed1ab_1
   - conda-libmamba-solver=23.12.0=pyhd8ed1ab_0
   - conda-merge=0.2.0=pyhd8ed1ab_0
@@ -108,11 +108,11 @@ dependencies:
   - conda-souschef=2.2.3=pyhd8ed1ab_0
   - configparser=5.3.0=pyhd8ed1ab_0
   - contourpy=1.2.0=py311h7bea37d_0
-  - coverage=7.4.0=py311he705e18_0
+  - coverage=7.4.1=py311he705e18_0
   - cryptography=41.0.7=py311h48c7838_1
   - curl=8.5.0=h726d00d_0
   - cycler=0.12.1=pyhd8ed1ab_0
-  - cython=0.29.37=py311hdd0406b_0
+  - cython=3.0.8=py311hdd0406b_0
   - cytoolz=0.12.2=py311h2725bcf_1
   - datamodeldict=0.9.9=pyhd8ed1ab_0
   - dav1d=1.2.1=h0dc2134_0
@@ -145,7 +145,7 @@ dependencies:
   - flask-sqlalchemy=3.0.3=pyhd8ed1ab_0
   - flatbuffers=23.5.26=he965462_1
   - flit-core=3.9.0=pyhd8ed1ab_0
-  - fmt=10.1.1=h7728843_1
+  - fmt=10.2.1=h7728843_0
   - font-ttf-dejavu-sans-mono=2.37=hab24e00_0
   - font-ttf-inconsolata=3.000=h77eed37_0
   - font-ttf-source-code-pro=2.038=h77eed37_0
@@ -367,7 +367,7 @@ dependencies:
   - markdown=3.5.2=pyhd8ed1ab_0
   - markdown-it-py=3.0.0=pyhd8ed1ab_0
   - markupsafe=2.1.4=py311he705e18_0
-  - matgl=0.9.1=pyhd8ed1ab_0
+  - matgl=0.9.2=pyhd8ed1ab_0
   - matplotlib-base=3.8.2=py311hd316c10_0
   - matplotlib-inline=0.1.6=pyhd8ed1ab_0
   - mdurl=0.1.2=pyhd8ed1ab_0
@@ -378,10 +378,10 @@ dependencies:
   - mistune=3.0.2=pyhd8ed1ab_0
   - mkl=2022.2.1=h44ed08c_16952
   - ml_dtypes=0.2.0=py311hab14417_2
-  - molmod=1.4.8=py311h2725bcf_9
+  - molmod=1.4.8=py311h5547dcb_8
   - mongogrant=0.3.3=pyhd8ed1ab_0
   - mongomock=4.0.0=pyhd8ed1ab_0
-  - monty=2024.1.23=pyhd8ed1ab_0
+  - monty=2024.1.26=pyhd8ed1ab_0
   - more-itertools=10.2.0=pyhd8ed1ab_0
   - mp-api=0.39.5=pyhd8ed1ab_0
   - mpc=1.3.1=h81bd1dd_0
@@ -511,7 +511,7 @@ dependencies:
   - pyiron_gpl=0.0.4=pyhd8ed1ab_0
   - pyjwt=2.8.0=pyhd8ed1ab_0
   - pylammpsmpi=0.2.11=pyhc1e730c_0
-  - pymatgen=2023.12.18=py311hc9a392d_1
+  - pymatgen=2024.1.27=py311hc9a392d_0
   - pymongo=4.6.1=py311hd39e593_0
   - pymov2gif=0.0.2=pyhd8ed1ab_0
   - pympipool=0.7.9=pyhd8ed1ab_0
@@ -586,8 +586,8 @@ dependencies:
   - scikit-learn=1.4.0=py311he2b4599_0
   - scipy=1.12.0=py311h86d0cd9_2
   - scrypt=0.8.20=py311h5dd7336_1
-  - seaborn=0.13.1=hd8ed1ab_0
-  - seaborn-base=0.13.1=pyhd8ed1ab_0
+  - seaborn=0.13.2=hd8ed1ab_0
+  - seaborn-base=0.13.2=pyhd8ed1ab_0
   - seekpath=2.1.0=pyhd8ed1ab_0
   - semver=3.0.2=pyhd8ed1ab_0
   - send2trash=1.8.2=pyhd1c38e8_0
