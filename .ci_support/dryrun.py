@@ -1,11 +1,12 @@
 import json
 import subprocess
+import sys
 import yaml
 
 
-def get_detailed_environment(environment_input_file, environment_output_file):
+def get_detailed_environment(environment_input_file, machine_type, environment_output_file):
     output_start = subprocess.check_output(
-        ["conda", "env", "create", "-n", "testenv", "-f", environment_input_file, "--dry-run", "--json"], 
+        ["CONDA_SUBDIR=" + machine_type, "conda", "env", "create", "-n", "testenv", "-f", environment_input_file, "--dry-run", "--json"], 
         shell=False, 
         universal_newlines=True
     )
@@ -22,7 +23,7 @@ def get_detailed_environment(environment_input_file, environment_output_file):
         f.writelines(yaml.dump(output_dict))
 
     output_extended = subprocess.check_output(
-        ["conda", "env", "create", "-n", "testenv", "-f", environment_output_file, "--dry-run", "--json"], 
+        ["CONDA_SUBDIR=" + machine_type, "conda", "env", "create", "-n", "testenv", "-f", environment_output_file, "--dry-run", "--json"], 
         shell=False, 
         universal_newlines=True
     )
@@ -31,4 +32,4 @@ def get_detailed_environment(environment_input_file, environment_output_file):
 
 
 if __name__ == "__main__":
-    get_detailed_environment(environment_input_file="macbookpro_x64_requirements/environment.yml", environment_output_file="macbook_pro_x64.yml")
+    get_detailed_environment(environment_input_file=sys.argv[1], machine_type=sys.argv[2], environment_output_file=sys.argv[3])

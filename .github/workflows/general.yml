@@ -1,4 +1,4 @@
-name: MacbookProX64
+name: general-osx-64
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Setup Mambaforge
@@ -25,7 +25,7 @@ jobs:
       shell: bash -l {0}
       timeout-minutes: 30
       run: |
-        python .ci_support/dryrun.py
+        python .ci_support/dryrun.py generalenv_requirements/environment.yml osx-64 env-osx-x64.yml 
     - uses: actions/upload-artifact@v4
       with:
-        path: macbook_pro_x64.yml
+        path: env-osx-x64.yml
