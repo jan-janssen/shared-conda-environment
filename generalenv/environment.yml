@@ -36,7 +36,7 @@ dependencies:
   - pymov2gif=0.0.2
   - pympipool=0.8.5
   - pysqa=0.1.21
-  - python=3.11.8
+  - python=3.12.4
   - python-ternary=1.0.8
   - pytorch=2.1.2
   - qe=7.0
