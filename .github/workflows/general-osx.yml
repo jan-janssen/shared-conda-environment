@@ -1,4 +1,4 @@
-name: general-osx-64
+name: general-osx-x64
 
 on:
   push:
