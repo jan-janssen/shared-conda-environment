@@ -23,6 +23,7 @@ dependencies:
   - langchain=0.2.6
   - langchain-experimental=0.0.62
   - langchain-openai=0.1.10
+  - mamba=1.5.8
   - matplotlib-base=3.8.4
   - mkl=2023.2.0
   - mpi4py=3.1.6
