@@ -1,10 +1,7 @@
 name: general-osx-x64
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
 
 jobs:
   build:
@@ -25,7 +22,7 @@ jobs:
       shell: bash -l {0}
       timeout-minutes: 30
       run: |
-        python .ci_support/dryrun.py generalenv_requirements/environment.yml env-osx-x64.yml 
+        python .ci_support/dryrun.py generalenv/environment.yml env-osx-x64.yml 
     - uses: actions/upload-artifact@v4
       with:
         path: env-osx-x64.yml
