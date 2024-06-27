@@ -23,6 +23,7 @@ jobs:
       timeout-minutes: 30
       run: |
         sed -i '' -e "/[win]/d" -e "/[linux]/d" environment.yml
+        cat environment.yml
         python .ci_support/dryrun.py environment.yml env-osx-x64.yml 
     - uses: actions/upload-artifact@v4
       with:
@@ -46,4 +47,5 @@ jobs:
         conda install -y --name test -c conda-forge constructor
         mkdir build
         sed -i '' -e "/[win]/d" -e "/[linux]/d" environment.yml
+        cat environment.yml
         constructor -v --output-dir=build --platform="osx-64" constructor
