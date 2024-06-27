@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  build:
+  build_environment:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -26,3 +26,22 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         path: env-linux-x64.yml
+
+  build_constructor:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: conda-incubator/setup-miniconda@v2.2.0
+      with:
+        python-version: "3.12"
+        mamba-version: "*"
+        channels: conda-forge
+        miniforge-variant: Mambaforge
+        channel-priority: strict
+        auto-update-conda: true
+    - name: Build Constructor
+      shell: bash -l {0}
+      run: |
+        conda install -y --name test -c conda-forge constructor
+        mkdir build
+        constructor -v --output-dir=build --platform="linux-64" constructor
