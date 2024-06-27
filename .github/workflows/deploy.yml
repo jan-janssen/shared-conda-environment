@@ -178,9 +178,9 @@ jobs:
         conda install -y --name test -c conda-forge constructor
         mkdir build
         constructor -v --output-dir=build --platform="linux-64" constructor
-        mv ./build/pyiron-0.0.0-Linux-x86_64.sh ./build/$FILENAME
+        mv ./build/shared-conda-environment-0.0.0-Linux-x86_64.sh ./build/$FILENAME
       env:
-        FILENAME: pyiron-${{ steps.get_date_info.outputs.date }}-Linux-x86_64.sh
+        FILENAME: conda-${{ steps.get_date_info.outputs.date }}-Linux-x86_64.sh
     - name: Upload Release Asset
       id: upload-release-asset
       uses: actions/upload-release-asset@v1.0.1
@@ -188,8 +188,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.get_release_info.outputs.upload_url }}
-        asset_path: ./build/pyiron-${{ steps.get_date_info.outputs.date }}-Linux-x86_64.sh
-        asset_name: pyiron-${{ steps.get_date_info.outputs.date }}-Linux-x86_64.sh
+        asset_path: ./build/conda-${{ steps.get_date_info.outputs.date }}-Linux-x86_64.sh
+        asset_name: conda-${{ steps.get_date_info.outputs.date }}-Linux-x86_64.sh
         asset_content_type: application/zip
 
   build_macos_constructor:
@@ -230,9 +230,9 @@ jobs:
         conda install -y --name test -c conda-forge constructor
         mkdir build
         constructor -v --output-dir=build --platform="osx-64" constructor
-        mv ./build/pyiron-0.0.0-MacOSX-x86_64.pkg ./build/$FILENAME
+        mv ./build/shared-conda-environment-0.0.0-MacOSX-x86_64.pkg ./build/$FILENAME
       env:
-        FILENAME: pyiron-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg
+        FILENAME: conda-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg
     - name: Upload Release Asset
       id: upload-release-asset
       uses: actions/upload-release-asset@v1.0.1
@@ -240,6 +240,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.get_release_info.outputs.upload_url }}
-        asset_path: ./build/pyiron-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg
-        asset_name: pyiron-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg 
+        asset_path: ./build/conda-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg
+        asset_name: conda-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg 
         asset_content_type: application/zip
