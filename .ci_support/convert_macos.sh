@@ -1,3 +1,3 @@
 #!/bin/bash
-sed '/\[win\]/d' environment.yml | sed '/\[linux\]/d' > tmp.yml
+sed -e '/\[win\]/d' -e '/\[linux\]/d' environment.yml > tmp.yml
 mv tmp.yml environment.yml
