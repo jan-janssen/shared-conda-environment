@@ -11,7 +11,7 @@ jobs:
     - name: convert
       shell: bash -l {0}
       run: |
-        ./.ci_support/convert_linux.sh
+        ./.ci_support/convert_macos.sh
         cat environment.yml
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v2
