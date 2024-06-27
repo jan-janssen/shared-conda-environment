@@ -329,13 +329,13 @@ jobs:
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
-        echo ::set-output name=upload_url::$value
+        $value = Get-Content release_url/release_url.txt
+        echo "::set-output name=upload_url::$value"
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
-        echo ::set-output name=date::$value
+        $value = Get-Content date/date.txt
+        echo "::set-output name=date::$value"
     - name: Build Constructor
       shell: bash -l {0}
       run: |
