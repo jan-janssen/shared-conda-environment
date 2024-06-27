@@ -30,7 +30,7 @@ dependencies:
   - matplotlib-base=3.8.4
   - mkl=2023.2.0
   - mpi4py=3.1.6
-  - pyauthenticator=0.2.0
+  - pyauthenticator=0.2.0  # [unix]
   - pygraphviz=1.13
   - pyiron=0.5.2
   - pyiron-data=0.0.29
