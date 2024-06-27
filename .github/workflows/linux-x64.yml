@@ -47,5 +47,5 @@ jobs:
         conda install -y --name test -c conda-forge constructor
         mkdir build
         ./.ci_support/convert-linux.sh
-	cat environment.yml
+        cat environment.yml
         constructor -v --output-dir=build --platform="linux-64" constructor
