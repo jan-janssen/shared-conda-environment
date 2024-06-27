@@ -8,7 +8,6 @@ channels:
 environment_file: ../environment.yml
 
 ignore_duplicate_files: True
-install_in_dependency_order: True
 conda_default_channels:
   - https://conda.anaconda.org/conda-forge
   - https://repo.anaconda.com/pkgs/main
