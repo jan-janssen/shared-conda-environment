@@ -9,6 +9,7 @@ dependencies:
   - coverage=7.5.4
   - dynaphopy=1.17.15
   - ffmpeg=4.3.2
+  - flux-core=0.59.0  # [linux]
   - git=2.45.1
   - git-filter-repo=2.38.0
   - gmailsorter=0.1.3
