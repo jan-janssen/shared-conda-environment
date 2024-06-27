@@ -1,17 +1,17 @@
-name: macos-x64
+name: windows-x64
 
 on:
   pull_request:
 
 jobs:
   test_environment:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
     - name: convert
       shell: bash -l {0}
       run: |
-        ./.ci_support/convert_macos.sh
+        ./.ci_support/convert_windows.sh
         cat environment.yml
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v2
@@ -26,7 +26,7 @@ jobs:
 
   build_environment:
     needs: [test_environment]
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
     - name: Setup Mambaforge
@@ -43,16 +43,16 @@ jobs:
       shell: bash -l {0}
       timeout-minutes: 30
       run: |
-        ./.ci_support/convert_macos.sh
+        ./.ci_support/convert_windows.sh
         cat environment.yml
-        python .ci_support/dryrun.py environment.yml env-osx-x64.yml 
+        python .ci_support/dryrun.py environment.yml env-windows-x64.yml 
     - uses: actions/upload-artifact@v4
       with:
-        path: env-osx-x64.yml
+        path: env-windows-x64.yml
 
   build_constructor:
     needs: [test_environment]
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
     - uses: conda-incubator/setup-miniconda@v2.2.0
@@ -68,6 +68,6 @@ jobs:
       run: |
         conda install -y --name test -c conda-forge constructor
         mkdir build
-        ./.ci_support/convert_macos.sh
+        ./.ci_support/convert_windows.sh
         cat environment.yml
-        constructor -v --output-dir=build --platform="osx-64" constructor
+        constructor -v --output-dir=build --platform="win-64" constructor

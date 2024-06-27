@@ -11,7 +11,7 @@ jobs:
     
     steps:
     - name: Check out code
-      uses: actions/checkout@v1
+      uses: actions/checkout@v4
     - name: Get current date
       id: date
       run: echo "::set-output name=date::$(date +%F)"
@@ -78,6 +78,8 @@ jobs:
       shell: bash -l {0}
       timeout-minutes: 30
       run: |
+        ./.ci_support/convert_linux.sh
+        cat environment.yml
         python .ci_support/dryrun.py environment.yml env-linux-x64-${{ steps.get_date_info.outputs.date }}.yml
     - name: Upload Release Asset
       id: upload-release-asset
@@ -128,6 +130,8 @@ jobs:
       shell: bash -l {0}
       timeout-minutes: 30
       run: |
+        ./.ci_support/convert_macos.sh
+        cat environment.yml
         python .ci_support/dryrun.py environment.yml env-osx-x64-${{ steps.get_date_info.outputs.date }}.yml 
     - name: Upload Release Asset
       id: upload-release-asset
@@ -140,12 +144,64 @@ jobs:
         asset_name: env-osx-x64-${{ steps.get_date_info.outputs.date }}.yml
         asset_content_type: text/plain
 
+  build_windows_environment:
+    name: windows_environment
+    needs: [createrelease]
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Load Release URL File from release job
+      uses: actions/download-artifact@v1
+      with:
+        name: release_url
+    - name: Load Date File from release job
+      uses: actions/download-artifact@v1
+      with:
+        name: date
+    - name: Get Release File Name & Upload URL
+      id: get_release_info
+      run: |
+        value=`cat release_url/release_url.txt`
+        echo ::set-output name=upload_url::$value
+    - name: Get Release File Name & Upload URL
+      id: get_date_info
+      run: |
+        value=`cat date/date.txt`
+        echo ::set-output name=date::$value
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        python-version: "3.12"
+        miniforge-variant: Mambaforge
+        channels: conda-forge
+        channel-priority: strict
+        activate-environment: my-env
+        environment-file: .ci_support/environment.yml
+        use-mamba: true
+    - name: Test
+      shell: bash -l {0}
+      timeout-minutes: 30
+      run: |
+        ./.ci_support/convert_windows.sh
+        cat environment.yml
+        python .ci_support/dryrun.py environment.yml env-win-x64-${{ steps.get_date_info.outputs.date }}.yml
+    - name: Upload Release Asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.get_release_info.outputs.upload_url }}
+        asset_path: env-win-x64-${{ steps.get_date_info.outputs.date }}.yml
+        asset_name: env-win-x64-${{ steps.get_date_info.outputs.date }}.yml
+        asset_content_type: text/plain
+
   build_linux_constructor:
     name: linux_constructor
     needs: [createrelease]
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: conda-incubator/setup-miniconda@v2.2.0
       with:
         python-version: "3.12"
@@ -177,6 +233,8 @@ jobs:
       run: |
         conda install -y --name test -c conda-forge constructor
         mkdir build
+        ./.ci_support/convert_linux.sh
+        cat environment.yml
         constructor -v --output-dir=build --platform="linux-64" constructor
         mv ./build/shared-conda-environment-0.0.0-Linux-x86_64.sh ./build/$FILENAME
       env:
@@ -229,6 +287,8 @@ jobs:
       run: |
         conda install -y --name test -c conda-forge constructor
         mkdir build
+        ./.ci_support/convert_macos.sh
+        cat environment.yml
         constructor -v --output-dir=build --platform="osx-64" constructor
         mv ./build/shared-conda-environment-0.0.0-MacOSX-x86_64.pkg ./build/$FILENAME
       env:
@@ -242,4 +302,58 @@ jobs:
         upload_url: ${{ steps.get_release_info.outputs.upload_url }}
         asset_path: ./build/conda-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg
         asset_name: conda-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg 
+        asset_content_type: application/zip
+
+  build_windows_constructor:
+    name: windows_constructor
+    needs: [createrelease]
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: conda-incubator/setup-miniconda@v2.2.0
+      with:
+        python-version: "3.12"
+        mamba-version: "*"
+        channels: conda-forge
+        miniforge-variant: Mambaforge
+        channel-priority: strict
+        auto-update-conda: true
+    - name: Load Release URL File from release job
+      uses: actions/download-artifact@v1
+      with:
+        name: release_url
+    - name: Load Date File from release job
+      uses: actions/download-artifact@v1
+      with:
+        name: date
+    - name: Get Release File Name & Upload URL
+      id: get_release_info
+      run: |
+        value=`cat release_url/release_url.txt`
+        echo ::set-output name=upload_url::$value
+    - name: Get Release File Name & Upload URL
+      id: get_date_info
+      run: |
+        value=`cat date/date.txt`
+        echo ::set-output name=date::$value
+    - name: Build Constructor
+      shell: bash -l {0}
+      run: |
+        conda install -y --name test -c conda-forge constructor
+        mkdir build
+        ./.ci_support/convert_windows.sh
+        cat environment.yml
+        constructor -v --output-dir=build --platform="win-64" constructor
+        mv ./build/shared-conda-environment-0.0.0-Windows-x86_64.exe ./build/$FILENAME
+      env:
+        FILENAME: conda-${{ steps.get_date_info.outputs.date }}-Windows-x86_64.exe
+    - name: Upload Release Asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.get_release_info.outputs.upload_url }}
+        asset_path: ./build/conda-${{ steps.get_date_info.outputs.date }}-Windows-x86_64.exe
+        asset_name: conda-${{ steps.get_date_info.outputs.date }}-Windows-x86_64.exe
         asset_content_type: application/zip

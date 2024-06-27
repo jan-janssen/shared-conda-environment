@@ -15,7 +15,9 @@ conda_default_channels:
 license_file: EULA.txt
 
 initialize_by_default: True
+register_python_default: True [win]
 
 # Linux and Windows are the defaults, but macOS uses pkg instead of sh
 installer_type: sh [linux]
 installer_type: pkg [osx]
+installer_type: exe [win]
