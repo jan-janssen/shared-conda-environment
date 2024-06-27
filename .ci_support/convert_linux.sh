@@ -1,2 +1,2 @@
 #!/bin/bash
-sed '/\[win\]/d' environment.yml | sed '/\[osx\]/d' | sed '/\[macos\]/d' > environment.yml
+sed '/\[win\]/d' environment.yml | sed '/\[osx\]/d' | sed '/\[macos\]/d'
