@@ -40,8 +40,8 @@ jobs:
         name: date
         path: date.txt
 
-  build_linux:
-    name: Linux 
+  build_linux_environment:
+    name: linux_environment
     needs: [createrelease]
     runs-on: ubuntu-latest
     steps:
@@ -78,7 +78,7 @@ jobs:
       shell: bash -l {0}
       timeout-minutes: 30
       run: |
-        python .ci_support/dryrun.py generalenv/environment.yml env-linux-x64-${{ steps.get_date_info.outputs.date }}.yml
+        python .ci_support/dryrun.py environment.yml env-linux-x64-${{ steps.get_date_info.outputs.date }}.yml
     - name: Upload Release Asset
       id: upload-release-asset
       uses: actions/upload-release-asset@v1.0.1
@@ -90,11 +90,10 @@ jobs:
         asset_name: env-linux-x64-${{ steps.get_date_info.outputs.date }}.yml
         asset_content_type: text/plain
 
-  build_mac:
-    name: MacOsX
+  build_macos_environment:
+    name: macos_environment
     needs: [createrelease]
     runs-on: macos-latest
-
     steps:
     - uses: actions/checkout@v4
     - name: Load Release URL File from release job
@@ -129,7 +128,7 @@ jobs:
       shell: bash -l {0}
       timeout-minutes: 30
       run: |
-        python .ci_support/dryrun.py generalenv/environment.yml env-osx-x64-${{ steps.get_date_info.outputs.date }}.yml 
+        python .ci_support/dryrun.py environment.yml env-osx-x64-${{ steps.get_date_info.outputs.date }}.yml 
     - name: Upload Release Asset
       id: upload-release-asset
       uses: actions/upload-release-asset@v1.0.1
@@ -140,3 +139,107 @@ jobs:
         asset_path: env-osx-x64-${{ steps.get_date_info.outputs.date }}.yml
         asset_name: env-osx-x64-${{ steps.get_date_info.outputs.date }}.yml
         asset_content_type: text/plain
+
+  build_linux_constructor:
+    name: linux_constructor
+    needs: [createrelease]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: conda-incubator/setup-miniconda@v2.2.0
+      with:
+        python-version: "3.12"
+        mamba-version: "*"
+        channels: conda-forge
+        miniforge-variant: Mambaforge
+        channel-priority: strict
+        auto-update-conda: true
+    - name: Load Release URL File from release job
+      uses: actions/download-artifact@v1
+      with:
+        name: release_url
+    - name: Load Date File from release job
+      uses: actions/download-artifact@v1
+      with:
+        name: date
+    - name: Get Release File Name & Upload URL
+      id: get_release_info
+      run: |
+        value=`cat release_url/release_url.txt`
+        echo ::set-output name=upload_url::$value
+    - name: Get Release File Name & Upload URL
+      id: get_date_info
+      run: |
+        value=`cat date/date.txt`
+        echo ::set-output name=date::$value
+    - name: Build Constructor
+      shell: bash -l {0}
+      run: |
+        conda install -y --name test -c conda-forge constructor
+        mkdir build
+        constructor -v --output-dir=build --platform="linux-64" constructor
+        mv ./build/pyiron-0.0.0-Linux-x86_64.sh ./build/$FILENAME
+      env:
+        FILENAME: pyiron-${{ steps.get_date_info.outputs.date }}-Linux-x86_64.sh
+    - name: Upload Release Asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.get_release_info.outputs.upload_url }}
+        asset_path: ./build/pyiron-${{ steps.get_date_info.outputs.date }}-Linux-x86_64.sh
+        asset_name: pyiron-${{ steps.get_date_info.outputs.date }}-Linux-x86_64.sh
+        asset_content_type: application/zip
+
+  build_macos_constructor:
+    name: macos_constructor
+    needs: [createrelease]
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: conda-incubator/setup-miniconda@v2.2.0
+      with:
+        python-version: "3.12"
+        mamba-version: "*"
+        channels: conda-forge
+        miniforge-variant: Mambaforge
+        channel-priority: strict
+        auto-update-conda: true
+    - name: Load Release URL File from release job
+      uses: actions/download-artifact@v1
+      with:
+        name: release_url
+    - name: Load Date File from release job
+      uses: actions/download-artifact@v1
+      with:
+        name: date
+    - name: Get Release File Name & Upload URL
+      id: get_release_info
+      run: |
+        value=`cat release_url/release_url.txt`
+        echo ::set-output name=upload_url::$value
+    - name: Get Release File Name & Upload URL
+      id: get_date_info
+      run: |
+        value=`cat date/date.txt`
+        echo ::set-output name=date::$value
+    - name: Build Constructor
+      shell: bash -l {0}
+      run: |
+        conda install -y --name test -c conda-forge constructor
+        mkdir build
+        constructor -v --output-dir=build --platform="osx-64" constructor
+        mv ./build/pyiron-0.0.0-MacOSX-x86_64.pkg ./build/$FILENAME
+      env:
+        FILENAME: pyiron-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg
+    - name: Upload Release Asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.get_release_info.outputs.upload_url }}
+        asset_path: ./build/pyiron-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg
+        asset_name: pyiron-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg 
+        asset_content_type: application/zip

@@ -1,5 +1,5 @@
-# My Conda Environment
-Maintain the same conda environment over different machines with different operation systems. 
+# Shared Conda Environment
+Install the same conda environment on all your computers. The environments are centrally built using a [Github Action](https://docs.github.com/en/actions). 
 
 ## Update your computer
 Download the latest release for your corresponding operation system:
@@ -7,10 +7,10 @@ https://github.com/jan-janssen/my-conda-environment/releases
 
 Install environment in `environment.yml` locally using:
 ```
-mamba env update --name base --file environment.yml --prune
+mamba env update --name base --prune --file environment.yml
 ```
 
-While it is possible to replace the `mamba` command above with the corresponding `conda` command by just replacing `mamba` with `conda` the use of `mamba` is highly recommended. 
+While it is possible to replace the `mamba` command with the corresponding `conda` command, by just replacing `mamba` with `conda`, the use of `mamba` is highly recommended. 
 
 ## Keep the environments up to date
 This repository uses the [dependabot](https://github.com/dependabot) from Github, to receive automatic pull request when one of the dependencies in the `requirements.txt` file changes. 
