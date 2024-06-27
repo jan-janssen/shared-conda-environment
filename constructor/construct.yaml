@@ -1,0 +1,22 @@
+name: shared-conda-environment
+version: 0.0.0
+
+channels:
+  - https://conda.anaconda.org/conda-forge
+  - https://repo.anaconda.com/pkgs/main
+
+environment_file: ../environment.yml
+
+ignore_duplicate_files: True
+install_in_dependency_order: True
+conda_default_channels:
+  - https://conda.anaconda.org/conda-forge
+  - https://repo.anaconda.com/pkgs/main
+
+license_file: EULA.txt
+
+initialize_by_default: True
+
+# Linux and Windows are the defaults, but macOS uses pkg instead of sh
+installer_type: sh [linux]
+installer_type: pkg [osx]
