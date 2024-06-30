@@ -42,7 +42,7 @@ dependencies:
   - pysqa=0.1.21
   - python=3.11.8
   - python-ternary=1.0.8
-  - pytorch=2.1.2  # [unix]
+  - pytorch=2.3.1  # [unix]
   - qe=7.0  # [unix]
   - seaborn=0.13.2
   - sqsgenerator=0.3
