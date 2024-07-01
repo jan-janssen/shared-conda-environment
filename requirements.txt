@@ -12,7 +12,7 @@ jupyterlab==4.2.3
 langchain==0.2.6
 langchain-anthropic==0.1.16
 langchain-experimental==0.0.62
-langchain-openai==0.1.11
+langchain-openai==0.1.13
 lxml==5.2.2 
 matplotlib==3.8.4
 mkl==2023.2.0
