@@ -23,7 +23,7 @@ dependencies:
   - lammps=2024.02.07=*openmpi*  # [unix]
   - langchain=0.2.6
   - langchain-experimental=0.0.62
-  - langchain-openai=0.1.13
+  - langchain-openai=0.1.14
   - langchain-anthropic=0.1.19
   - lxml=5.2.2 
   - mamba=1.5.8
