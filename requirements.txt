@@ -21,7 +21,7 @@ pyauthenticator==0.2.0
 pygraphviz==1.13
 pyiron==0.5.2
 pyiron_atomistics==0.6.3
-pyiron_base==0.9.5
+pyiron_base==0.9.6
 pympipool==0.8.5
 pysqa==0.1.21
 python-ternary==1.0.8
