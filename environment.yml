@@ -28,7 +28,7 @@ dependencies:
   - langchain-anthropic =0.1.19
   - lxml =5.2.2 
   - mamba =1.5.8
-  - matplotlib-base =3.8.4
+  - matplotlib-base =3.9.1
   - mkl =2023.2.0
   - mpi4py =3.1.6
   - nglview =3.1.2 
