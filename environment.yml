@@ -10,7 +10,7 @@ dependencies:
   - dynaphopy=1.17.15  # [unix]
   - ffmpeg=4.3.2  # [unix]
   - flux-core=0.64.0  # [linux]
-  - flux-sched=0.36.0  # [linux]
+  - flux-sched=0.36.1  # [linux]
   - git=2.45.1
   - git-filter-repo=2.38.0
   - gmailsorter=0.1.3
