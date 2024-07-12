@@ -6,7 +6,7 @@ dependencies:
   - atomistics =0.1.30
   - black =24.4.2
   - conda-smithy =3.36.2
-  - coverage =7.5.4
+  - coverage =7.6.0
   - dynaphopy =1.17.15  # [unix]
   - ffmpeg =4.3.2  # [unix]
   - flux-core =0.64.0  # [linux]
