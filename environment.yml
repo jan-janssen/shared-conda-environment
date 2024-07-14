@@ -43,12 +43,11 @@ dependencies:
   - pympipool =0.8.5
   - pysqa =0.1.21
   - python =3.11.8
-  - python-ace =0.2.8 # [unix]
+  - python-ace =0.3.0 # [unix]
   - python-ternary =1.0.8
   - pytorch =2.3.1  # [unix]
   - qe =7.0  # [unix]
   - seaborn =0.13.2
   - sqsgenerator =0.3
   - tensorflow =2.16.1  # [unix]
-  - tensorpotential =0.2.0 # [unix]
   - wget =1.21.4  # [unix]
