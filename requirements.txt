@@ -22,7 +22,7 @@ pygraphviz==1.13
 pyiron==0.5.2
 pyiron_atomistics==0.6.4
 pyiron_base==0.9.6
-pympipool==0.8.5
+pympipool==0.9.1
 pysqa==0.1.21
 python-ternary==1.0.8
 torch==2.3.1
