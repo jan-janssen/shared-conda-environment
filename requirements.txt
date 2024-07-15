@@ -1,5 +1,5 @@
 ase==3.23.0
-atomistics==0.1.30
+atomistics==0.1.31
 black==24.4.2
 coverage==7.6.0
 dynaphopy==1.17.15
