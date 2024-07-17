@@ -18,7 +18,7 @@ dependencies:
   - graphviz =11.0.0
   - grayskull =2.5.3
   - gunicorn =22.0.0  # [unix]
-  - h5io =0.2.3
+  - h5io =0.2.4
   - h5io_browser =0.0.15
   - iprpy-data =2023.07.25
   - jupyterlab =4.2.3
