@@ -18,8 +18,8 @@ dependencies:
   - graphviz =11.0.0
   - grayskull =2.5.3
   - gunicorn =22.0.0  # [unix]
-  - h5io =0.2.3
-  - h5io_browser =0.0.15
+  - h5io =0.2.4
+  - h5io_browser =0.0.16
   - iprpy-data =2023.07.25
   - jupyterlab =4.2.3
   - lammps =2024.02.07=*openmpi*  # [unix]
@@ -37,8 +37,8 @@ dependencies:
   - pygraphviz =1.13
   - pyiron =0.5.2
   - pyiron-data =0.0.29
-  - pyiron_atomistics =0.6.6
-  - pyiron_base =0.9.7
+  - pyiron_atomistics =0.6.7
+  - pyiron_base =0.9.9
   - pymace =0.3.6  # [unix]
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.1.21
