@@ -36,7 +36,7 @@ dependencies:
   - pyauthenticator =0.2.0  # [unix]
   - pygraphviz =1.13
   - pyiron =0.5.2
-  - pyiron-data =0.0.29
+  - pyiron-data =0.0.30
   - pyiron_atomistics =0.6.8
   - pyiron_base =0.9.10
   - pymace =0.3.6  # [unix]
