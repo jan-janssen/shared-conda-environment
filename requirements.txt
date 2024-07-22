@@ -22,7 +22,7 @@ pyauthenticator==0.2.0
 pygraphviz==1.13
 pyiron==0.5.2
 pyiron_atomistics==0.6.7
-pyiron_base==0.9.9
+pyiron_base==0.9.10
 pysqa==0.1.21
 python-ternary==1.0.8
 torch==2.3.1
