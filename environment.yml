@@ -31,7 +31,7 @@ dependencies:
   - mamba =1.5.8
   - matplotlib-base =3.9.1
   - mkl =2023.2.0
-  - mpi4py =3.1.6
+  - mpi4py =4.0.0
   - nglview =3.1.2 
   - pyauthenticator =0.2.0  # [unix]
   - pygraphviz =1.13
