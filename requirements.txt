@@ -18,6 +18,7 @@ lxml==5.2.2
 matplotlib==3.9.1
 mkl==2023.2.0
 mpi4py==3.1.6
+pre-commit==3.8.0
 pyauthenticator==0.2.0
 pygraphviz==1.13
 pyiron==0.5.2
