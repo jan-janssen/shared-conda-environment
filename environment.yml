@@ -6,7 +6,7 @@ dependencies:
   - atomistics =0.1.31
   - black =24.4.2
   - conda-smithy =3.36.2
-  - coverage =7.6.0
+  - coverage =7.6.1
   - dynaphopy =1.17.16  # [unix]
   - executorlib =0.0.1
   - ffmpeg =7.0.1  # [unix]
