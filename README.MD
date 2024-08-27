@@ -32,6 +32,6 @@ In the `environment.yml` file you can use the following comments after the name 
 * `- test=0.0.1  # [win]` to install the package on Windows on x64
 * `- test=0.0.1  # [x64]` to install the package on x64 independent of the operation system
 
-Only these four labels are supported. Other labels or variations of these labels like `# [not win]` are not supported. 
+Only these seven labels are supported. Other labels or variations of these labels like `# [not win]` are not supported. 
 
 Every push to the `main` branch results in a new release, consequently only one release per day is possible. To release multiple updates on a day, just remove the previous release and tag. 
