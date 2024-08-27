@@ -30,7 +30,7 @@ dependencies:
   - lxml =5.3.0
   - mamba =1.5.8
   - matplotlib-base =3.9.1
-  - mkl =2023.2.0
+  - mkl =2023.2.0  # [x64]
   - mpi4py =3.1.6
   - nglview =3.1.2 
   - pre-commit =3.8.0
@@ -40,14 +40,14 @@ dependencies:
   - pyiron-data =0.0.30
   - pyiron_atomistics =0.6.10
   - pyiron_base =0.9.11
-  - pymace =0.3.6  # [unix]
+  - pymace =0.3.6  # [unix64]
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.1.21
   - python =3.11.8
-  - python-ace =0.3.0 # [unix]
+  - python-ace =0.3.0 # [unix64]
   - python-ternary =1.0.8
   - pytorch =2.3.1  # [unix]
-  - qe =7.0  # [unix]
+  - qe =7.0  # [unix64]
   - seaborn =0.13.2
   - sqsgenerator =0.3
   - tensorflow =2.16.1  # [unix]
