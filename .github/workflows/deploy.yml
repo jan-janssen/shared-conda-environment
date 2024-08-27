@@ -125,7 +125,7 @@ jobs:
         python-version: "3.12"
         miniforge-version: latest
         condarc-file: .condarc
-        architecture: x86
+        architecture: x64
         environment-file: .ci_support/environment.yml
     - name: Test
       shell: bash -l {0}
@@ -265,7 +265,7 @@ jobs:
         python-version: "3.12"
         miniforge-version: latest
         condarc-file: .condarc
-        architecture: x86
+        architecture: x64
     - name: Load Release URL File from release job
       uses: actions/download-artifact@v1
       with:
