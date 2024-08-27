@@ -43,10 +43,10 @@ jobs:
       run: |
         ./.ci_support/convert_macarm.sh
         cat environment.yml
-        python .ci_support/dryrun.py environment.yml env-osx-x64.yml 
+        python .ci_support/dryrun.py environment.yml env-osx-arm.yml 
     - uses: actions/upload-artifact@v4
       with:
-        path: env-osx-x64.yml
+        path: env-osx-arm.yml
 
   build_constructor:
     needs: [test_environment]
@@ -68,4 +68,4 @@ jobs:
         mkdir build
         ./.ci_support/convert_macarm.sh
         cat environment.yml
-        constructor -v --output-dir=build --platform="osx-64" constructor
+        constructor -v --output-dir=build --platform="osx-arm64" constructor
