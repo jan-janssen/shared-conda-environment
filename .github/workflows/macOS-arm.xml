@@ -2,6 +2,7 @@ name: macos-arm
 
 on:
   pull_request:
+  push:
 
 jobs:
   test_environment:
