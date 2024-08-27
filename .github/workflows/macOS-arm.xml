@@ -1,4 +1,4 @@
-name: macos-x64-arm
+name: macos-arm
 
 on:
   pull_request:
