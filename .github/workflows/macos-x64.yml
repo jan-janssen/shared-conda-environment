@@ -20,7 +20,7 @@ jobs:
         python-version: "3.11"
         miniforge-version: latest
         condarc-file: .condarc
-        architecture: x86
+        architecture: x64
         environment-file: environment.yml
 
   build_environment:
@@ -37,7 +37,7 @@ jobs:
         python-version: "3.12"
         miniforge-version: latest
         condarc-file: .condarc
-        architecture: x86
+        architecture: x64
         environment-file: .ci_support/environment.yml
     - name: Test
       shell: bash -l {0}
@@ -63,7 +63,7 @@ jobs:
         python-version: "3.12"
         miniforge-version: latest
         condarc-file: .condarc
-        architecture: x86
+        architecture: x64
     - name: Build Constructor
       shell: bash -l {0}
       run: |
