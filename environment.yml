@@ -44,10 +44,10 @@ dependencies:
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.1.21
   - python =3.11.8
-  - python-ace =0.3.0 # [unix]
+  - python-ace =0.3.0 # [unix64]
   - python-ternary =1.0.8
   - pytorch =2.3.1  # [unix]
-  - qe =7.0  # [unix]
+  - qe =7.0  # [unix64]
   - seaborn =0.13.2
   - sqsgenerator =0.3
   - tensorflow =2.16.1  # [unix]
