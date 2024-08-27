@@ -24,10 +24,11 @@ Currently, [dependabot](https://github.com/dependabot) does not support conda `e
 When updating, adding or removing a dependency it is important to modify both the `requirements.txt` file and the `environment.yml` file. 
 
 In the `environment.yml` file you can use the following comments after the name and version of a package to restrict it to specific architectures: 
-* `- test=0.0.1  # [linux]` to install the package only on Linux
-* `- test=0.0.1  # [macos]` to install the package only on MacOS
-* `- test=0.0.1  # [unix]` to install the package on Linux and MacOS
-* `- test=0.0.1  # [win]` to install the package on Windows
+* `- test=0.0.1  # [linux]` to install the package only on Linux on x64
+* `- test=0.0.1  # [macos]` to install the package only on MacOS on x64
+* `- test=0.0.1  # [macarm]` to install the package only on MacOS on ARM 
+* `- test=0.0.1  # [unix64]` to install the package on Linux and MacOS on x64
+* `- test=0.0.1  # [win]` to install the package on Windows on x64
 
 Only these four labels are supported. Other labels or variations of these labels like `# [not win]` are not supported. 
 
