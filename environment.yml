@@ -40,7 +40,7 @@ dependencies:
   - pyiron-data =0.0.30
   - pyiron_atomistics =0.6.10
   - pyiron_base =0.9.11
-  - pymace =0.3.6  # [unix]
+  - pymace =0.3.6  # [unix64]
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.1.21
   - python =3.11.8
