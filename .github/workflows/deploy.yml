@@ -64,16 +64,16 @@ jobs:
       run: |
         value=`cat date/date.txt`
         echo ::set-output name=date::$value
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        miniforge-variant: Mambaforge
-        channels: conda-forge
-        channel-priority: strict
-        activate-environment: my-env
+        miniforge-version: latest
+        condarc-file: .condarc
         environment-file: .ci_support/environment.yml
-        use-mamba: true
     - name: Test
       shell: bash -l {0}
       timeout-minutes: 30
@@ -116,16 +116,17 @@ jobs:
       run: |
         value=`cat date/date.txt`
         echo ::set-output name=date::$value
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        miniforge-variant: Mambaforge
-        channels: conda-forge
-        channel-priority: strict
-        activate-environment: my-env
+        miniforge-version: latest
+        condarc-file: .condarc
+        architecture: x64
         environment-file: .ci_support/environment.yml
-        use-mamba: true
     - name: Test
       shell: bash -l {0}
       timeout-minutes: 30
@@ -168,16 +169,16 @@ jobs:
       run: |
         $value = Get-Content date/date.txt
         echo "::set-output name=date::$value"
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        miniforge-variant: Mambaforge
-        channels: conda-forge
-        channel-priority: strict
-        activate-environment: my-env
+        miniforge-version: latest
+        condarc-file: .condarc
         environment-file: .ci_support/environment.yml
-        use-mamba: true
     - name: Test
       shell: bash -l {0}
       timeout-minutes: 30
@@ -202,14 +203,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: conda-incubator/setup-miniconda@v2.2.0
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        mamba-version: "*"
-        channels: conda-forge
-        miniforge-variant: Mambaforge
-        channel-priority: strict
-        auto-update-conda: true
+        miniforge-version: latest
+        condarc-file: .condarc
     - name: Load Release URL File from release job
       uses: actions/download-artifact@v1
       with:
@@ -256,14 +257,15 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: conda-incubator/setup-miniconda@v2.2.0
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        mamba-version: "*"
-        channels: conda-forge
-        miniforge-variant: Mambaforge
-        channel-priority: strict
-        auto-update-conda: true
+        miniforge-version: latest
+        condarc-file: .condarc
+        architecture: x64
     - name: Load Release URL File from release job
       uses: actions/download-artifact@v1
       with:
@@ -310,14 +312,14 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: conda-incubator/setup-miniconda@v2.2.0
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        mamba-version: "*"
-        channels: conda-forge
-        miniforge-variant: Mambaforge
-        channel-priority: strict
-        auto-update-conda: true
+        miniforge-version: latest
+        condarc-file: .condarc
     - name: Load Release URL File from release job
       uses: actions/download-artifact@v1
       with:
