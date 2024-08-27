@@ -30,6 +30,7 @@ In the `environment.yml` file you can use the following comments after the name 
 * `- test=0.0.1  # [unix64]` to install the package on Linux and MacOS on x64
 * `- test=0.0.1  # [unix]` to install the package on Linux and MacOS on x64 and ARM
 * `- test=0.0.1  # [win]` to install the package on Windows on x64
+* `- test=0.0.1  # [x64]` to install the package on x64 independent of the operation system
 
 Only these four labels are supported. Other labels or variations of these labels like `# [not win]` are not supported. 
 
