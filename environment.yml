@@ -29,7 +29,7 @@ dependencies:
   - langchain-openai =0.1.22
   - lxml =5.3.0
   - mamba =1.5.8
-  - matplotlib-base =3.9.1
+  - matplotlib-base =3.9.2
   - mkl =2023.2.0  # [x64]
   - mpi4py =3.1.6
   - nglview =3.1.2 
@@ -38,8 +38,8 @@ dependencies:
   - pygraphviz =1.13
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.6.10
-  - pyiron_base =0.9.11
+  - pyiron_atomistics =0.6.11
+  - pyiron_base =0.9.12
   - pymace =0.3.6  # [unix64]
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.1.21
