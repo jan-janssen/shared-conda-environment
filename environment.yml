@@ -12,16 +12,16 @@ dependencies:
   - ffmpeg =7.0.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.36.1  # [linux]
-  - git =2.45.1
+  - git =2.46.0
   - git-filter-repo =2.38.0
   - gmailsorter =0.1.3
-  - graphviz =11.0.0
+  - graphviz =12.0.0
   - grayskull =2.7.1
   - gunicorn =23.0.0  # [unix]
   - h5io =0.2.4
   - h5io_browser =0.1.0
   - iprpy-data =2023.07.25
-  - jupyterlab =4.2.4
+  - jupyterlab =4.2.5
   - lammps =2024.06.27=*openmpi*  # [unix]
   - langchain =0.2.14
   - langchain-anthropic =0.1.23
@@ -50,5 +50,5 @@ dependencies:
   - qe =7.0  # [unix64]
   - seaborn =0.13.2
   - sqsgenerator =0.3
-  - tensorflow =2.16.1  # [unix]
+  - tensorflow =2.17.0  # [unix]
   - wget =1.21.4  # [unix]
