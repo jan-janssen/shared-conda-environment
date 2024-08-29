@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - ase =3.23.0
-  - atomistics =0.1.31
+  - atomistics =0.1.32
   - black =24.8.0
   - conda-smithy =3.38.0
   - coverage =7.6.1
@@ -12,16 +12,16 @@ dependencies:
   - ffmpeg =7.0.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.36.1  # [linux]
-  - git =2.45.1
+  - git =2.46.0
   - git-filter-repo =2.38.0
   - gmailsorter =0.1.3
-  - graphviz =11.0.0
+  - graphviz =12.0.0
   - grayskull =2.7.1
   - gunicorn =23.0.0  # [unix]
   - h5io =0.2.4
   - h5io_browser =0.0.17
   - iprpy-data =2023.07.25
-  - jupyterlab =4.2.4
+  - jupyterlab =4.2.5
   - lammps =2024.06.27=*openmpi*  # [unix]
   - langchain =0.2.14
   - langchain-anthropic =0.1.23
@@ -29,7 +29,7 @@ dependencies:
   - langchain-openai =0.1.22
   - lxml =5.3.0
   - mamba =1.5.8
-  - matplotlib-base =3.9.1
+  - matplotlib-base =3.9.2
   - mkl =2023.2.0  # [x64]
   - mpi4py =3.1.6
   - nglview =3.1.2 
@@ -38,8 +38,8 @@ dependencies:
   - pygraphviz =1.13
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.6.10
-  - pyiron_base =0.9.11
+  - pyiron_atomistics =0.6.11
+  - pyiron_base =0.9.12
   - pymace =0.3.6  # [unix64]
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.1.21
@@ -50,5 +50,5 @@ dependencies:
   - qe =7.0  # [unix64]
   - seaborn =0.13.2
   - sqsgenerator =0.3
-  - tensorflow =2.16.1  # [unix]
+  - tensorflow =2.17.0  # [unix]
   - wget =1.21.4  # [unix]
