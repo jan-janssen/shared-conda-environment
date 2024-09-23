@@ -25,7 +25,7 @@ pygraphviz==1.13
 pyiron==0.5.2
 pyiron_atomistics==0.6.12
 pyiron_base==0.10.1
-pysqa==0.1.21
+pysqa==0.1.22
 python-ternary==1.0.8
 torch==2.3.1
 seaborn==0.13.2
