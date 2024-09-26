@@ -57,12 +57,12 @@ jobs:
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
     - name: Conda config
       shell: bash -l {0}
@@ -109,12 +109,12 @@ jobs:
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
     - name: Conda config
       shell: bash -l {0}
@@ -162,12 +162,12 @@ jobs:
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
     - name: Conda config
       shell: bash -l {0}
@@ -214,12 +214,12 @@ jobs:
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        $value = Get-Content release_url/release_url.txt
+        $value = Get-Content release_url.txt
         echo "::set-output name=upload_url::$value"
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        $value = Get-Content date/date.txt
+        $value = Get-Content date.txt
         echo "::set-output name=date::$value"
     - name: Conda config
       shell: bash -l {0}
@@ -274,12 +274,12 @@ jobs:
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
     - name: Build Constructor
       shell: bash -l {0}
@@ -329,12 +329,12 @@ jobs:
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
     - name: Build Constructor
       shell: bash -l {0}
@@ -383,12 +383,12 @@ jobs:
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
     - name: Build Constructor
       shell: bash -l {0}
@@ -437,12 +437,12 @@ jobs:
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        $value = Get-Content release_url/release_url.txt
+        $value = Get-Content release_url.txt
         echo "::set-output name=upload_url::$value"
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        $value = Get-Content date/date.txt
+        $value = Get-Content date.txt
         echo "::set-output name=date::$value"
     - name: Build Constructor
       shell: bash -l {0}
