@@ -47,11 +47,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
@@ -99,11 +99,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
@@ -152,11 +152,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
@@ -204,11 +204,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
@@ -264,11 +264,11 @@ jobs:
         miniforge-version: latest
         condarc-file: .condarc
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
@@ -319,11 +319,11 @@ jobs:
         condarc-file: .condarc
         architecture: x64
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
@@ -373,11 +373,11 @@ jobs:
         miniforge-version: latest
         condarc-file: .condarc
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
@@ -427,11 +427,11 @@ jobs:
         miniforge-version: latest
         condarc-file: .condarc
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
