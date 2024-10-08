@@ -34,7 +34,7 @@ dependencies:
   - mkl =2023.2.0  # [x64]
   - mpi4py =3.1.6
   - nglview =3.1.2 
-  - pre-commit =3.8.0
+  - pre-commit =4.0.0
   - psycopg2 =2.9.9
   - pyauthenticator =0.2.0  # [unix]
   - pygraphviz =1.14
