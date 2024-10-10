@@ -3,7 +3,7 @@ atomistics==0.1.32
 black==24.10.0
 coverage==7.6.2
 dynaphopy==1.17.16
-executorlib==0.0.2
+executorlib==0.0.3
 gmailsorter==0.1.3
 grayskull==2.7.3
 gunicorn==23.0.0
