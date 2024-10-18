@@ -9,7 +9,7 @@ dependencies:
   - conda-smithy =3.42.0
   - coverage =7.6.3
   - dynaphopy =1.17.16  # [unix]
-  - executorlib =0.0.2
+  - executorlib =0.0.4
   - ffmpeg =7.0.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.38.0  # [linux]
@@ -20,7 +20,7 @@ dependencies:
   - grayskull =2.7.3
   - gunicorn =23.0.0  # [unix]
   - h5io =0.2.4
-  - h5io_browser =0.1.2
+  - h5io_browser =0.1.4
   - iprpy-data =2023.07.25
   - jupyterlab =4.2.5
   - lammps =2024.06.27=*openmpi*  # [unix]
@@ -40,8 +40,8 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.6.13
-  - pyiron_base =0.10.2
+  - pyiron_atomistics =0.6.14
+  - pyiron_base =0.10.4
   - pymace =0.3.6  # [unix64]
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.1.22
