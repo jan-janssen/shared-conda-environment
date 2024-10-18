@@ -3,12 +3,12 @@ atomistics==0.1.32
 black==24.10.0
 coverage==7.6.3
 dynaphopy==1.17.16
-executorlib==0.0.2
+executorlib==0.0.4
 gmailsorter==0.1.3
 grayskull==2.7.3
 gunicorn==23.0.0
 h5io==0.2.4
-h5io_browser==0.1.2
+h5io_browser==0.1.4
 jupyterlab==4.2.5
 langchain==0.3.3
 langchain-anthropic==0.2.3
@@ -23,7 +23,7 @@ psycopg2==2.9.9
 pyauthenticator==0.2.0
 pygraphviz==1.14
 pyiron==0.5.2
-pyiron_atomistics==0.6.13
+pyiron_atomistics==0.6.14
 pyiron_base==0.10.4
 pysqa==0.1.22
 python-ternary==1.0.8
