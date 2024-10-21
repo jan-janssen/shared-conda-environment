@@ -1,7 +1,7 @@
 ase==3.23.0
 atomistics==0.1.32
 black==24.10.0
-coverage==7.6.3
+coverage==7.6.4
 dynaphopy==1.17.16
 executorlib==0.0.4
 gmailsorter==0.1.3
