@@ -9,7 +9,7 @@ grayskull==2.7.3
 gunicorn==23.0.0
 h5io==0.2.4
 h5io_browser==0.1.4
-jupyterlab==4.2.5
+jupyterlab==4.3.0
 langchain==0.3.4
 langchain-anthropic==0.2.3
 langchain-experimental==0.3.2
