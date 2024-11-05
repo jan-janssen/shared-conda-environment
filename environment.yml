@@ -44,7 +44,7 @@ dependencies:
   - pyiron_base =0.10.6
   - pymace =0.3.6  # [unix64]
   - pymov2gif =0.0.2  # [unix]
-  - pysqa =0.2.0
+  - pysqa =0.2.1
   - python =3.12.5
   - python-ace =0.3.0 # [unix64]
   - python-ternary =1.0.8
