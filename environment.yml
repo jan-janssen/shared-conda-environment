@@ -6,7 +6,7 @@ dependencies:
   - atomistics =0.1.32
   - black =24.10.0
   - conda =24.9.1
-  - conda-smithy =3.42.0
+  - conda-smithy =3.44.7
   - coverage =7.6.7
   - dynaphopy =1.17.16  # [unix]
   - executorlib =0.0.4
