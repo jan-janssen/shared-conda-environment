@@ -9,7 +9,7 @@ dependencies:
   - conda-smithy =3.44.7
   - coverage =7.6.7
   - dynaphopy =1.17.16  # [unix]
-  - executorlib =0.0.4
+  - executorlib =0.0.5
   - ffmpeg =7.0.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.38.0  # [linux]
@@ -40,11 +40,11 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.6.16
-  - pyiron_base =0.10.7
+  - pyiron_atomistics =0.6.17
+  - pyiron_base =0.10.8
   - pymace =0.3.6  # [unix64]
   - pymov2gif =0.0.2  # [unix]
-  - pysqa =0.2.1
+  - pysqa =0.2.2
   - python =3.12.5
   - python-ace =0.3.0 # [unix64]
   - python-ternary =1.0.8
