@@ -5,7 +5,7 @@ dependencies:
   - ase =3.23.0
   - atomistics =0.1.32
   - black =24.10.0
-  - conda =24.9.1
+  - conda =24.9.2
   - conda-smithy =3.44.7
   - coverage =7.6.7
   - dynaphopy =1.17.16  # [unix]
