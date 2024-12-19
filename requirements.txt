@@ -15,7 +15,7 @@ langchain-anthropic==0.3.0
 langchain-experimental==0.3.3
 langchain-openai==0.2.12
 lxml==5.3.0 
-matplotlib==3.9.3
+matplotlib==3.10.0
 mkl==2023.2.0
 mpi4py==3.1.6
 pre-commit==4.0.1
@@ -23,8 +23,8 @@ psycopg2==2.9.9
 pyauthenticator==0.2.0
 pygraphviz==1.14
 pyiron==0.5.2
-pyiron_atomistics==0.6.18
-pyiron_base==0.10.9
+pyiron_atomistics==0.6.19
+pyiron_base==0.10.10
 pysqa==0.2.2
 python-ternary==1.0.8
 torch==2.4.1
