@@ -7,7 +7,7 @@ dependencies:
   - black =24.10.0
   - conda =24.11.0
   - conda-smithy =3.44.7
-  - coverage =7.6.9
+  - coverage =7.6.10
   - dynaphopy =1.17.16  # [unix]
   - executorlib =0.0.5
   - ffmpeg =7.0.1  # [unix]
