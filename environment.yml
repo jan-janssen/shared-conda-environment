@@ -48,7 +48,7 @@ dependencies:
   - python =3.12.5
   - python-ace =0.3.0 # [unix64]
   - python-ternary =1.0.8
-  - pytorch =2.5.0  # [unix]
+  - pytorch =2.5.1  # [unix]
   - qe =7.0  # [unix64]
   - seaborn =0.13.2
   - sphinxdft =3.1  # [linux]
