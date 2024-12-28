@@ -30,12 +30,12 @@ jobs:
     - name: Date File 
       run: echo "${{ steps.date.outputs.date }}" > date.txt
     - name: Save Release URL File for publish
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: release_url
         path: release_url.txt
     - name: Save Date File for publish
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: date
         path: date.txt
@@ -47,33 +47,33 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        miniforge-variant: Mambaforge
-        channels: conda-forge
-        channel-priority: strict
-        activate-environment: my-env
+        miniforge-version: latest
+        condarc-file: .condarc
         environment-file: .ci_support/environment.yml
-        use-mamba: true
     - name: Test
       shell: bash -l {0}
       timeout-minutes: 30
@@ -99,33 +99,34 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        miniforge-variant: Mambaforge
-        channels: conda-forge
-        channel-priority: strict
-        activate-environment: my-env
+        miniforge-version: latest
+        condarc-file: .condarc
+        architecture: x64
         environment-file: .ci_support/environment.yml
-        use-mamba: true
     - name: Test
       shell: bash -l {0}
       timeout-minutes: 30
@@ -144,6 +145,58 @@ jobs:
         asset_name: env-osx-x64-${{ steps.get_date_info.outputs.date }}.yml
         asset_content_type: text/plain
 
+  build_macarm_environment:
+    name: macarm_environment
+    needs: [createrelease]
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Load Release URL File from release job
+      uses: actions/download-artifact@v4
+      with:
+        name: release_url
+    - name: Load Date File from release job
+      uses: actions/download-artifact@v4
+      with:
+        name: date
+    - name: Get Release File Name & Upload URL
+      id: get_release_info
+      run: |
+        value=`cat release_url.txt`
+        echo ::set-output name=upload_url::$value
+    - name: Get Release File Name & Upload URL
+      id: get_date_info
+      run: |
+        value=`cat date.txt`
+        echo ::set-output name=date::$value
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        environment-file: .ci_support/environment.yml
+    - name: Test
+      shell: bash -l {0}
+      timeout-minutes: 30
+      run: |
+        ./.ci_support/convert_macarm.sh
+        cat environment.yml
+        python .ci_support/dryrun.py environment.yml env-osx-arm-${{ steps.get_date_info.outputs.date }}.yml 
+    - name: Upload Release Asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.get_release_info.outputs.upload_url }}
+        asset_path: env-osx-arm-${{ steps.get_date_info.outputs.date }}.yml
+        asset_name: env-osx-arm-${{ steps.get_date_info.outputs.date }}.yml
+        asset_content_type: text/plain
+
   build_windows_environment:
     name: windows_environment
     needs: [createrelease]
@@ -151,33 +204,33 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        $value = Get-Content release_url/release_url.txt
+        $value = Get-Content release_url.txt
         echo "::set-output name=upload_url::$value"
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        $value = Get-Content date/date.txt
+        $value = Get-Content date.txt
         echo "::set-output name=date::$value"
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        miniforge-variant: Mambaforge
-        channels: conda-forge
-        channel-priority: strict
-        activate-environment: my-env
+        miniforge-version: latest
+        condarc-file: .condarc
         environment-file: .ci_support/environment.yml
-        use-mamba: true
     - name: Test
       shell: bash -l {0}
       timeout-minutes: 30
@@ -202,31 +255,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: conda-incubator/setup-miniconda@v2.2.0
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        mamba-version: "*"
-        channels: conda-forge
-        miniforge-variant: Mambaforge
-        channel-priority: strict
-        auto-update-conda: true
+        miniforge-version: latest
+        condarc-file: .condarc
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
     - name: Build Constructor
       shell: bash -l {0}
@@ -256,31 +309,32 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: conda-incubator/setup-miniconda@v2.2.0
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        mamba-version: "*"
-        channels: conda-forge
-        miniforge-variant: Mambaforge
-        channel-priority: strict
-        auto-update-conda: true
+        miniforge-version: latest
+        condarc-file: .condarc
+        architecture: x64
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        value=`cat release_url/release_url.txt`
+        value=`cat release_url.txt`
         echo ::set-output name=upload_url::$value
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        value=`cat date/date.txt`
+        value=`cat date.txt`
         echo ::set-output name=date::$value
     - name: Build Constructor
       shell: bash -l {0}
@@ -304,37 +358,91 @@ jobs:
         asset_name: conda-${{ steps.get_date_info.outputs.date }}-MacOSX-x86_64.pkg 
         asset_content_type: application/zip
 
+  build_macarm_constructor:
+    name: macarm_constructor
+    needs: [createrelease]
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+    - name: Load Release URL File from release job
+      uses: actions/download-artifact@v4
+      with:
+        name: release_url
+    - name: Load Date File from release job
+      uses: actions/download-artifact@v4
+      with:
+        name: date
+    - name: Get Release File Name & Upload URL
+      id: get_release_info
+      run: |
+        value=`cat release_url.txt`
+        echo ::set-output name=upload_url::$value
+    - name: Get Release File Name & Upload URL
+      id: get_date_info
+      run: |
+        value=`cat date.txt`
+        echo ::set-output name=date::$value
+    - name: Build Constructor
+      shell: bash -l {0}
+      run: |
+        conda install -y --name test -c conda-forge constructor
+        mkdir build
+        ./.ci_support/convert_macarm.sh
+        cat environment.yml
+        constructor -v --output-dir=build --platform="osx-arm64" constructor
+        mv ./build/shared-conda-environment-0.0.0-MacOSX-arm64.pkg ./build/$FILENAME
+      env:
+        FILENAME: conda-${{ steps.get_date_info.outputs.date }}-MacOSX-arm64.pkg
+    - name: Upload Release Asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.get_release_info.outputs.upload_url }}
+        asset_path: ./build/conda-${{ steps.get_date_info.outputs.date }}-MacOSX-arm64.pkg
+        asset_name: conda-${{ steps.get_date_info.outputs.date }}-MacOSX-arm64.pkg 
+        asset_content_type: application/zip
+  
   build_windows_constructor:
     name: windows_constructor
     needs: [createrelease]
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: conda-incubator/setup-miniconda@v2.2.0
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
       with:
         python-version: "3.12"
-        mamba-version: "*"
-        channels: conda-forge
-        miniforge-variant: Mambaforge
-        channel-priority: strict
-        auto-update-conda: true
+        miniforge-version: latest
+        condarc-file: .condarc
     - name: Load Release URL File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: release_url
     - name: Load Date File from release job
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: date
     - name: Get Release File Name & Upload URL
       id: get_release_info
       run: |
-        $value = Get-Content release_url/release_url.txt
+        $value = Get-Content release_url.txt
         echo "::set-output name=upload_url::$value"
     - name: Get Release File Name & Upload URL
       id: get_date_info
       run: |
-        $value = Get-Content date/date.txt
+        $value = Get-Content date.txt
         echo "::set-output name=date::$value"
     - name: Build Constructor
       shell: bash -l {0}
