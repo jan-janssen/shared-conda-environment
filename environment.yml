@@ -9,7 +9,7 @@ dependencies:
   - conda-smithy =3.44.7
   - coverage =7.6.10
   - dynaphopy =1.17.16  # [unix]
-  - executorlib =0.0.5
+  - executorlib =0.0.7
   - ffmpeg =7.0.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.38.0  # [linux]
