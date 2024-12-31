@@ -16,7 +16,7 @@ langchain-experimental==0.3.4
 langchain-openai==0.2.14
 lxml==5.3.0 
 matplotlib==3.10.0
-mkl==2023.2.0
+mkl==2024.2.0
 mpi4py==3.1.6
 mypy==1.14.0 
 pre-commit==4.0.1
