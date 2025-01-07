@@ -5,7 +5,7 @@ dependencies:
   - ase =3.23.0
   - atomistics =0.1.32
   - black =24.10.0
-  - conda =24.11.0
+  - conda =24.11.2
   - conda-smithy =3.44.7
   - coverage =7.6.10
   - dynaphopy =1.17.16  # [unix]
@@ -29,7 +29,7 @@ dependencies:
   - langchain-experimental =0.3.4
   - langchain-openai =0.2.14
   - lxml =5.3.0
-  - mamba =1.5.10
+  - mamba =2.0.5
   - matplotlib-base =3.10.0
   - mkl =2023.2.0  # [x64]
   - mpi4py =3.1.6
