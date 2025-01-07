@@ -22,7 +22,7 @@ dependencies:
   - h5io =0.2.4
   - h5io_browser =0.1.4
   - iprpy-data =2023.07.25
-  - jupyterlab =4.2.5
+  - jupyterlab =4.3.4
   - lammps =2024.06.27=*openmpi*  # [unix]
   - langchain =0.3.13
   - langchain-anthropic =0.3.1
@@ -34,7 +34,7 @@ dependencies:
   - mkl =2023.2.0  # [x64]
   - mpi4py =3.1.6
   - mypy =1.14.0 
-  - nglview =3.1.2 
+  - nglview =3.1.4
   - pre-commit =4.0.1
   - psycopg2 =2.9.9
   - pyauthenticator =0.2.0  # [unix]
