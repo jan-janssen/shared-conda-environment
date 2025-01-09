@@ -2,14 +2,14 @@ name: base
 channels:
   - conda-forge
 dependencies:
-  - ase =3.23.0
-  - atomistics =0.1.32
+  - ase =3.24.0
+  - atomistics =0.1.33
   - black =24.10.0
   - conda =24.11.2
   - conda-smithy =3.45.1
   - coverage =7.6.10
   - dynaphopy =1.17.16  # [unix]
-  - executorlib =0.0.5
+  - executorlib =0.0.7
   - ffmpeg =7.0.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.38.0  # [linux]
@@ -20,7 +20,7 @@ dependencies:
   - grayskull =2.7.6
   - gunicorn =23.0.0  # [unix]
   - h5io =0.2.4
-  - h5io_browser =0.1.4
+  - h5io_browser =0.1.5
   - iprpy-data =2023.07.25
   - jupyterlab =4.3.4
   - lammps =2024.06.27=*openmpi*  # [unix]
@@ -41,11 +41,11 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.6.19
-  - pyiron_base =0.10.10
+  - pyiron_atomistics =0.6.20
+  - pyiron_base =0.10.11
   - pymace =0.3.6  # [unix64]
   - pymov2gif =0.0.2  # [unix]
-  - pysqa =0.2.2
+  - pysqa =0.2.3
   - python =3.12.5
   - python-ace =0.3.0 # [unix64]
   - python-ternary =1.0.8
