@@ -5,6 +5,7 @@ dependencies:
   - ase =3.24.0
   - atomistics =0.1.33
   - black =24.10.0
+  - calphy =1.3.13  # [unix]
   - conda =24.11.2
   - conda-smithy =3.45.1
   - coverage =7.6.10
