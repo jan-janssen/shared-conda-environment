@@ -34,7 +34,7 @@ dependencies:
   - matplotlib-base =3.10.0
   - mkl =2023.2.0  # [x64]
   - mpi4py =3.1.6
-  - mypy =1.14.1 
+  - mypy =1.15.0 
   - nglview =3.1.4
   - notebook_intelligence =0.8.1
   - pre-commit =4.1.0
