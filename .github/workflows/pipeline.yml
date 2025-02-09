@@ -45,6 +45,7 @@ jobs:
         python .ci_support/dryrun.py environment.yml env-linux-x64.yml 
     - uses: actions/upload-artifact@v4
       with:
+        name: env-linux-x64.yml
         path: env-linux-x64.yml
 
   linux_x64_build_constructor:
@@ -112,6 +113,7 @@ jobs:
         python .ci_support/dryrun.py environment.yml env-osx-x64.yml
     - uses: actions/upload-artifact@v4
       with:
+        name: env-osx-x64.yml
         path: env-osx-x64.yml
 
   macos_x64_build_constructor:
@@ -179,6 +181,7 @@ jobs:
         python .ci_support/dryrun.py environment.yml env-osx-arm.yml
     - uses: actions/upload-artifact@v4
       with:
+        name: env-osx-arm.yml
         path: env-osx-arm.yml
 
   macos_arm_build_constructor:
@@ -245,6 +248,7 @@ jobs:
         python .ci_support/dryrun.py environment.yml env-windows-x64.yml
     - uses: actions/upload-artifact@v4
       with:
+        name: env-windows-x64.yml
         path: env-windows-x64.yml
 
   win_x64_build_constructor:
