@@ -1,0 +1,284 @@
+name: Pipeline
+
+on:
+  pull_request:
+
+jobs:
+  linux_x64_test_environment:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: convert
+      shell: bash -l {0}
+      run: |
+        ./.ci_support/convert_linux.sh
+        cat environment.yml
+        echo -e "channels:\n  - conda-forge\n" > .condarc
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        environment-file: environment.yml
+
+  linux_x64_build_environment:
+    needs: [linux_x64_test_environment]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Conda config
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        environment-file: .ci_support/environment.yml
+    - name: Test
+      shell: bash -l {0}
+      timeout-minutes: 30
+      run: |
+        ./.ci_support/convert_linux.sh
+        cat environment.yml
+        python .ci_support/dryrun.py environment.yml env-linux-x64.yml 
+    - uses: actions/upload-artifact@v4
+      with:
+        path: env-linux-x64.yml
+
+  linux_x64_build_constructor:
+    needs: [linux_x64_test_environment]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Conda config
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+    - name: Build Constructor
+      shell: bash -l {0}
+      run: |
+        conda install -y --name test -c conda-forge constructor
+        mkdir build
+        ./.ci_support/convert_linux.sh
+        cat environment.yml
+        constructor -v --output-dir=build --platform="linux-64" constructor
+
+  macos_x64_test_environment:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: convert
+      shell: bash -l {0}
+      run: |
+        ./.ci_support/convert_macos.sh
+        cat environment.yml
+        echo -e "channels:\n  - conda-forge\n" > .condarc
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        architecture: x64
+        environment-file: environment.yml
+
+  macos_x64_build_environment:
+    needs: [macos_x64_test_environment]
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        architecture: x64
+        environment-file: .ci_support/environment.yml
+    - name: Test
+      shell: bash -l {0}
+      timeout-minutes: 30
+      run: |
+        ./.ci_support/convert_macos.sh
+        cat environment.yml
+        python .ci_support/dryrun.py environment.yml env-osx-x64.yml
+    - uses: actions/upload-artifact@v4
+      with:
+        path: env-osx-x64.yml
+
+  macos_x64_build_constructor:
+    needs: [macos_x64_test_environment]
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        architecture: x64
+    - name: Build Constructor
+      shell: bash -l {0}
+      run: |
+        conda install -y --name test -c conda-forge constructor
+        mkdir build
+        ./.ci_support/convert_macos.sh
+        cat environment.yml
+        constructor -v --output-dir=build --platform="osx-64" constructor
+
+  macos_arm_test_environment:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: convert
+      shell: bash -l {0}
+      run: |
+        ./.ci_support/convert_macarm.sh
+        cat environment.yml
+        echo -e "channels:\n  - conda-forge\n" > .condarc
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        environment-file: environment.yml
+
+  macos_arm_build_environment:
+    needs: [macos_arm_test_environment]
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        environment-file: .ci_support/environment.yml
+    - name: Test
+      shell: bash -l {0}
+      timeout-minutes: 30
+      run: |
+        ./.ci_support/convert_macarm.sh
+        cat environment.yml
+        python .ci_support/dryrun.py environment.yml env-osx-arm.yml
+    - uses: actions/upload-artifact@v4
+      with:
+        path: env-osx-arm.yml
+
+  macos_arm_build_constructor:
+    needs: [macos_arm_test_environment]
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+    - name: Build Constructor
+      shell: bash -l {0}
+      run: |
+        conda install -y --name test -c conda-forge constructor
+        mkdir build
+        ./.ci_support/convert_macarm.sh
+        cat environment.yml
+        constructor -v --output-dir=build --platform="osx-arm64" constructor
+
+  win_x64_test_environment:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: convert
+      shell: bash -l {0}
+      run: |
+        ./.ci_support/convert_windows.sh
+        cat environment.yml
+        echo -e "channels:\n  - conda-forge\n" > .condarc
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        environment-file: environment.yml
+
+  win_x64_build_environment:
+    needs: [win_x64_test_environment]
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - name: Setup Mambaforge
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+        environment-file: .ci_support/environment.yml
+    - name: Test
+      shell: bash -l {0}
+      timeout-minutes: 30
+      run: |
+        ./.ci_support/convert_windows.sh
+        cat environment.yml
+        python .ci_support/dryrun.py environment.yml env-windows-x64.yml
+    - uses: actions/upload-artifact@v4
+      with:
+        path: env-windows-x64.yml
+
+  win_x64_build_constructor:
+    needs: [win_x64_test_environment]
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Conda config
+      shell: bash -l {0}
+      run: echo -e "channels:\n  - conda-forge\n" > .condarc
+    - uses: conda-incubator/setup-miniconda@v3
+      with:
+        python-version: "3.12"
+        miniforge-version: latest
+        condarc-file: .condarc
+    - name: Build Constructor
+      shell: bash -l {0}
+      run: |
+        conda install -y --name test -c conda-forge constructor
+        mkdir build
+        ./.ci_support/convert_windows.sh
+        cat environment.yml
+        constructor -v --output-dir=build --platform="win-64" constructor
+
+  autobot:
+    needs: [win_x64_build_constructor, win_x64_build_environment, macos_arm_build_constructor, macos_arm_build_environment, macos_x64_build_constructor, macos_x64_build_environment, linux_x64_build_constructor, linux_x64_build_environment]
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    steps:
+      - name: Enable auto-merge for bot PRs
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
