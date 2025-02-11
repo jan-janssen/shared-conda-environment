@@ -8,7 +8,7 @@ dependencies:
   - calphy =1.3.13  # [unix]
   - conda =24.11.3
   - conda-smithy =3.45.1
-  - coverage =7.6.10
+  - coverage =7.6.12
   - dynaphopy =1.17.16  # [unix]
   - executorlib =0.1.0
   - ffmpeg =7.0.1  # [unix]
