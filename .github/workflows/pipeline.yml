@@ -32,7 +32,8 @@ jobs:
           branch: ${{ github.event.pull_request.head.ref }}
 
   linux_x64_test_environment:
-    if: (github.actor != 'dependabot[bot]') || (github.actor != github.triggering_actor)
+    needs: [dependabot]
+    if: always() && contains(needs.*.result, 'skipped')
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -98,7 +99,8 @@ jobs:
         constructor -v --output-dir=build --platform="linux-64" constructor
 
   macos_x64_test_environment:
-    if: (github.actor != 'dependabot[bot]') || (github.actor != github.triggering_actor)
+    needs: [dependabot]
+    if: always() && contains(needs.*.result, 'skipped')
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -169,7 +171,8 @@ jobs:
         constructor -v --output-dir=build --platform="osx-64" constructor
 
   macos_arm_test_environment:
-    if: (github.actor != 'dependabot[bot]') || (github.actor != github.triggering_actor)
+    needs: [dependabot]
+    if: always() && contains(needs.*.result, 'skipped')
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -237,7 +240,8 @@ jobs:
         constructor -v --output-dir=build --platform="osx-arm64" constructor
 
   win_x64_test_environment:
-    if: (github.actor != 'dependabot[bot]') || (github.actor != github.triggering_actor)
+    needs: [dependabot]
+    if: always() && contains(needs.*.result, 'skipped')
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
