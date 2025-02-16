@@ -6,7 +6,7 @@ on:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: (github.event.commits[0].author.name == 'dependabot[bot]')
+    if: (github.event.head.user.login == 'dependabot[bot]')
     permissions:
       contents: write
       pull-requests: write
@@ -32,7 +32,7 @@ jobs:
           branch: ${{ github.event.pull_request.head.ref }}
 
   linux_x64_test_environment:
-    if: (github.event.commits[0].author.name != 'dependabot[bot]')
+    if: (github.event.head.user.login != 'dependabot[bot]')
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -98,7 +98,7 @@ jobs:
         constructor -v --output-dir=build --platform="linux-64" constructor
 
   macos_x64_test_environment:
-    if: (github.event.commits[0].author.name != 'dependabot[bot]')
+    if: (github.event.head.user.login != 'dependabot[bot]')
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -169,7 +169,7 @@ jobs:
         constructor -v --output-dir=build --platform="osx-64" constructor
 
   macos_arm_test_environment:
-    if: (github.event.commits[0].author.name != 'dependabot[bot]')
+    if: (github.event.head.user.login != 'dependabot[bot]')
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -237,7 +237,7 @@ jobs:
         constructor -v --output-dir=build --platform="osx-arm64" constructor
 
   win_x64_test_environment:
-    if: (github.event.commits[0].author.name != 'dependabot[bot]')
+    if: (github.event.head.user.login != 'dependabot[bot]')
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
