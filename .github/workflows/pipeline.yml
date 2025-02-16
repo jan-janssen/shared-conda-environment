@@ -7,12 +7,13 @@ jobs:
   dependabot:
     runs-on: ubuntu-latest
     if: (github.actor == 'dependabot[bot]')
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref }} # Check out the head of the actual branch, not the PR
-          fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
-          token: ${{ secrets.DEPENDABOT_WORKFLOW_TOKEN }}
       - name: UpdateEnvironmentFile
         shell: bash -l {0}
         run: |
