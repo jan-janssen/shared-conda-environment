@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v4
     - name : check
       shell: bash -l {0}
-      run: python .ci_support/checktitle.py ${{ github.event.pull_request.title }}
+      run: python .ci_support/checktitle.py "${{ github.event.pull_request.title }}"
 
   pip_check:
     needs: [debug]
