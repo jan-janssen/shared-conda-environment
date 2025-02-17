@@ -6,6 +6,6 @@ if __name__ == "__main__":
         disable_lst = f.readlines()
     print(pr_title, disable_lst)
     for disable in disable_lst:
-        print(disable, disable in pr_title)
-        if len(disable.rstrip()) > 0 and disable in pr_title:
+        print(disable, disable.rstrip() in pr_title)
+        if len(disable.rstrip()) > 0 and disable.rstrip() in pr_title:
             sys.exit(1)
