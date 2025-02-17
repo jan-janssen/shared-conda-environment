@@ -21,10 +21,11 @@ jobs:
           to=$(echo "${{ github.event.pull_request.title }}" | awk '{print $6}')
           sed -i "/${package}/s/${from}/${to}/g" environment.yml
       - name: UpdateDependabotPR commit
+        continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "[dependabot skip] Update environment" -a && exit 0
+          git commit -m "[dependabot skip] Update environment" -a
       - name: UpdateDependabotPR push
         uses: ad-m/github-push-action@master
         with:
