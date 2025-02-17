@@ -4,7 +4,38 @@ on:
   pull_request:
 
 jobs:
+  dependabot_check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }} # Check out the head of the actual branch, not the PR
+      - name: UpdateEnvironmentFile
+        shell: bash -l {0}
+        run: |
+          package=$(echo "${{ github.event.pull_request.title }}" | awk '{print $2}')
+          from=$(echo "${{ github.event.pull_request.title }}" | awk '{print $4}')
+          to=$(echo "${{ github.event.pull_request.title }}" | awk '{print $6}')
+          sed -i "/${package}/s/${from}/${to}/g" environment.yml
+      - name: UpdateDependabotPR commit
+        continue-on-error: true
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "[dependabot skip] Update environment" -a
+      - name: UpdateDependabotPR push
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.event.pull_request.head.ref }}
+      - name: Validate last commit
+        shell: bash -l {0}
+        run: author=$(git log -1 --pretty=format:'%an'); if [[ "$author" == "github-actions[bot]" ]]; then exit 1; else echo $author; fi;
+
   linux_x64_test_environment:
+    needs: [dependabot_check]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -70,6 +101,7 @@ jobs:
         constructor -v --output-dir=build --platform="linux-64" constructor
 
   macos_x64_test_environment:
+    needs: [dependabot_check]
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -140,6 +172,7 @@ jobs:
         constructor -v --output-dir=build --platform="osx-64" constructor
 
   macos_arm_test_environment:
+    needs: [dependabot_check]
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -207,6 +240,7 @@ jobs:
         constructor -v --output-dir=build --platform="osx-arm64" constructor
 
   win_x64_test_environment:
+    needs: [dependabot_check]
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
