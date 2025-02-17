@@ -1,2 +1,3 @@
+mkl
 nglview
 torch
