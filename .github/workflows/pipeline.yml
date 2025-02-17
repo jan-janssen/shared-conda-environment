@@ -20,11 +20,10 @@ jobs:
           to=$(echo "${{ github.event.pull_request.title }}" | awk '{print $6}')
           sed -i "/${package}/s/${from}/${to}/g" environment.yml
       - name: UpdateDependabotPR commit
-        continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "[dependabot skip] Update environment" -a
+          git commit -m "[dependabot skip] Update environment" -a && echo "commit_status=success" >> $GITHUB_OUTPUT || echo "commit_status=failure" >> $GITHUB_OUTPUT
       - name: UpdateDependabotPR push
         uses: ad-m/github-push-action@master
         with:
@@ -32,7 +31,7 @@ jobs:
           github_token: ${{ secrets.DEPENDABOT_WORKFLOW_TOKEN }}
       - name: Validate last commit
         shell: bash -l {0}
-        run: author=$(git log -1 --pretty=format:'%an'); if [[ "$author" == "github-actions[bot]" ]]; then exit 1; else echo $author; fi;
+        run: status=${{ steps.vars.outputs.commit_status }}; echo "$status"; if [[ "$status" == "failure" ]]; then exit 1; fi;
 
   linux_x64_test_environment:
     needs: [dependabot_check]
