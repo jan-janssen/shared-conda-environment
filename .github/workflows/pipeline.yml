@@ -31,7 +31,7 @@ jobs:
         with:
           branch: ${{ github.event.pull_request.head.ref }}
       - name: Validate last commit
-        run: if [[ $(git log -1 --pretty=format:'%an') -eq "github-actions[bot]" ]]; then exit 1; fi;
+        run: if [[ "$(git log -1 --pretty=format:'%an')" -eq "github-actions[bot]" ]]; then exit 1; fi;
 
   linux_x64_test_environment:
     needs: [dependabot_check]
