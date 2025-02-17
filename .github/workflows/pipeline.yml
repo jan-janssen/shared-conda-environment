@@ -1,7 +1,8 @@
 name: Pipeline
 
 on:
-  pull_request:
+  pull_request_target:
+    branches: [ main ]
 
 jobs:
   dependabot_check:
