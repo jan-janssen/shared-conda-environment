@@ -31,7 +31,7 @@ jobs:
           github_token: ${{ secrets.DEPENDABOT_WORKFLOW_TOKEN }}
       - name: Validate last commit
         shell: bash -l {0}
-        run: status=${{ env.commit_status }}; echo "$status"; if [[ "$status" == "failure" ]]; then exit 1; fi;
+        run: status=${{ env.commit_status }}; echo "$status"; if [[ "$status" == "success" ]]; then exit 1; fi;
         
 
   linux_x64_test_environment:
