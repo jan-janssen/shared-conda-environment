@@ -1,15 +1,16 @@
 from setuptools import setup, find_packages
 
+with open("../disableautomerge.txt", "r") as f:
+    disable_lst = f.readlines()
+
 with open("../requirements.txt", "r") as f:
     install_requires = []
     for l in f.readlines():
-        if l.startswith("mkl=="):
-            pass   # mkl is not installed on linux, so it is not checked 
-        elif l.startswith("nglview=="):
-            pass   # nglview reports itself as 0.0.0 even if the correct version is installed
-        elif l.startswith("torch=="):
-            pass   # commonly an torch postbuild version is installed
-        else:
+        skip = False
+        for disable in disable_lst:
+            if l.startswith(disable + "=="):
+                skip = True
+        if not skip:
             install_requires.append(l)
 
 setup(
