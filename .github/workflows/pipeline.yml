@@ -32,7 +32,7 @@ jobs:
           branch: ${{ github.event.pull_request.head.ref }}
       - name: Validate last commit
         shell: bash -l {0}
-        run: author=$(git log -1 --pretty=format:'%an'); if [ "$author" -eq "github-actions[bot]" ]; then exit 1; else echo $author; fi;
+        run: author=$(git log -1 --pretty=format:'%an'); if [[ "$author" == "github-actions[bot]" ]]; then exit 1; else echo $author; fi;
 
   linux_x64_test_environment:
     needs: [dependabot_check]
