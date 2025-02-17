@@ -25,7 +25,7 @@ jobs:
       shell: bash -l {0}
       timeout-minutes: 30
       run: |
-        python ./.ci_support/setup.py install
+        pip install ./.ci_support --no-deps --no-build-isolation
         pip check
 
   linux_x64_test_environment:
