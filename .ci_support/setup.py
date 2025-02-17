@@ -8,8 +8,9 @@ with open("../requirements.txt", "r") as f:
     for l in f.readlines():
         skip = False
         for disable in disable_lst:
-            if l.startswith(disable + "=="):
+            if len(disable.rstrip()) > 0 and l.startswith(disable.rstrip() + "=="):
                 skip = True
+                break
         if not skip:
             install_requires.append(l)
 
