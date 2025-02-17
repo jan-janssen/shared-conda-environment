@@ -311,10 +311,7 @@ jobs:
     steps:
       - name: Ignore broken packages
         shell: bash -l {0}
-        run: |
-           if [[ "${{ github.event.pull_request.title }}" == *"mkl"* ]]; then exit 1; fi;
-           if [[ "${{ github.event.pull_request.title }}" == *"nglview"* ]]; then exit 1; fi;
-           if [[ "${{ github.event.pull_request.title }}" == *"torch"* ]]; then exit 1; fi;
+        run: python .ci_support/checktitle.py "${{ github.event.pull_request.title }}"
       - name: Enable auto-merge for bot PRs
         run: gh pr merge --auto --squash "$PR_URL"
         env:
