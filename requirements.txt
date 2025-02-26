@@ -12,7 +12,7 @@ h5io==0.2.4
 h5io_browser==0.1.6
 jupyterlab==4.3.5
 langchain==0.3.18
-langchain-anthropic==0.3.7
+langchain-anthropic==0.3.8
 langchain-experimental==0.3.4
 langchain-openai==0.3.7
 lxml==5.3.1 
@@ -27,8 +27,8 @@ psycopg2==2.9.9
 pyauthenticator==0.2.0
 pygraphviz==1.14
 pyiron==0.5.2
-pyiron_atomistics==0.6.23
-pyiron_base==0.11.1
+pyiron_atomistics==0.6.25
+pyiron_base==0.11.5
 pysqa==0.2.3
 python-ternary==1.0.8
 torch==2.4.1
