@@ -56,5 +56,5 @@ dependencies:
   - seaborn =0.13.2
   - sphinxdft =3.1  # [linux]
   - sqsgenerator =0.3
-  - tensorflow =2.17.0  # [unix]
+  - tensorflow =2.16.2  # [unix]
   - wget =1.21.4  # [unix]
