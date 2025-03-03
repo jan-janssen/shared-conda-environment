@@ -33,4 +33,4 @@ pysqa==0.2.3
 python-ternary==1.0.8
 torch==2.4.1
 seaborn==0.13.2
-tensorflow==2.16.2
+tensorflow==2.17.0
