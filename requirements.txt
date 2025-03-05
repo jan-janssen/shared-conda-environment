@@ -18,7 +18,7 @@ langchain-openai==0.3.7
 lxml==5.3.1 
 matplotlib==3.10.1
 mkl==2023.2.0
-mpi4py==3.1.6
+mpi4py==4.0.3
 nglview==3.1.4
 notebook_intelligence==1.1.2
 mypy==1.15.0
