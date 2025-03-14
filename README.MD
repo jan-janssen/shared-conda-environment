@@ -2,8 +2,7 @@
 Install the same conda environment on all your computers. The environments are centrally built using a [Github Action](https://docs.github.com/en/actions). 
 
 ## Update your computer
-Download the `environment.yml` file for the latest release for your operation system:
-https://github.com/jan-janssen/my-conda-environment/releases
+Download the `environment.yml` file for the [latest release](https://github.com/jan-janssen/my-conda-environment/releases) for your operation system.
 
 Install the environment in the `environment.yml` locally using:
 ```
@@ -13,8 +12,7 @@ mamba env update --name base --prune --file environment.yml
 While it is possible to replace the `mamba` command with the corresponding `conda` command, by just replacing `mamba` with `conda`, the use of `mamba` is highly recommended. 
 
 ## Setup a new computer
-In addition to the `environment.yml` files, the releases also include installers for Windows, MacOS and Linux:
-https://github.com/jan-janssen/my-conda-environment/releases
+In addition to the `environment.yml` files, the [releases](https://github.com/jan-janssen/my-conda-environment/releases) also include installers for Windows, MacOS and Linux.
 
 ## Keep the environments up to date
 This repository uses the [dependabot](https://github.com/dependabot) from Github, to receive automatic pull request when one of the dependencies in the `requirements.txt` file changes. 
