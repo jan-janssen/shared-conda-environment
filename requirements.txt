@@ -7,7 +7,7 @@ custodian==2024.10.16
 dynaphopy==1.17.16
 executorlib==0.4.2
 gmailsorter==0.1.3
-grayskull==2.7.6
+grayskull==2.8.0
 gunicorn==23.0.0
 h5io==0.2.4
 h5io_browser==0.1.8
