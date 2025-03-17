@@ -21,7 +21,7 @@ matplotlib==3.10.1
 mkl==2023.2.0
 mpi4py==3.1.6
 nglview==3.1.4
-notebook_intelligence==1.1.2
+notebook_intelligence==1.2.5
 mypy==1.15.0
 pre-commit==4.1.0
 psycopg2==2.9.9
