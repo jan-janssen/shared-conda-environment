@@ -32,7 +32,7 @@ pyiron-atomistics==0.7.2
 pyiron-base==0.11.8
 pysqa==0.2.4
 python-ternary==1.0.8
-pyxtal==1.0.6
+pyxtal==1.0.7
 torch==2.4.1
 seaborn==0.13.2
 tensorflow==2.17.0
