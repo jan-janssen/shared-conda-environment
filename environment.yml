@@ -39,7 +39,7 @@ dependencies:
   - mypy =1.15.0 
   - nglview =3.1.4
   - notebook_intelligence =1.1.2
-  - pre-commit =4.1.0
+  - pre-commit =4.2.0
   - psycopg2 =2.9.9
   - pyauthenticator =0.2.0  # [unix]
   - pygraphviz =1.14
