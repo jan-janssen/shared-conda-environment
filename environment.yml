@@ -27,7 +27,7 @@ dependencies:
   - iprpy-data =2023.07.25
   - jupyterlab =4.3.6
   - lammps =2024.06.27=*openmpi*  # [unix]
-  - langchain =0.3.21
+  - langchain =0.3.22
   - langchain-anthropic =0.3.10
   - langchain-experimental =0.3.4
   - langchain-openai =0.3.11
