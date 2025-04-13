@@ -50,7 +50,7 @@ dependencies:
   - pymace =0.3.10  # [unix64]
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.2.4
-  - python =3.12.5
+  - python =3.12.10
   - python-ace =0.3.1 # [unix64]
   - python-ternary =1.0.8
   - pytorch =2.4.1  # [unix]
