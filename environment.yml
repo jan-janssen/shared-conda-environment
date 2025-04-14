@@ -2,8 +2,8 @@ name: base
 channels:
   - conda-forge
 dependencies:
-  - ase =3.24.0
-  - atomistics =0.2.4
+  - ase =3.25.0
+  - atomistics =0.2.5
   - black =25.1.0
   - calphy =1.3.13  # [unix]
   - conda =25.1.1
@@ -44,8 +44,8 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.7.3
-  - pyiron_base =0.11.9
+  - pyiron_atomistics =0.7.4
+  - pyiron_base =0.11.10
   - pylammpsmpi =0.2.32
   - pymace =0.3.10  # [unix64]
   - pymov2gif =0.0.2  # [unix]
