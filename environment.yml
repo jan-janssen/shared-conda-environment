@@ -11,7 +11,7 @@ dependencies:
   - coverage =7.8.0
   - custodian =2024.10.16
   - dynaphopy =1.17.16  # [unix]
-  - executorlib =1.0.0
+  - executorlib =1.0.1
   - ffmpeg =7.0.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.38.0  # [linux]
@@ -45,7 +45,7 @@ dependencies:
   - pyiron =0.5.2
   - pyiron-data =0.0.30
   - pyiron_atomistics =0.7.4
-  - pyiron_base =0.11.9
+  - pyiron_base =0.11.10
   - pylammpsmpi =0.2.32
   - pymace =0.3.10  # [unix64]
   - pymov2gif =0.0.2  # [unix]
