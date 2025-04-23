@@ -12,7 +12,7 @@ gunicorn==23.0.0
 h5io==0.2.5
 h5io_browser==0.1.10
 jupyterlab==4.3.6
-langchain==0.3.23
+langchain==0.3.24
 langchain-anthropic==0.3.12
 langchain-experimental==0.3.4
 langchain-openai==0.3.14
