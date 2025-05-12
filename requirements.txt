@@ -33,6 +33,6 @@ pylammpsmpi==0.2.34
 pysqa==0.2.4
 python-ternary==1.0.8
 pyxtal==1.0.8
-torch==2.4.1
+torch==2.7.0
 seaborn==0.13.2
 tensorflow==2.17.0
