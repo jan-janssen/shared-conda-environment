@@ -54,7 +54,7 @@ dependencies:
   - python-ace =0.3.1 # [unix64]
   - python-ternary =1.0.8
   - pytorch =2.4.1  # [unix]
-  - pyxtal =1.0.7
+  - pyxtal =1.0.8
   - qe =7.2  # [unix64]
   - seaborn =0.13.2
   - sphinxdft =3.1  # [linux]
