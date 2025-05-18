@@ -44,8 +44,8 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.7.6
-  - pyiron_base =0.11.13
+  - pyiron_atomistics =0.7.7
+  - pyiron_base =0.12.0
   - pylammpsmpi =0.2.34
   - pymace =0.3.10  # [unix64]
   - pymov2gif =0.0.2  # [unix]
