@@ -27,8 +27,8 @@ psycopg2==2.9.9
 pyauthenticator==0.2.0
 pygraphviz==1.14
 pyiron==0.5.2
-pyiron-atomistics==0.7.6
-pyiron-base==0.11.12
+pyiron-atomistics==0.7.7
+pyiron-base==0.12.0
 pylammpsmpi==0.2.34
 pysqa==0.2.4
 python-ternary==1.0.8
