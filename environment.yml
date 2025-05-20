@@ -6,7 +6,7 @@ dependencies:
   - atomistics =0.2.5
   - black =25.1.0
   - calphy =1.4.2  # [unix]
-  - conda =25.1.1
+  - conda =25.3.1
   - conda-smithy =3.47.1
   - coverage =7.8.0
   - custodian =2024.10.16
@@ -39,7 +39,7 @@ dependencies:
   - mypy =1.15.0 
   - nglview =3.1.4
   - pre-commit =4.2.0
-  - psycopg2 =2.9.9
+  - psycopg2 =2.9.10
   - pyauthenticator =0.2.0  # [unix]
   - pygraphviz =1.14
   - pyiron =0.5.2
