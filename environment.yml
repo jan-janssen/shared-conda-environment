@@ -49,7 +49,7 @@ dependencies:
   - pylammpsmpi =0.2.35
   - pymace =0.3.10  # [unix64]
   - pymov2gif =0.0.2  # [unix]
-  - pysqa =0.2.4
+  - pysqa =0.2.5
   - python =3.12.10
   - python-ace =0.3.1 # [unix64]
   - python-ternary =1.0.8
