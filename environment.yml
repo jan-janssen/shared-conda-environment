@@ -8,7 +8,7 @@ dependencies:
   - calphy =1.4.2  # [unix]
   - conda =25.3.1
   - conda-smithy =3.50.0
-  - coverage =7.9.0
+  - coverage =7.9.1
   - custodian =2024.10.16
   - dynaphopy =1.17.16  # [unix]
   - executorlib =1.2.0
