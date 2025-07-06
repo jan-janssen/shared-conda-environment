@@ -10,7 +10,7 @@ gmailsorter==0.1.3
 grayskull==2.8.0
 gunicorn==23.0.0
 h5io==0.2.5
-h5io_browser==0.1.11
+h5io_browser==0.1.12
 jupyterlab==4.4.4
 langchain==0.3.26
 langchain-anthropic==0.3.16
@@ -27,8 +27,8 @@ psycopg2==2.9.10
 pyauthenticator==0.2.0
 pygraphviz==1.14
 pyiron==0.5.2
-pyiron-atomistics==0.7.8
-pyiron-base==0.13.0
+pyiron-atomistics==0.7.9
+pyiron-base==0.13.1
 pylammpsmpi==0.2.35
 pysqa==0.2.6
 python-ternary==1.0.8
