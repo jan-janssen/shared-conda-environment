@@ -23,7 +23,7 @@ dependencies:
   - grayskull =2.8.0
   - gunicorn =23.0.0  # [unix]
   - h5io =0.2.5
-  - h5io_browser =0.1.12
+  - h5io_browser =0.1.13
   - iprpy-data =2023.07.25
   - jupyterlab =4.4.4
   - lammps =2024.06.27=*openmpi*  # [unix]
@@ -44,12 +44,12 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.7.10
-  - pyiron_base =0.13.1
+  - pyiron_atomistics =0.7.11
+  - pyiron_base =0.13.2
   - pylammpsmpi =0.2.36
   - pymace =0.3.10  # [unix64]
   - pymov2gif =0.0.2  # [unix]
-  - pysqa =0.2.6
+  - pysqa =0.2.7
   - python =3.12.10
   - python-ace =0.3.1 # [unix64]
   - python-ternary =1.0.8
