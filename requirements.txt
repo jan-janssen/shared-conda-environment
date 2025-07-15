@@ -16,7 +16,7 @@ langchain==0.3.26
 langchain-anthropic==0.3.17
 langchain-experimental==0.3.4
 langchain-openai==0.3.28
-lxml==5.4.0 
+lxml==6.0.0 
 matplotlib==3.10.1
 mkl==2023.2.0
 mpi4py==3.1.6
