@@ -5,13 +5,13 @@ dependencies:
   - ase =3.25.0
   - atomistics =0.2.5
   - black =25.1.0
-  - calphy =1.4.2  # [unix]
+  - calphy =1.4.3  # [unix]
   - conda =25.3.1
   - conda-smithy =3.50.1
   - coverage =7.9.2
   - custodian =2024.10.16
   - dynaphopy =1.17.16  # [unix]
-  - executorlib =1.5.1
+  - executorlib =1.6.0
   - ffmpeg =7.0.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.38.0  # [linux]
@@ -44,8 +44,8 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.7.11
-  - pyiron_base =0.13.2
+  - pyiron_atomistics =0.7.12
+  - pyiron_base =0.13.3
   - pylammpsmpi =0.2.37
   - pymace =0.3.10  # [unix64]
   - pymov2gif =0.0.2  # [unix]
