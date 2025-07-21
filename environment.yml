@@ -7,7 +7,7 @@ dependencies:
   - black =25.1.0
   - calphy =1.4.3  # [unix]
   - conda =25.5.1
-  - conda-smithy =3.50.1
+  - conda-smithy =3.51.1
   - coverage =7.9.2
   - custodian =2024.10.16
   - dynaphopy =1.17.16  # [unix]
