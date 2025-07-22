@@ -32,7 +32,7 @@ dependencies:
   - langchain-experimental =0.3.4
   - langchain-openai =0.3.28
   - lxml =5.4.0
-  - mamba =2.3.0
+  - mamba =2.2.0
   - matplotlib-base =3.10.1
   - mkl =2023.2.0  # [x64]
   - mpi4py =3.1.6
