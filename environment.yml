@@ -28,7 +28,7 @@ dependencies:
   - jupyterlab =4.4.5
   - lammps =2024.06.27=*openmpi*  # [unix]
   - langchain =0.3.27
-  - langchain-anthropic =0.3.17
+  - langchain-anthropic =0.3.18
   - langchain-experimental =0.3.4
   - langchain-openai =0.3.28
   - lxml =5.4.0
