@@ -28,7 +28,7 @@ pyauthenticator==0.2.1
 pygraphviz==1.14
 pyiron==0.5.2
 pyiron-atomistics==0.7.13
-pyiron-base==0.13.3
+pyiron-base==0.13.4
 pyiron-snippets==0.2.0
 pylammpsmpi==0.2.37
 pysqa==0.2.7
