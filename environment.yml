@@ -38,7 +38,7 @@ dependencies:
   - mpi4py =3.1.6
   - mypy =1.17.1 
   - nglview =3.1.4
-  - pre-commit =4.2.0
+  - pre-commit =4.3.0
   - psycopg2 =2.9.10
   - pyauthenticator =0.2.1  # [unix]
   - pygraphviz =1.14
