@@ -1,5 +1,5 @@
 ase==3.25.0
-assyst==0.6.0
+assyst==0.6.2
 atomistics==0.2.5
 black==25.1.0
 calphy==1.4.3
