@@ -12,7 +12,7 @@ dependencies:
   - coverage =7.10.6
   - custodian =2025.8.13
   - dynaphopy =1.17.16  # [unix]
-  - executorlib =1.6.1
+  - executorlib =1.7.1
   - ffmpeg =7.0.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.38.0  # [linux]
