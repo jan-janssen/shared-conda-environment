@@ -32,7 +32,7 @@ pyiron==0.5.2
 pyiron-atomistics==0.7.17
 pyiron-base==0.14.2
 pyiron-snippets==0.2.0
-pylammpsmpi==0.2.39
+pylammpsmpi==0.3.0
 pysqa==0.3.1
 python-ternary==1.0.8
 pyxtal==1.1.0
