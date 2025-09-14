@@ -30,7 +30,7 @@ dependencies:
   - lammps =2024.06.27=*openmpi*  # [unix]
   - landau =1.3.3
   - langchain =0.3.27
-  - langchain-anthropic =0.3.19
+  - langchain-anthropic =0.3.20
   - langchain-experimental =0.3.4
   - langchain-openai =0.3.33
   - lxml =5.4.0
@@ -38,7 +38,7 @@ dependencies:
   - matplotlib-base =3.10.1
   - mkl =2023.2.0  # [x64]
   - mpi4py =4.0.1
-  - mypy =1.17.1 
+  - mypy =1.18.1
   - nglview =3.1.4
   - pre-commit =4.3.0
   - psycopg2 =2.9.10
