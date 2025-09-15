@@ -38,7 +38,7 @@ dependencies:
   - matplotlib-base =3.10.1
   - mkl =2023.2.0  # [x64]
   - mpi4py =3.1.6
-  - mypy =1.18.1 
+  - mypy =1.18.1
   - nglview =3.1.4
   - pre-commit =4.3.0
   - psycopg2 =2.9.10
@@ -46,10 +46,10 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.7.17
-  - pyiron_base =0.14.2
+  - pyiron_atomistics =0.7.18
+  - pyiron_base =0.14.3
   - pyiron_snippets =0.2.0
-  - pylammpsmpi =0.2.39
+  - pylammpsmpi =0.3.1
   - pymace =0.3.10  # [unix64]
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.3.1
