@@ -20,7 +20,7 @@ langchain-experimental==0.3.4
 langchain-openai==0.3.33
 lxml==5.4.0 
 matplotlib==3.10.1
-mkl==2024.2.2
+mkl==2025.2.0
 mpi4py==3.1.6
 nglview==3.1.4
 mypy==1.18.1
