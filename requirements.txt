@@ -38,4 +38,4 @@ python-ternary==1.0.8
 pyxtal==1.1.0
 torch==2.5.1
 seaborn==0.13.2
-tensorflow==2.18.0
+tensorflow==2.20.0
