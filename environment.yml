@@ -56,7 +56,7 @@ dependencies:
   - python =3.12.10
   - python-ace =0.3.1 # [unix64]
   - python-ternary =1.0.8
-  - pytorch =2.5.1  # [unix]
+  - pytorch =2.8.0  # [unix]
   - pyxtal =1.1.0
   - qe =7.5  # [unix64]
   - seaborn =0.13.2
