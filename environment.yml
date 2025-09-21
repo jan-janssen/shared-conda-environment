@@ -19,7 +19,7 @@ dependencies:
   - git =2.49.0
   - git-filter-repo =2.38.0
   - gmailsorter =0.1.3
-  - grace-tensorpotential =0.5.3  # [unix64]
+  - grace-tensorpotential =0.5.3  # [unix]
   - graphviz =12.0.0
   - grayskull =2.9.1
   - gunicorn =23.0.0  # [unix]
