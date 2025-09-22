@@ -7,7 +7,7 @@ dependencies:
   - atomistics =0.2.5
   - black =25.1.0
   - calphy =1.4.3  # [unix]
-  - conda =25.5.1
+  - conda =25.7.0
   - conda-smithy =3.52.2
   - coverage =7.10.6
   - custodian =2025.8.13
