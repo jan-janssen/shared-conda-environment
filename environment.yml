@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - ase =3.25.0
-  - assyst =0.6.2  # [unix]
+  - assyst =0.7.0  # [unix]
   - atomistics =0.2.5
   - black =25.1.0
   - calphy =1.4.3  # [unix]
@@ -28,7 +28,7 @@ dependencies:
   - iprpy-data =2023.07.25
   - jupyterlab =4.4.9
   - lammps =2024.06.27=*openmpi*  # [unix]
-  - landau =1.3.3
+  - landau =1.4
   - langchain =0.3.27
   - langchain-anthropic =0.3.20
   - langchain-experimental =0.3.4
