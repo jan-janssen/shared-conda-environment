@@ -24,7 +24,7 @@ dependencies:
   - grayskull =2.9.1
   - gunicorn =23.0.0  # [unix]
   - h5io =0.2.5
-  - h5io_browser =0.2.0
+  - h5io_browser =0.2.1
   - iprpy-data =2023.07.25
   - jupyterlab =4.4.9
   - lammps =2024.06.27=*openmpi*  # [unix]
