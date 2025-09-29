@@ -49,7 +49,7 @@ dependencies:
   - pyiron_atomistics =0.7.20
   - pyiron_base =0.15.1
   - pyiron_snippets =0.2.0
-  - pylammpsmpi =0.3.2
+  - pylammpsmpi =0.3.3
   - pymace =0.3.10  # [unix]
   - pymov2gif =0.0.2  # [unix]
   - pysqa =0.3.1
