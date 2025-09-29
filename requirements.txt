@@ -1,6 +1,6 @@
 ase==3.25.0
 assyst==0.7.0
-atomistics==0.2.5
+atomistics==0.3.0
 black==25.1.0
 calphy==1.4.3
 coverage==7.10.7
