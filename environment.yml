@@ -11,7 +11,7 @@ dependencies:
   - conda-smithy =3.52.2
   - coverage =7.10.7
   - custodian =2025.8.13
-  - dynaphopy =1.17.16  # [unix]
+  - dynaphopy =1.18.0  # [unix]
   - executorlib =1.7.1
   - ffmpeg =7.1.1  # [unix]
   - flux-core =0.64.0  # [linux]
