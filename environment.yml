@@ -47,7 +47,7 @@ dependencies:
   - pyiron =0.5.2
   - pyiron-data =0.0.30
   - pyiron_atomistics =0.8.0
-  - pyiron_base =0.15.2
+  - pyiron_base =0.15.3
   - pyiron_snippets =0.2.0
   - pylammpsmpi =0.3.3
   - pymace =0.3.14  # [unix]
