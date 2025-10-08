@@ -14,10 +14,6 @@ h5io==0.2.5
 h5io_browser==0.2.2
 jupyterlab==4.4.9
 landau==1.4
-langchain==0.3.27
-langchain-anthropic==0.3.21
-langchain-experimental==0.3.4
-langchain-openai==0.3.35
 matplotlib==3.10.6
 mkl==2024.2.2
 mpi4py==4.1.0
