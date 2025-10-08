@@ -14,8 +14,8 @@ dependencies:
   - dynaphopy =1.18.0  # [unix]
   - executorlib =1.7.1
   - ffmpeg =7.1.1  # [unix]
-  - flux-core =0.64.0  # [linux]
-  - flux-sched =0.38.0  # [linux]
+  - flux-core =0.79.0  # [linux]
+  - flux-sched =0.47.0  # [linux]
   - git =2.49.0
   - git-filter-repo =2.38.0
   - gmailsorter =0.1.3
