@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - ase =3.26.0
-  - assyst =0.7.1  # [unix]
+  - assyst =0.8.0  # [unix]
   - atomistics =0.3.0
   - black =25.1.0
   - calphy =1.4.3  # [unix]
@@ -24,7 +24,7 @@ dependencies:
   - grayskull =2.9.1
   - gunicorn =23.0.0  # [unix]
   - h5io =0.2.5
-  - h5io_browser =0.2.2
+  - h5io_browser =0.2.3
   - iprpy-data =2023.07.25
   - jupyterlab =4.4.9
   - lammps =2024.08.29=*openmpi*  # [unix]
@@ -46,13 +46,13 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.8.0
-  - pyiron_base =0.15.2
-  - pyiron_snippets =0.2.0
+  - pyiron_atomistics =0.8.1
+  - pyiron_base =0.15.4
+  - pyiron_snippets =1.0.1
   - pylammpsmpi =0.3.3
   - pymace =0.3.14  # [unix]
   - pymov2gif =0.0.2  # [unix]
-  - pysqa =0.3.1
+  - pysqa =0.3.2
   - python =3.12.10
   - python-ace =0.3.1 # [unix]
   - python-ternary =1.0.8
