@@ -3,7 +3,7 @@ assyst==0.8.0
 atomistics==0.3.0
 black==25.1.0
 calphy==1.4.3
-coverage==7.10.7
+coverage==7.11.0
 custodian==2025.10.11
 dynaphopy==1.18.0
 executorlib==1.7.1
