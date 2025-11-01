@@ -23,7 +23,7 @@ lxml==5.4.0
 matplotlib==3.10.7
 mkl==2024.2.2
 mpi4py==4.1.1
-nglview==3.1.4
+nglview==4.0
 mypy==1.18.2
 pre-commit==4.3.0
 psycopg2==2.9.10
