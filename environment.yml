@@ -32,7 +32,6 @@ dependencies:
   - landau =1.5.2
   - langchain =1.0.3
   - langchain-anthropic =1.0.1
-  - langchain-experimental =0.3.4
   - langchain-openai =1.0.1
   - lxml =5.4.0
   - mamba =2.3.2
