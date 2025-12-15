@@ -27,7 +27,7 @@ dependencies:
   - h5io =0.2.5
   - h5io_browser =0.2.6
   - iprpy-data =2023.07.25
-  - jupyterlab =4.4.10
+  - jupyterlab =4.5.1
   - lammps =2024.08.29=*openmpi*  # [unix]
   - landau =1.5.2
   - langchain =0.3.27
