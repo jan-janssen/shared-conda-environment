@@ -4,7 +4,7 @@ atomistics==0.3.3
 black==25.12.0
 calphy==1.4.5
 coverage==7.13.0
-custodian==2025.10.11
+custodian==2025.12.14
 dynaphopy==1.18.0
 executorlib==1.7.2
 gmailsorter==0.1.3
