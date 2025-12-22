@@ -28,7 +28,7 @@ mypy==1.19.1
 phono3py==3.19.4
 pre-commit==4.5.1
 psycopg2==2.9.10
-pyauthenticator==0.2.1
+pyauthenticator==0.3.0
 pygraphviz==1.14
 pyiron==0.5.2
 pyiron-atomistics==0.8.4
