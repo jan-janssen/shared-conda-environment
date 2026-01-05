@@ -25,7 +25,7 @@ mkl==2024.2.2
 mpi4py==4.1.1
 nglview==3.1.4
 mypy==1.19.1
-phono3py==3.19.4
+phono3py==3.23.0
 pre-commit==4.5.1
 psycopg2==2.9.10
 pyauthenticator==0.3.0
