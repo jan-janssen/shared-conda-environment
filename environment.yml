@@ -43,7 +43,7 @@ dependencies:
   - nglview =3.1.4
   - phono3py =3.19.4
   - pre-commit =4.5.1
-  - psycopg2 =2.9.10
+  - psycopg2 =2.9.11
   - pyauthenticator =0.3.0  # [unix]
   - pygraphviz =1.14
   - pyiron =0.5.2
