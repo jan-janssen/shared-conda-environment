@@ -31,8 +31,8 @@ psycopg2==2.9.11
 pyauthenticator==0.3.0
 pygraphviz==1.14
 pyiron==0.5.2
-pyiron-atomistics==0.8.6
-pyiron-base==0.15.10
+pyiron-atomistics==0.8.7
+pyiron-base==0.15.12
 pyiron-snippets==1.0.2
 pylammpsmpi==0.3.7
 pysqa==0.3.3
