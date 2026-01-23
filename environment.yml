@@ -22,7 +22,7 @@ dependencies:
   - gpaw =25.7.0  # [unix64]
   - grace-tensorpotential =0.5.5  # [unix]
   - graphviz =12.0.0
-  - grayskull =3.0.1
+  - grayskull =3.0.2
   - gunicorn =23.0.0  # [unix]
   - h5io =0.2.5
   - h5io_browser =0.2.8
