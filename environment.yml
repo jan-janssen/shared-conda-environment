@@ -6,7 +6,7 @@ dependencies:
   - assyst =0.9.0  # [unix]
   - atomistics =0.3.5
   - black =26.1.0
-  - calphy =1.4.13  # [unix]
+  - calphy =1.5.0  # [unix]
   - conda =25.7.0
   - conda-smithy =3.52.2
   - coverage =7.13.3
