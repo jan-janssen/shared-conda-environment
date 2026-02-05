@@ -15,7 +15,6 @@ h5io==0.2.5
 h5io_browser==0.2.8
 jupyterlab==4.5.3
 landau==1.5.2
-lxml==5.4.0 
 matgl==2.0.6
 matplotlib==3.10.8
 mkl==2024.2.2
