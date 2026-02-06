@@ -10,7 +10,7 @@ executorlib==1.7.2
 gmailsorter==0.1.5
 gpaw==25.7.0
 grayskull==3.1.0
-gunicorn==24.1.1
+gunicorn==25.0.2
 h5io==0.2.5
 h5io_browser==0.2.8
 jupyterlab==4.5.3
