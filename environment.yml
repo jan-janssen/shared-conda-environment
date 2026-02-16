@@ -38,7 +38,7 @@ dependencies:
   - mpi4py =4.1.1
   - mypy =1.19.1
   - nglview =4.0.1
-  - phono3py =3.24.0
+  - phono3py =3.25.0
   - pre-commit =4.5.1
   - psycopg2 =2.9.11
   - pyauthenticator =0.3.0  # [unix]
