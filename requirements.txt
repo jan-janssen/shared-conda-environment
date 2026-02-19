@@ -12,7 +12,7 @@ gpaw==25.7.0
 grayskull==3.1.0
 gunicorn==24.1.1
 h5io==0.2.5
-h5io_browser==0.2.8
+h5io_browser==0.2.11
 jupyterlab==4.5.4
 landau==1.5.2
 lxml==6.0.2 
