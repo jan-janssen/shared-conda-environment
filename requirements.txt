@@ -7,7 +7,7 @@ coverage==7.13.3
 custodian==2025.12.14
 dynaphopy==1.18.0
 executorlib==1.7.2
-gmailsorter==0.1.5
+gmailsorter==0.1.10
 gpaw==25.7.0
 grayskull==3.1.0
 gunicorn==24.1.1
