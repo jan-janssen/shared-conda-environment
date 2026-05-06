@@ -30,6 +30,7 @@ dependencies:
   - jupyterlab =4.5.4
   - lammps =2024.08.29=*openmpi*  # [unix]
   - landau =1.5.2
+  - lightning =2.6.0  # [unix]
   - lxml =6.0.2
   - mamba =2.3.2
   - matgl =2.0.6  # [unix]
@@ -45,8 +46,8 @@ dependencies:
   - pygraphviz =1.14
   - pyiron =0.5.2
   - pyiron-data =0.0.30
-  - pyiron_atomistics =0.8.7
-  - pyiron_base =0.15.12
+  - pyiron_atomistics =0.8.8
+  - pyiron_base =0.15.14
   - pyiron_snippets =1.0.2
   - pylammpsmpi =0.3.7
   - pymace =0.3.14  # [unix]
