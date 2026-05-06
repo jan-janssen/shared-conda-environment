@@ -7,7 +7,7 @@ jobs:
   pip_check:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: convert
       shell: bash -l {0}
       run: |
@@ -15,7 +15,7 @@ jobs:
         cat environment.yml
         echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v3
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -32,7 +32,7 @@ jobs:
     needs: [pip_check]
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: convert
       shell: bash -l {0}
       run: |
@@ -40,7 +40,7 @@ jobs:
         cat environment.yml
         echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v3
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -51,11 +51,11 @@ jobs:
     needs: [linux_x64_test_environment]
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Conda config
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v3
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -77,10 +77,10 @@ jobs:
     needs: [linux_x64_test_environment]
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Conda config
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
-    - uses: conda-incubator/setup-miniconda@v3
+    - uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -98,7 +98,7 @@ jobs:
     needs: [pip_check]
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: convert
       shell: bash -l {0}
       run: |
@@ -106,7 +106,7 @@ jobs:
         cat environment.yml
         echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v3
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -118,12 +118,12 @@ jobs:
     needs: [macos_x64_test_environment]
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Conda config
       shell: bash -l {0}
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v3
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -146,11 +146,11 @@ jobs:
     needs: [macos_x64_test_environment]
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Conda config
       shell: bash -l {0}
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
-    - uses: conda-incubator/setup-miniconda@v3
+    - uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -169,7 +169,7 @@ jobs:
     needs: [pip_check]
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: convert
       shell: bash -l {0}
       run: |
@@ -177,7 +177,7 @@ jobs:
         cat environment.yml
         echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v3
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -188,12 +188,12 @@ jobs:
     needs: [macos_arm_test_environment]
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Conda config
       shell: bash -l {0}
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v3
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -215,11 +215,11 @@ jobs:
     needs: [macos_arm_test_environment]
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Conda config
       shell: bash -l {0}
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
-    - uses: conda-incubator/setup-miniconda@v3
+    - uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -237,7 +237,7 @@ jobs:
     needs: [pip_check]
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: convert
       shell: bash -l {0}
       run: |
@@ -245,7 +245,7 @@ jobs:
         cat environment.yml
         echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v3
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -256,12 +256,12 @@ jobs:
     needs: [win_x64_test_environment]
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Conda config
       shell: bash -l {0}
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - name: Setup Mambaforge
-      uses: conda-incubator/setup-miniconda@v3
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -283,11 +283,11 @@ jobs:
     needs: [win_x64_test_environment]
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Conda config
       shell: bash -l {0}
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
-    - uses: conda-incubator/setup-miniconda@v3
+    - uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: "3.12"
         miniforge-version: latest
@@ -309,7 +309,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Ignore broken packages
         shell: bash -l {0}
         run: python .ci_support/checktitle.py "${{ github.event.pull_request.title }}"
