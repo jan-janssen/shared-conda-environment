@@ -17,7 +17,7 @@ jupyterlab==4.5.7
 landau==1.5.2
 lxml==6.0.2
 matgl==3.0.1
-matplotlib==3.10.8
+matplotlib==3.10.9
 mkl==2024.2.2
 mpi4py==4.1.1
 nglview==4.0.1
