@@ -30,7 +30,7 @@ dependencies:
   - landau =1.7.0
   - lightning =2.6.0  # [unix]
   - lxml =6.0.2
-  - mamba =2.6.0
+  - mamba =2.3.2
   - matgl =3.0.1  # [unix]
   - matplotlib-base =3.10.9
   - mkl =2024.2.2  # [linux]
