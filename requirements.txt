@@ -17,7 +17,7 @@ lxml==6.0.2
 matgl==3.0.2
 matplotlib==3.10.9
 mkl==2024.2.2
-mpi4py==4.1.1
+mpi4py==4.1.2
 nglview==4.0.1
 mypy==1.20.2
 phono3py==3.31.1
