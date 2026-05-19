@@ -29,7 +29,7 @@ dependencies:
   - lammps =2024.08.29=*openmpi*  # [unix]
   - landau =1.7.0
   - lightning =2.6.0  # [unix]
-  - lxml =6.0.2
+  - lxml =6.1.1
   - mamba =2.3.2
   - matgl =3.0.2  # [unix]
   - matplotlib-base =3.10.9
