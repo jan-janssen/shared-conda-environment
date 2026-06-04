@@ -13,6 +13,7 @@ dependencies:
   - custodian =2025.12.14
   - dynaphopy =1.19.0  # [unix]
   - executorlib =1.9.2
+  - feedrattler =0.3.14
   - ffmpeg =7.1.1  # [unix]
   - flux-core =0.64.0  # [linux]
   - flux-sched =0.38.0  # [linux]
