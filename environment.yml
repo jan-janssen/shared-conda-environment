@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - ase =3.28.0
-  - assyst =0.13.0  # [unix]
+  - assyst =0.15.0  # [unix]
   - atomistics =0.3.6
   - black =26.5.1
   - calphy =1.8.2  # [unix]
