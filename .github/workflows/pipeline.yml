@@ -17,7 +17,7 @@ jobs:
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         environment-file: environment.yml
@@ -42,7 +42,7 @@ jobs:
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         environment-file: environment.yml
@@ -57,7 +57,7 @@ jobs:
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         environment-file: .ci_support/environment.yml
@@ -82,7 +82,7 @@ jobs:
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
     - name: Build Constructor
@@ -108,7 +108,7 @@ jobs:
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         architecture: x64
@@ -125,7 +125,7 @@ jobs:
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         architecture: x64
@@ -152,7 +152,7 @@ jobs:
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         architecture: x64
@@ -179,7 +179,7 @@ jobs:
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         environment-file: environment.yml
@@ -195,7 +195,7 @@ jobs:
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         environment-file: .ci_support/environment.yml
@@ -221,7 +221,7 @@ jobs:
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
     - name: Build Constructor
@@ -247,7 +247,7 @@ jobs:
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         environment-file: environment.yml
@@ -263,7 +263,7 @@ jobs:
     - name: Setup Mambaforge
       uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
         environment-file: .ci_support/environment.yml
@@ -289,7 +289,7 @@ jobs:
       run: echo -e "channels:\n  - conda-forge\n" > .condarc
     - uses: conda-incubator/setup-miniconda@v4
       with:
-        python-version: "3.12"
+        python-version: "3.13"
         miniforge-version: latest
         condarc-file: .condarc
     - name: Build Constructor
