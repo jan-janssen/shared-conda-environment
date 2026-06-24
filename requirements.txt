@@ -2,7 +2,7 @@ ase==3.28.0
 assyst==0.15.0
 atomistics==0.3.6
 black==26.5.1
-calphy==1.8.3
+calphy==1.8.4
 coverage==7.14.3
 custodian==2025.12.14
 dynaphopy==1.19.0
