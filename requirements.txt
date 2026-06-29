@@ -14,7 +14,7 @@ h5io_browser==0.2.14
 jupyterlab==4.6.1
 landau==1.8.8
 lxml==6.0.2
-matgl==3.0.3
+matgl==4.0.2
 matplotlib==3.10.9
 mkl==2024.2.2
 mpi4py==4.1.1
