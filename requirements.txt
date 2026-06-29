@@ -13,7 +13,7 @@ h5io==0.2.5
 h5io_browser==0.2.14
 jupyterlab==4.6.1
 landau==1.8.8
-lxml==6.0.2
+lxml==6.1.1
 matgl==3.0.3
 matplotlib==3.10.9
 mkl==2024.2.2
