@@ -4,7 +4,7 @@ channels:
 dependencies:
   - ase =3.28.0
   - assyst =0.15.0  # [unix]
-  - atomistics =0.3.6
+  - atomistics =0.3.8
   - black =26.5.1
   - calphy =1.8.4  # [unix]
   - conda =26.3.1
