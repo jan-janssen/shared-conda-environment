@@ -10,7 +10,7 @@ executorlib==1.9.2
 gpaw==25.7.0
 grayskull==3.1.1
 h5io==0.2.5
-h5io_browser==0.2.14
+h5io_browser==0.2.15
 jupyterlab==4.6.1
 landau==1.8.8
 lxml==6.0.2
