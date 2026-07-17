@@ -13,7 +13,6 @@ mpi4py==4.1.2
 nglview==3.1.4
 phono3py==4.3.1
 pygraphviz==1.14
-pyiron==0.5.2
 pyiron-snippets==1.4.0
 pylammpsmpi==0.5.0
 pysqa==0.4.3
