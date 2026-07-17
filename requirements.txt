@@ -8,7 +8,7 @@ jupyterlab==4.6.1
 landau==1.11.0
 lxml==6.1.1
 matplotlib==3.11.0
-mkl==2024.2.2
+mkl==2026.1.0
 mpi4py==4.1.2
 nglview==3.1.4
 phono3py==4.3.1
