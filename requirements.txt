@@ -19,4 +19,4 @@ pysqa==0.4.3
 pyxtal==1.1.4
 torch==2.5.1
 seaborn==0.13.2
-tensorflow==2.19.1
+tensorflow==2.21.0
