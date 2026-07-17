@@ -10,7 +10,7 @@ dependencies:
   - executorlib =1.10.1
   - flux-core =0.87.0  # [linux]
   - flux-pmix =0.7.1  # [linux]
-  - grace-tensorpotential =0.6.0  # [unix]
+  - grace-tensorpotential =0.6.0  # [linux]
   - graphviz =14.1.2 
   - iprpy-data =2025.01.14
   - jupyterlab =4.6.1
@@ -26,9 +26,9 @@ dependencies:
   - pylammpsmpi =0.5.0
   - pysqa =0.4.3
   - python =3.12.13
-  - python-ace =0.3.1 # [unix]
+  - python-ace =0.3.1 # [linux]
   - pyxtal =1.1.4
   - seaborn =0.13.2
   - setuptools =79.0.1 
   - sqsgenerator =0.5.6
-  - tensorflow =2.19.1  # [unix]
+  - tensorflow =2.19.1  # [linux]
