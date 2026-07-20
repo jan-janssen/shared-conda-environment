@@ -21,7 +21,7 @@ dependencies:
   - matplotlib-base =3.11.0
   - mpi4py =4.1.2
   - nglview =4.0.1
-  - phono3py =4.3.3
+  - phono3py =4.4.0
   - pygraphviz =1.14
   - pylammpsmpi =0.5.0
   - pysqa =0.4.3
