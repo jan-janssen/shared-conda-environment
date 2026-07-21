@@ -7,7 +7,7 @@ executorlib==1.10.1
 jupyterlab==4.6.2
 landau==1.11.0
 lxml==6.1.1
-matplotlib==3.11.0
+matplotlib==3.11.1
 mpi4py==4.1.2
 nglview==3.1.4
 phono3py==4.4.0
