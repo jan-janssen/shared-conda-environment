@@ -13,7 +13,7 @@ dependencies:
   - grace-tensorpotential =0.6.0  # [linux]
   - graphviz =14.1.2 
   - iprpy-data =2025.01.14
-  - jupyterlab =4.6.1
+  - jupyterlab =4.6.2
   - lammps =2025.07.22=*openmpi*  # [unix]
   - lammpsparser =0.0.7
   - landau =1.11.0
