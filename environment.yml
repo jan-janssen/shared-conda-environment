@@ -18,7 +18,7 @@ dependencies:
   - lammpsparser =0.0.7
   - landau =1.11.0
   - lxml =6.1.1
-  - matplotlib-base =3.11.0
+  - matplotlib-base =3.11.1
   - mpi4py =4.1.2
   - nglview =4.0.1
   - phono3py =4.4.0
