@@ -24,7 +24,7 @@ dependencies:
   - phono3py =4.4.0
   - pygraphviz =1.14
   - pylammpsmpi =0.5.0
-  - pysqa =0.4.3
+  - pysqa =0.4.4
   - python =3.12.13
   - python-ace =0.3.1 # [linux]
   - pyxtal =1.1.4
