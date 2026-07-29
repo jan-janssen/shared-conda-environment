@@ -14,7 +14,7 @@ phono3py==4.4.0
 pygraphviz==1.14
 pyiron-snippets==1.4.0
 pylammpsmpi==0.5.0
-pysqa==0.4.3
+pysqa==0.4.4
 pyxtal==1.1.4
 seaborn==0.13.2
 tensorflow==2.19.1
