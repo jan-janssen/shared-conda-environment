@@ -27,7 +27,7 @@ dependencies:
   - pysqa =0.4.4
   - python =3.12.13
   - python-ace =0.3.1 # [linux]
-  - pyxtal =1.1.4
+  - pyxtal =1.1.5
   - seaborn =0.13.2
   - setuptools =79.0.1 
   - sqsgenerator =0.5.6
