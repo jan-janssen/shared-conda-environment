@@ -14,7 +14,7 @@ def get_detailed_environment(environment_input_file, environment_output_file):
     output_dict = output_start_dict.copy()
     
     output_dict["dependencies"] = list(sorted([
-        dep['pydantic'] + "=" + dep['version'] + "=" + dep['build']
+        dep['name'] + "=" + dep['version'] + "=" + dep['build']
         for dep in output_dict['actions']['FETCH']
     ]))
     with open(environment_output_file, "w") as f:
