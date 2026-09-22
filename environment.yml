@@ -10,7 +10,7 @@ dependencies:
   - executorlib =1.10.3
   - flux-core =0.87.0  # [linux]
   - flux-pmix =0.7.1  # [linux]
-  - grace-tensorpotential =0.6.0  # [linux]
+  - grace-tensorpotential =0.6.1  # [linux]
   - graphviz =14.1.2 
   - iprpy-data =2025.01.14
   - jupyterlab =4.6.3
@@ -20,7 +20,7 @@ dependencies:
   - lxml =6.1.3
   - matplotlib-base =3.11.2
   - mpi4py =4.1.2
-  - nglview =4.0.1
+  - nglview =3.1.4
   - phono3py =4.5.0
   - pygraphviz =2.0.2
   - pylammpsmpi =0.5.1
