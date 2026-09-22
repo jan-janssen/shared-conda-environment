@@ -12,13 +12,10 @@ def get_detailed_environment(environment_input_file, environment_output_file):
     )
     output_start_dict = json.loads(output_start)
     output_dict = output_start_dict.copy()
-    print("output_dict:", output_dict)
-
-    if "name" in output_dict and output_dict["name"] is None:
-        del output_dict["name"]
+    
     output_dict["dependencies"] = list(sorted([
-        dep.split("::")[-1].replace("==", "=") 
-        for dep in output_dict["dependencies"]
+        dep['pydantic'] + "=" + dep['version'] + "=" + dep['build']
+        for dep in output_dict['actions']['FETCH']
     ]))
     with open(environment_output_file, "w") as f:
         f.writelines(yaml.dump(output_dict))
@@ -29,7 +26,7 @@ def get_detailed_environment(environment_input_file, environment_output_file):
         universal_newlines=True
     )
     output_extended_dict = json.loads(output_extended)
-    return output_extended_dict == output_start_dict
+    return output_extended_dict['actions']['FETCH'] == output_start_dict['actions']['FETCH']
 
 
 if __name__ == "__main__":
