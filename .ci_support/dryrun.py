@@ -13,12 +13,15 @@ def get_detailed_environment(environment_input_file, environment_output_file):
     output_start_dict = json.loads(output_start)
     output_dict = output_start_dict.copy()
     
-    output_dict["dependencies"] = list(sorted([
-        dep['name'] + "=" + dep['version'] + "=" + dep['build']
-        for dep in output_dict['actions']['FETCH']
-    ]))
+    write_dict = {
+        "channels": "conda-forge",
+        "dependencies": list(sorted([
+            dep['name'] + "=" + dep['version'] + "=" + dep['build']
+            for dep in output_dict['actions']['FETCH']
+        ])),
+    }
     with open(environment_output_file, "w") as f:
-        f.writelines(yaml.dump(output_dict))
+        f.writelines(yaml.dump(write_dict))
 
     output_extended = subprocess.check_output(
         "conda env create -n testenv -f " + environment_output_file + " --dry-run --json", 
