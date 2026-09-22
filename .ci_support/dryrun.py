@@ -14,7 +14,7 @@ def get_detailed_environment(environment_input_file, environment_output_file):
     output_dict = output_start_dict.copy()
     
     write_dict = {
-        "channels": "conda-forge",
+        "channels": ["conda-forge"],
         "dependencies": list(sorted([
             dep['name'] + "=" + dep['version'] + "=" + dep['build']
             for dep in output_dict['actions']['FETCH']
