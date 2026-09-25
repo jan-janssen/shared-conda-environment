@@ -25,7 +25,7 @@ dependencies:
   - pygraphviz =2.0.2
   - pylammpsmpi =0.5.1
   - pysqa =1.0.0
-  - python =3.12.13
+  - python =3.13.15
   - python-ace =0.3.1 # [linux]
   - pyxtal =1.1.5
   - seaborn =0.13.2
