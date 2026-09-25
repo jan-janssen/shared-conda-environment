@@ -12,7 +12,7 @@ mpi4py==4.1.2
 nglview==3.1.4
 phono3py==4.5.0
 pygraphviz==2.0.2
-pylammpsmpi==0.5.1
+pylammpsmpi==0.5.2
 pysqa==1.0.0
 pyxtal==1.1.5
 seaborn==0.13.2

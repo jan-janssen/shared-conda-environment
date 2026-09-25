@@ -23,7 +23,7 @@ dependencies:
   - nglview =3.1.4
   - phono3py =4.5.0
   - pygraphviz =2.0.2
-  - pylammpsmpi =0.5.1
+  - pylammpsmpi =0.5.2
   - pysqa =1.0.0
   - python =3.12.13
   - python-ace =0.3.1 # [linux]
