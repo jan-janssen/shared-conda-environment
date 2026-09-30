@@ -31,4 +31,4 @@ dependencies:
   - seaborn =0.13.2
   - setuptools =79.0.1 
   - sqsgenerator =0.5.6
-  - tensorflow =2.19.1  # [linux]
+  - tensorflow =2.21.0  # [linux]
