@@ -1,5 +1,5 @@
 ase==3.29.0
-assyst==0.16.0
+assyst==1.0.0
 atomistics==0.3.10
 calphy==2.3.0
 custodian==2026.10.11
