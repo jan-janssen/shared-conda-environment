@@ -7,7 +7,7 @@ dependencies:
   - atomistics =0.3.10
   - calphy =2.3.0  # [unix]
   - custodian =2026.10.11
-  - executorlib =1.10.3
+  - executorlib =1.11.0
   - flux-core =0.87.0  # [linux]
   - flux-pmix =0.7.1  # [linux]
   - grace-tensorpotential =0.6.1  # [linux]
