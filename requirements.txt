@@ -3,7 +3,7 @@ assyst==0.16.0
 atomistics==0.3.10
 calphy==2.3.0
 custodian==2026.10.11
-executorlib==1.10.3
+executorlib==1.11.0
 jupyterlab==4.6.4
 landau==1.11.0
 lxml==6.1.3
