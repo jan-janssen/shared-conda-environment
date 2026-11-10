@@ -5,7 +5,7 @@ dependencies:
   - ase =3.29.0
   - assyst =0.16.0  # [unix]
   - atomistics =0.3.10
-  - calphy =2.3.0  # [unix]
+  - calphy =2.3.1  # [unix]
   - custodian =2026.10.21
   - executorlib =1.10.3
   - flux-core =0.87.0  # [linux]
